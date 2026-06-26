@@ -4,22 +4,22 @@ const steps = [
   {
     n: "01",
     title: "Audit",
-    desc: "On analyse votre métier, votre zone, votre concurrence et votre objectif. Pas de campagne avant d'avoir compris votre marché et défini ce qu'est un « bon client » pour vous.",
+    desc: "On analyse votre zone d'intervention, vos concurrents locaux et le profil des propriétaires éligibles à MaPrimeRénov'. Pas de campagne avant d'avoir compris votre marché et défini ce qu'est un lead vraiment exploitable pour vous.",
   },
   {
     n: "02",
     title: "Ciblage",
-    desc: "On définit les audiences pertinentes : propriétaires de votre secteur géographique, par profil et centres d'intérêt, pour ne pas dépenser un euro sur des gens hors cible.",
+    desc: "On vise les bonnes audiences : propriétaires de logements de 15 ans et plus, chauffés au fioul ou au gaz à remplacer, dans votre secteur géographique. On ne dépense pas un euro sur des profils hors cible ou non éligibles.",
   },
   {
     n: "03",
     title: "Création",
-    desc: "On produit des visuels et messages clairs qui parlent de votre métier et de la transformation que vous apportez. Des annonces faites pour générer des demandes, pas des likes.",
+    desc: "On produit des annonces claires qui parlent des aides d'État, du confort et des économies d'énergie — les leviers qui déclenchent la prise de contact. Des publicités faites pour générer des demandes de devis, pas des likes.",
   },
   {
     n: "04",
     title: "Optimisation",
-    desc: "On suit les données semaine après semaine, on coupe ce qui ne marche pas, on amplifie ce qui performe. L'algorithme Meta s'affine avec le temps — on l'alimente correctement.",
+    desc: "On suit les données chaque semaine, on coupe ce qui ne marche pas, on amplifie ce qui performe. L'algorithme Meta s'affine avec le temps — on l'alimente correctement pour faire baisser le coût par lead.",
   },
 ];
 

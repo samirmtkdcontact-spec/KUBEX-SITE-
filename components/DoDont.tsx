@@ -1,21 +1,21 @@
 import Reveal from "./Reveal";
 
 const promises = [
+  "Des leads de particuliers qualifiés, ciblés sur votre zone d'intervention",
   "Une méthode claire, expliquée et documentée à chaque étape",
-  "Un ciblage précis sur votre zone et vos clients potentiels",
+  "Un ciblage précis : propriétaires éligibles aux aides, logements à rénover",
   "Des comptes rendus réguliers avec les vrais chiffres de vos campagnes",
   "De la transparence totale sur le budget publicitaire et son utilisation",
   "Un accompagnement humain, sans jargon inutile",
-  "Le respect des bonnes pratiques Meta et des moyennes du marché",
 ];
 
 const noPromises = [
   "Des résultats « garantis » : aucune agence sérieuse ne peut les promettre",
-  "Un nombre de clients chiffré à l'avance, déconnecté de votre marché",
+  "Un volume exact de leads chiffré à l'avance, déconnecté de votre marché",
+  "Remplacer votre travail commercial : un lead se rappelle, se qualifie, se conclut",
   "Des résultats du jour au lendemain : l'algorithme a besoin de temps",
   "Des « secrets » ou des méthodes miracles qui contournent la réalité",
   "De faux témoignages ou des captures d'écran de résultats invérifiables",
-  "Vous enfermer : nos formules d'entrée sont sans engagement",
 ];
 
 function Check() {
@@ -62,9 +62,9 @@ export default function DoDont() {
             Ce qu'on fait — et ce qu'on ne fera jamais
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Le marketing pour artisans est plein de promesses creuses. Notre
-            crédibilité, c'est justement de vous dire la vérité, y compris quand
-            elle n'est pas vendeuse.
+            Le marketing pour installateurs est plein de promesses creuses —
+            « 30 leads garantis par mois ». Notre crédibilité, c'est justement
+            de vous dire la vérité, y compris quand elle n'est pas vendeuse.
           </p>
         </Reveal>
 

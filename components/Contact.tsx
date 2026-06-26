@@ -101,13 +101,14 @@ export default function Contact() {
             </h2>
             <p className="mt-4 text-lg text-white/65">
               Remplissez ce formulaire et on revient vers vous pour un échange
-              sans engagement. On regarde ensemble votre marché, votre zone et
-              ce que Meta Ads peut — ou ne peut pas — vous apporter.
+              sans engagement. On regarde ensemble votre zone, le potentiel de
+              propriétaires éligibles aux aides et ce que Meta Ads peut — ou ne
+              peut pas — vous apporter en leads.
             </p>
             <ul className="mt-7 space-y-3 text-sm text-white/70">
               <li>· Réponse honnête, même si Meta Ads n'est pas pour vous</li>
               <li>· Aucune obligation, aucun engagement</li>
-              <li>· Recommandation de budget adaptée à votre situation</li>
+              <li>· Estimation du potentiel de leads sur votre département</li>
             </ul>
           </Reveal>
 
@@ -228,21 +229,19 @@ export default function Contact() {
                         id="metier"
                         type="text"
                         list="metiers"
-                        placeholder="Plombier, maçon, électricien…"
+                        placeholder="Installateur PAC, chauffagiste RGE…"
                         value={values.metier}
                         onChange={(e) => update("metier", e.target.value)}
                         className={`${fieldBase} ${border("metier")}`}
                       />
                       <datalist id="metiers">
+                        <option value="Installateur PAC air-eau" />
+                        <option value="Installateur PAC air-air" />
+                        <option value="Chauffagiste RGE QualiPAC" />
                         <option value="Plombier / Chauffagiste" />
-                        <option value="Électricien" />
-                        <option value="Maçon" />
-                        <option value="Menuisier" />
-                        <option value="Couvreur" />
-                        <option value="Peintre" />
-                        <option value="Carreleur" />
+                        <option value="Génie climatique / CVC" />
                         <option value="Rénovation énergétique" />
-                        <option value="Autre métier du BTP" />
+                        <option value="Autre métier du chauffage" />
                       </datalist>
                       {errors.metier && (
                         <p className="mt-1 text-xs text-red-500">{errors.metier}</p>

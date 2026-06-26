@@ -1,5 +1,6 @@
 /**
- * Données réelles et vérifiées sur Meta et le marché BTP France.
+ * Données réelles et vérifiées — marché des pompes à chaleur (PAC),
+ * aides d'État et Meta Ads en France.
  * Chaque chiffre est accompagné de sa source — AUCUNE donnée inventée.
  */
 
@@ -23,54 +24,54 @@ export const heroStats: Stat[] = [
     source: "SQ Magazine 2025",
   },
   {
-    value: "64 %",
-    label: "des dépenses pub Facebook viennent de PME / TPE",
-    source: "SQ Magazine 2025",
+    value: "200–500 €",
+    label: "budget Meta Ads mensuel recommandé pour une PME",
+    source: "Effinity 2026",
   },
 ];
 
-/** Cards de la section « Le contexte » — vraies données marché BTP & Meta */
+/** Cards de la section « Le contexte » — marché PAC, aides d'État & Meta */
 export const contextStats: Stat[] = [
   {
-    value: "615 000",
-    label: "entreprises BTP en France",
+    value: "+11 %",
+    label: "de ventes de PAC en Europe en 2025",
     detail:
-      "dont 90 % de TPE et d'artisans : un marché immense, mais une concurrence locale forte où la visibilité fait la différence.",
-    source: "Batiweb 2025",
+      "Soit 2,63 millions d'unités vendues sur l'année : après un trou d'air, le marché de la pompe à chaleur est clairement reparti à la hausse.",
+    source: "EHPA, 2025",
   },
   {
-    value: "49 %",
-    label: "des artisans BTP ont moins de 3 mois de visibilité",
+    value: "×2",
+    label: "ventes de PAC en France depuis octobre 2025",
     detail:
-      "sur leur carnet de commandes. Près d'un artisan sur deux ne sait pas de quoi seront faits les mois suivants : l'acquisition régulière devient vitale.",
-    source: "CAPEB 2025",
+      "Un doublement observé sur la fin d'année : la demande des particuliers redémarre fort, portée par les aides et la fin du fioul.",
+    source: "Hello Watt / Révolution Énergétique, déc. 2025",
   },
   {
-    value: "16 Mds €",
-    label: "investis en rénovation énergétique en 2025",
+    value: "1 million",
+    label: "de PAC produites par an d'ici 2027 (objectif État)",
     detail:
-      "Un marché porteur, soutenu par les aides publiques, où la demande existe — encore faut-il être visible au bon moment auprès des bons prospects.",
-    source: "Batiweb 2025",
+      "L'objectif gouvernemental fixe le cap : la pompe à chaleur devient un pilier de la rénovation énergétique en France.",
+    source: "economie.gouv.fr",
   },
   {
-    value: "48,7 M",
-    label: "d'utilisateurs Facebook en France",
+    value: "30 000",
+    label: "installateurs PAC à former d'ici 2027",
     detail:
-      "Vos futurs clients y passent du temps chaque jour. Le ciblage Meta permet de toucher des propriétaires par zone, âge et centres d'intérêt.",
-    source: "NapoleonCat, déc. 2025",
+      "Un marché en tension où l'offre peine à suivre la demande — et où la concurrence digitale reste, aujourd'hui, faible.",
+    source: "Plan PAC, gouvernement français",
   },
   {
-    value: "9,2 %",
-    label: "taux de conversion moyen des annonces Facebook",
+    value: "10 800 €",
+    label: "d'aides cumulables (MaPrimeRénov' + CEE) pour une PAC air-eau",
     detail:
-      "Tous secteurs confondus. Une bonne base de référence pour bâtir des campagnes performantes plutôt que de partir à l'aveugle.",
-    source: "SQ Magazine 2025",
+      "Pour un ménage très modeste. Ces aides créent une demande massive chez les particuliers — réservée aux chantiers réalisés par un installateur RGE QualiPAC.",
+    source: "Idéal Système / ANAH 2026",
   },
   {
-    value: "200–500 €",
-    label: "budget Meta Ads mensuel recommandé pour une PME",
+    value: "3,6 Mds €",
+    label: "alloués à MaPrimeRénov' en 2026",
     detail:
-      "Une fourchette réaliste pour alimenter correctement l'algorithme et obtenir des données exploitables, sans dilapider son budget.",
-    source: "Effinity 2026",
+      "Avec une réouverture du guichet le 23 février 2026 : un budget d'État massif qui solvabilise des milliers de projets de chauffage.",
+    source: "ANAH 2026",
   },
 ];

@@ -8,12 +8,13 @@ export default function Context() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Le contexte</span>
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-kubex-ink sm:text-4xl">
-            Les artisans BTP face à un défi d'acquisition
+            Le marché PAC repart. Êtes-vous visible ?
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Le marché est là, la demande aussi. Le vrai sujet, c'est la
-            visibilité régulière. Voici ce que disent les chiffres — sources à
-            l'appui, sans rien inventer.
+            Les ventes redémarrent depuis octobre 2025 et les aides 2026 sont
+            massives. La demande de particuliers est là — le vrai sujet, c'est
+            qu'ils vous trouvent. Voici ce que disent les chiffres, sources à
+            l'appui.
           </p>
         </Reveal>
 
@@ -42,9 +43,11 @@ export default function Context() {
 
         <Reveal className="mt-10">
           <p className="mx-auto max-w-3xl text-center text-sm text-kubex-ink/50">
-            Ces données décrivent un marché et une moyenne sectorielle. Elles ne
-            constituent pas une promesse de résultat : les performances d'une
-            campagne dépendent du métier, de la zone, de l'offre et du budget.
+            Ces données décrivent le marché de la PAC et les dispositifs
+            d'aides. Elles ne constituent pas une promesse de résultat : les
+            performances d'une campagne dépendent de votre zone, de votre offre
+            et du budget. Les montants d'aides évoluent selon les barèmes ANAH
+            en vigueur et la situation de chaque ménage.
           </p>
         </Reveal>
       </div>

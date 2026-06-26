@@ -5,24 +5,24 @@ import Reveal from "./Reveal";
 
 const faqs = [
   {
-    q: "Quel budget faut-il prévoir ?",
-    a: "Il y a deux postes distincts : nos honoraires de gestion (à partir de 490 €/mois) et le budget publicitaire versé directement à Meta. Pour ce dernier, une fourchette de 200 à 500 €/mois est recommandée pour une PME afin d'alimenter correctement l'algorithme et obtenir des données exploitables (source : Effinity 2026). On définit ensemble ce qui est réaliste pour votre situation.",
+    q: "Mes clients sont-ils vraiment sur Facebook ?",
+    a: "Oui. La France compte 48,7 millions d'utilisateurs Facebook (NapoleonCat, déc. 2025), parmi lesquels une grande part de propriétaires de 35 à 65 ans — exactement le profil qui remplace son chauffage. Ils n'y cherchent pas activement un installateur, mais c'est justement là que Meta Ads est utile : on va susciter la demande auprès des bons profils, là où ils passent déjà du temps chaque jour.",
   },
   {
-    q: "Combien de temps avant de voir des résultats ?",
-    a: "Honnêtement : il faut du temps. L'algorithme Meta a besoin d'une phase d'apprentissage et de données pour s'optimiser, ce qui prend généralement quelques semaines. Les premiers contacts peuvent arriver rapidement, mais une campagne se juge sur la durée, une fois les audiences et messages affinés. Personne de sérieux ne peut vous promettre un flux de clients dès le premier jour.",
+    q: "Comment ciblez-vous des propriétaires éligibles aux aides ?",
+    a: "Le ciblage Meta permet de combiner zone géographique, statut de propriétaire, tranche d'âge et centres d'intérêt (rénovation, économies d'énergie, maison). On concentre la diffusion sur les profils les plus susceptibles d'être propriétaires d'un logement de 15 ans et plus, chauffé au fioul ou au gaz. L'éligibilité définitive à MaPrimeRénov' reste ensuite vérifiée au moment de la qualification du lead — c'est une partie de votre travail commercial.",
   },
   {
-    q: "Quelle différence avec Google Ads ?",
-    a: "Google Ads capte une demande existante : la personne cherche déjà « plombier + ville ». Meta Ads (Facebook/Instagram) crée la demande : on va chercher des propriétaires qui ne vous cherchent pas encore mais correspondent à votre cible, par zone, profil et centres d'intérêt. Les deux sont complémentaires ; nous sommes spécialisés sur Meta, particulièrement efficace pour la notoriété locale et la génération de demandes.",
+    q: "Faut-il un budget pub en plus de vos honoraires ?",
+    a: "Oui, ce sont deux postes distincts : nos honoraires de gestion (à partir de 890 €/mois) et le budget publicitaire versé directement à Meta. Pour ce dernier, une fourchette de 200 à 500 €/mois est recommandée pour une PME afin d'alimenter correctement l'algorithme et obtenir des données exploitables (source : Effinity 2026). On définit ensemble ce qui est réaliste pour votre zone.",
+  },
+  {
+    q: "Combien de temps avant les premiers leads ?",
+    a: "Honnêtement : il faut un peu de temps. L'algorithme Meta a besoin d'une phase d'apprentissage et de données pour s'optimiser, ce qui prend généralement quelques semaines. Les premiers leads peuvent arriver assez vite, mais une campagne se juge sur la durée, une fois les audiences et messages affinés. Personne de sérieux ne peut vous promettre un volume de leads dès le premier jour.",
   },
   {
     q: "Travaillez-vous partout en France ?",
-    a: "Oui. Nos campagnes s'adressent aux artisans du BTP partout en France, en métropole. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise, qu'il s'agisse d'une ville, d'un département ou d'un rayon autour de votre atelier.",
-  },
-  {
-    q: "Y a-t-il une exclusivité de zone ?",
-    a: "Nous évitons de faire campagne pour deux artisans directement concurrents sur la même zone et le même métier, car cela nuirait à l'efficacité de chacun. L'exclusivité éventuelle se discute lors de l'audit, en fonction de votre secteur géographique et de votre activité. C'est un point qu'on aborde clairement, en toute transparence.",
+    a: "Oui. Nos campagnes s'adressent aux installateurs de PAC RGE QualiPAC partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise. Et avec la formule Domination, nous pouvons travailler en exclusivité sur votre département, sous réserve de disponibilité.",
   },
 ];
 

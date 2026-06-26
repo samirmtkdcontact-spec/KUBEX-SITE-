@@ -20,25 +20,28 @@ export default function Hero() {
       <div className="container-kubex relative">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
-            <span className="eyebrow">Agence Meta Ads · Artisans du bâtiment</span>
+            <span className="eyebrow">Agence Meta Ads · Installateurs PAC RGE</span>
           </Reveal>
 
           <Reveal delay={80}>
             <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-kubex-ink sm:text-5xl lg:text-6xl">
-              Remplissez votre carnet de commandes avec des clients{" "}
-              <span className="gradient-text">qualifiés</span>.
+              Les aides d'État remplissent les carnets. Encore faut-il être{" "}
+              <span className="gradient-text">visible</span>.
             </h1>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-kubex-ink/70">
-              Un carnet de commandes en dents de scie, c'est le quotidien de
-              trop d'artisans du BTP. KUBEX construit des campagnes{" "}
+              Jusqu'à{" "}
               <strong className="font-semibold text-kubex-ink">
-                Meta Ads ciblées
+                10 800 € d'aides cumulables
               </strong>{" "}
-              pour faire venir à vous des prospects de votre zone, au bon moment
-              — et transformer l'incertitude en demandes régulières.
+              créent une demande massive de pompes à chaleur. Le problème : ces
+              propriétaires ne savent pas que votre entreprise existe. Ils
+              cherchent un installateur <strong className="font-semibold text-kubex-ink">RGE QualiPAC</strong> sur
+              Facebook sans le savoir — KUBEX construit des campagnes{" "}
+              <strong className="font-semibold text-kubex-ink">Meta Ads ciblées</strong>{" "}
+              pour transformer cette demande en leads qualifiés dans votre zone.
             </p>
           </Reveal>
 
@@ -51,6 +54,14 @@ export default function Hero() {
                 Découvrir la méthode
               </a>
             </div>
+          </Reveal>
+
+          <Reveal delay={300}>
+            <p className="mx-auto mt-6 max-w-xl text-sm text-kubex-ink/60">
+              Seuls les installateurs RGE QualiPAC peuvent accéder aux chantiers
+              éligibles aux aides. Votre certification est un véritable avantage
+              concurrentiel — <strong className="font-semibold text-kubex-ink">KUBEX vous aide à l'exploiter</strong>.
+            </p>
           </Reveal>
         </div>
 

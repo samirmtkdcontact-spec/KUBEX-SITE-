@@ -15,20 +15,22 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "KUBEX — Acquisition de clients pour les artisans du bâtiment",
+  title: "KUBEX — L'agence Meta Ads des installateurs de PAC RGE",
   description:
-    "KUBEX est une agence Meta Ads spécialisée dans l'acquisition de clients qualifiés pour les artisans du BTP. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
+    "KUBEX génère des leads de particuliers qualifiés pour les installateurs de pompes à chaleur RGE QualiPAC, via Meta Ads. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
   keywords: [
     "Meta Ads",
-    "artisans BTP",
-    "acquisition clients",
+    "pompe à chaleur",
+    "PAC",
+    "RGE QualiPAC",
+    "MaPrimeRénov'",
+    "leads installateur PAC",
     "publicité Facebook",
-    "agence marketing bâtiment",
   ],
   openGraph: {
-    title: "KUBEX — Meta Ads pour artisans du bâtiment",
+    title: "KUBEX — Meta Ads pour installateurs de PAC RGE",
     description:
-      "Des campagnes Meta Ads ciblées pour remplir le carnet de commandes des artisans du BTP.",
+      "Des campagnes Meta Ads ciblées pour générer des leads de particuliers éligibles aux aides et remplir le carnet de commandes des installateurs PAC RGE.",
     type: "website",
     locale: "fr_FR",
   },

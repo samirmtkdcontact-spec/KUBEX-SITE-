@@ -16,10 +16,14 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr,1fr]">
           <div className="max-w-sm">
             <Logo />
-            <p className="mt-4 text-sm leading-relaxed text-kubex-ink/60">
-              Agence Meta Ads dédiée aux artisans du bâtiment. On construit des
-              campagnes ciblées pour faire venir des clients qualifiés — avec une
-              méthode claire et des promesses qu'on peut tenir.
+            <p className="mt-3 font-display text-sm font-semibold text-kubex-to">
+              L'agence Meta Ads des installateurs PAC RGE.
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-kubex-ink/60">
+              On construit des campagnes ciblées pour générer des leads de
+              particuliers qualifiés et remplir le carnet de commandes des
+              installateurs de pompes à chaleur — avec une méthode claire et des
+              promesses qu'on peut tenir.
             </p>
           </div>
 
@@ -65,10 +69,13 @@ export default function Footer() {
 
         <p className="mt-6 text-[11px] leading-relaxed text-kubex-ink/35">
           KUBEX est une agence indépendante, non affiliée à Meta Platforms, Inc.
-          Facebook, Instagram et Meta sont des marques de Meta Platforms, Inc.
-          Les statistiques mentionnées sur ce site proviennent de sources
-          publiques citées (NapoleonCat, SQ Magazine, Batiweb, CAPEB, Effinity)
-          et décrivent des tendances de marché, sans constituer une promesse de
+          ni à un organisme public. Facebook, Instagram et Meta sont des marques
+          de Meta Platforms, Inc. ; RGE QualiPAC et MaPrimeRénov' sont des
+          dispositifs gérés par leurs organismes respectifs. Les statistiques
+          mentionnées proviennent de sources publiques citées (NapoleonCat, SQ
+          Magazine, EHPA, Hello Watt / Révolution Énergétique, economie.gouv.fr,
+          ANAH, Idéal Système, Effinity) et décrivent des tendances de marché et
+          des barèmes d'aides en vigueur, sans constituer une promesse de
           résultat.
         </p>
       </div>
