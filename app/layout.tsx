@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import AnimatedBackground from "@/components/AnimatedBackground";
+import IntroScreen from "@/components/IntroScreen";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,7 +45,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body>{children}</body>
+      <body>
+        <AnimatedBackground />
+        <IntroScreen />
+        {children}
+      </body>
     </html>
   );
 }

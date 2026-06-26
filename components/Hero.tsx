@@ -5,34 +5,43 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-kubex-light pt-32 pb-24 sm:pt-36 sm:pb-32"
+      className="relative overflow-hidden pt-32 pb-24 sm:pt-36 sm:pb-32"
     >
-      {/* Décor d'arrière-plan */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-kubex-accent/20 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-40 -left-24 h-80 w-80 rounded-full bg-kubex-to/10 blur-3xl"
-      />
-
       <div className="container-kubex relative">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
-            <span className="eyebrow">Agence Meta Ads · Installateurs PAC RGE</span>
+            <span
+              className="block font-medium uppercase text-kubex-accent"
+              style={{ fontSize: "11px", letterSpacing: "0.25em" }}
+            >
+              KUBEX · AGENCE META ADS · SPÉCIALISTE PAC RGE
+            </span>
           </Reveal>
 
           <Reveal delay={80}>
             <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-kubex-ink sm:text-5xl lg:text-6xl">
-              Les aides d'État remplissent les carnets. Encore faut-il être{" "}
-              <span className="gradient-text">visible</span>.
+              Remplissez votre carnet de commandes avec des clients{" "}
+              <span className="gradient-text">qualifiés</span>.
             </h1>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-kubex-ink/70">
-              Remplissez votre carnet de commandes avec des clients qualifiés.
+              Jusqu'à{" "}
+              <strong className="font-semibold text-kubex-ink">
+                10 800 € d'aides cumulables
+              </strong>{" "}
+              créent une demande massive de pompes à chaleur. Le problème : ces
+              propriétaires ne savent pas que votre entreprise existe. Ils
+              cherchent un installateur{" "}
+              <strong className="font-semibold text-kubex-ink">
+                RGE QualiPAC
+              </strong>{" "}
+              sur Facebook sans le savoir — KUBEX construit des campagnes{" "}
+              <strong className="font-semibold text-kubex-ink">
+                Meta Ads ciblées
+              </strong>{" "}
+              pour transformer cette demande en leads qualifiés dans votre zone.
             </p>
           </Reveal>
 
@@ -47,7 +56,18 @@ export default function Hero() {
             </div>
           </Reveal>
 
-          <Reveal delay={300}>
+          <Reveal delay={280}>
+            <div
+              className="mt-6 flex flex-wrap items-center justify-center"
+              style={{ gap: "12px" }}
+            >
+              <span className="trust-pill">✓ Données réelles sourcées</span>
+              <span className="trust-pill">✓ Aucun faux témoignage</span>
+              <span className="trust-pill">✓ Sans engagement</span>
+            </div>
+          </Reveal>
+
+          <Reveal delay={340}>
             <p className="mx-auto mt-6 max-w-xl text-sm text-kubex-ink/60">
               Seuls les installateurs RGE QualiPAC peuvent accéder aux chantiers
               éligibles aux aides. Votre certification est un véritable avantage

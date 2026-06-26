@@ -11,7 +11,7 @@ const nav = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-kubex-ink/10 bg-white">
+    <footer className="border-t border-kubex-ink/10 bg-transparent">
       <div className="container-kubex py-14">
         <div className="grid gap-10 md:grid-cols-[1.4fr,1fr]">
           <div className="max-w-sm">

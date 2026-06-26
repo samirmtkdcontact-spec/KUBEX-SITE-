@@ -25,7 +25,7 @@ const steps = [
 
 export default function System() {
   return (
-    <section id="systeme" className="bg-kubex-light py-24 text-kubex-ink sm:py-32">
+    <section id="systeme" className="py-24 text-kubex-ink sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Le système KUBE</span>

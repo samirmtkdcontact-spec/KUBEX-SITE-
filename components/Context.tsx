@@ -3,7 +3,7 @@ import { contextStats } from "@/lib/data";
 
 export default function Context() {
   return (
-    <section id="contexte" className="bg-white py-24 sm:py-32">
+    <section id="contexte" className="py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Le contexte</span>

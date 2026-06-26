@@ -75,7 +75,7 @@ function Check() {
 
 export default function Offers() {
   return (
-    <section id="offres" className="bg-kubex-light py-24 sm:py-32">
+    <section id="offres" className="py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Nos offres</span>

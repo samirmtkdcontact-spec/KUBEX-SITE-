@@ -89,7 +89,13 @@ export default function Contact() {
     errors[field] ? "border-red-400" : "border-kubex-ink/15";
 
   return (
-    <section id="contact" className="bg-kubex-ink py-24 text-white sm:py-32">
+    <section
+      id="contact"
+      className="py-24 text-white sm:py-32"
+      style={{
+        background: "linear-gradient(160deg, #003F5C 0%, #001A2E 100%)",
+      }}
+    >
       <div className="container-kubex">
         <div className="grid items-start gap-12 lg:grid-cols-2">
           <Reveal>

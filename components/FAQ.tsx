@@ -65,7 +65,7 @@ function AccordionItem({ q, a }: { q: string; a: string }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-white py-24 sm:py-32">
+    <section id="faq" className="py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">FAQ</span>

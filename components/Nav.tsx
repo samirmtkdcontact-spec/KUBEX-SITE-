@@ -24,10 +24,10 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 bg-white/85 backdrop-blur-md transition-all duration-300 ${
         scrolled
-          ? "border-b border-kubex-ink/10 bg-white/80 backdrop-blur-md"
-          : "border-b border-transparent bg-white"
+          ? "border-b border-kubex-ink/10 shadow-sm"
+          : "border-b border-transparent"
       }`}
     >
       <nav className="container-kubex flex h-16 items-center justify-between">
