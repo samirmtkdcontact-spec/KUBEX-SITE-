@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-kubex-ink font-sans antialiased;
+  }
+}
+
+@layer components {
+  .container-kubex {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-kubex-gradient px-6 py-3 font-semibold text-white shadow-kubex transition-transform duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-kubex-accent focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-kubex-ink/15 bg-white px-6 py-3 font-semibold text-kubex-ink transition-colors duration-200 hover:border-kubex-accent hover:text-kubex-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-kubex-accent focus-visible:ring-offset-2;
+  }
+
+  .gradient-text {
+    @apply bg-kubex-gradient bg-clip-text text-transparent;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-kubex-accent/30 bg-kubex-light px-4 py-1.5 text-sm font-semibold text-kubex-to;
+  }
+}
+
+/* Scroll reveal — animation légère via CSS transitions */
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
