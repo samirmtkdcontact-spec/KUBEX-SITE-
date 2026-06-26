@@ -54,7 +54,7 @@ function Cross() {
 
 export default function DoDont() {
   return (
-    <section id="honnetete" className="bg-white py-20 sm:py-28">
+    <section id="honnetete" className="bg-white py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Notre différence</span>

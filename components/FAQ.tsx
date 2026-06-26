@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Faut-il un budget pub en plus de vos honoraires ?",
-    a: "Oui, ce sont deux postes distincts : nos honoraires de gestion (à partir de 890 €/mois) et le budget publicitaire versé directement à Meta. Pour ce dernier, une fourchette de 200 à 500 €/mois est recommandée pour une PME afin d'alimenter correctement l'algorithme et obtenir des données exploitables (source : Effinity 2026). On définit ensemble ce qui est réaliste pour votre zone.",
+    a: "Oui, ce sont deux postes distincts : nos honoraires de gestion (chiffrés sur devis après votre audit gratuit) et le budget publicitaire versé directement à Meta. Pour ce dernier, une fourchette de 200 à 500 €/mois est recommandée pour une PME afin d'alimenter correctement l'algorithme et obtenir des données exploitables (source : Effinity 2026). On définit ensemble ce qui est réaliste pour votre zone.",
   },
   {
     q: "Combien de temps avant les premiers leads ?",
@@ -65,7 +65,7 @@ function AccordionItem({ q, a }: { q: string; a: string }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-white py-20 sm:py-28">
+    <section id="faq" className="bg-white py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">FAQ</span>

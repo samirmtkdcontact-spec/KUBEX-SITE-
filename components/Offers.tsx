@@ -14,8 +14,8 @@ const offers: Offer[] = [
   {
     name: "Lancement",
     tagline: "Pour tester Meta Ads sur votre zone locale, sans vous engager.",
-    price: "890 €",
-    priceNote: "/ mois · gestion (hors budget pub)",
+    price: "Tarif sur devis",
+    priceNote: "Audit gratuit inclus",
     commitment: "Sans engagement",
     features: [
       "Audit de votre zone et des propriétaires éligibles",
@@ -28,8 +28,8 @@ const offers: Offer[] = [
   {
     name: "Croissance",
     tagline: "Le Système Kube complet PAC pour un flux de leads régulier.",
-    price: "1 490 €",
-    priceNote: "/ mois · gestion (hors budget pub)",
+    price: "Tarif sur devis",
+    priceNote: "Audit gratuit inclus",
     commitment: "Engagement 3 mois",
     highlighted: true,
     features: [
@@ -43,8 +43,8 @@ const offers: Offer[] = [
   {
     name: "Domination",
     tagline: "Pour prendre votre département et verrouiller votre zone.",
-    price: "2 490 €",
-    priceNote: "/ mois · gestion (hors budget pub)",
+    price: "Sur mesure",
+    priceNote: "Audit stratégique offert",
     commitment: "Exclusivité département",
     features: [
       "Tout le contenu de Croissance",
@@ -75,7 +75,7 @@ function Check() {
 
 export default function Offers() {
   return (
-    <section id="offres" className="bg-kubex-light py-20 sm:py-28">
+    <section id="offres" className="bg-kubex-light py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Nos offres</span>
@@ -83,8 +83,9 @@ export default function Offers() {
             Trois formules, une seule philosophie
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Des prix indicatifs et honnêtes. Le budget publicitaire (versé
-            directement à Meta) est distinct de nos honoraires de gestion — on
+            Chaque formule est chiffrée après un audit gratuit de votre zone :
+            on ne vend pas un tarif au hasard. Le budget publicitaire (versé
+            directement à Meta) reste distinct de nos honoraires de gestion — on
             recommande 200 à 500 €/mois pour bien démarrer.
           </p>
         </Reveal>
@@ -114,12 +115,12 @@ export default function Offers() {
                 </p>
 
                 <div className="mt-5">
-                  <span className="font-display text-3xl font-bold">
+                  <span className="font-display text-2xl font-bold sm:text-3xl">
                     {offer.price}
                   </span>
                   <span
-                    className={`ml-1 text-sm ${
-                      offer.highlighted ? "text-white/75" : "text-kubex-ink/55"
+                    className={`mt-1.5 block text-sm font-semibold ${
+                      offer.highlighted ? "text-white" : "text-kubex-to"
                     }`}
                   >
                     {offer.priceNote}
@@ -167,9 +168,9 @@ export default function Offers() {
 
         <Reveal className="mt-10">
           <p className="mx-auto max-w-3xl text-center text-sm text-kubex-ink/50">
-            Prix indicatifs hors taxes, donnés à titre d'information et
-            susceptibles d'être ajustés après l'audit selon votre situation. Le
-            budget publicitaire Meta est à votre charge et reste votre propriété.
+            Tarifs établis sur devis, après un audit gratuit, selon votre zone
+            et votre situation. Le budget publicitaire Meta est à votre charge et
+            reste votre propriété.
           </p>
         </Reveal>
       </div>

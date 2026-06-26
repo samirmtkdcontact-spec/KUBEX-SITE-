@@ -3,7 +3,7 @@ import { contextStats } from "@/lib/data";
 
 export default function Context() {
   return (
-    <section id="contexte" className="bg-white py-20 sm:py-28">
+    <section id="contexte" className="bg-white py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Le contexte</span>
@@ -18,22 +18,30 @@ export default function Context() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {contextStats.map((stat, i) => (
             <Reveal key={stat.value + stat.label} delay={(i % 3) * 80}>
-              <article className="flex h-full flex-col rounded-2xl border border-kubex-ink/10 bg-kubex-light/60 p-6 transition-shadow duration-300 hover:shadow-kubex">
-                <p className="font-display text-4xl font-bold gradient-text">
+              <article className="flex h-full flex-col rounded-3xl border border-kubex-ink/10 bg-kubex-light/60 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-kubex-accent/30 hover:shadow-kubex">
+                {stat.icon && (
+                  <span
+                    className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-3xl shadow-sm"
+                    aria-hidden
+                  >
+                    {stat.icon}
+                  </span>
+                )}
+                <p className="mt-6 font-display text-5xl font-bold gradient-text">
                   {stat.value}
                 </p>
-                <h3 className="mt-3 font-semibold text-kubex-ink">
+                <h3 className="mt-3 text-lg font-semibold text-kubex-ink">
                   {stat.label}
                 </h3>
                 {stat.detail && (
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-kubex-ink/65">
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-kubex-ink/65">
                     {stat.detail}
                   </p>
                 )}
-                <p className="mt-4 text-xs font-medium text-kubex-ink/40">
+                <p className="mt-5 border-t border-kubex-ink/10 pt-4 text-xs font-medium text-kubex-ink/40">
                   Source : {stat.source}
                 </p>
               </article>

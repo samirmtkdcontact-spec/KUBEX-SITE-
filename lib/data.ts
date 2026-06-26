@@ -9,6 +9,7 @@ export type Stat = {
   label: string;
   source: string;
   detail?: string;
+  icon?: string;
 };
 
 /** 3 stats « Pourquoi Meta Ads ? » mises en avant dans le hero */
@@ -33,6 +34,7 @@ export const heroStats: Stat[] = [
 /** Cards de la section « Le contexte » — marché PAC, aides d'État & Meta */
 export const contextStats: Stat[] = [
   {
+    icon: "📈",
     value: "+11 %",
     label: "de ventes de PAC en Europe en 2025",
     detail:
@@ -40,6 +42,7 @@ export const contextStats: Stat[] = [
     source: "EHPA, 2025",
   },
   {
+    icon: "🔥",
     value: "×2",
     label: "ventes de PAC en France depuis octobre 2025",
     detail:
@@ -47,6 +50,7 @@ export const contextStats: Stat[] = [
     source: "Hello Watt / Révolution Énergétique, déc. 2025",
   },
   {
+    icon: "🎯",
     value: "1 million",
     label: "de PAC produites par an d'ici 2027 (objectif État)",
     detail:
@@ -54,6 +58,7 @@ export const contextStats: Stat[] = [
     source: "economie.gouv.fr",
   },
   {
+    icon: "🔧",
     value: "30 000",
     label: "installateurs PAC à former d'ici 2027",
     detail:
@@ -61,6 +66,7 @@ export const contextStats: Stat[] = [
     source: "Plan PAC, gouvernement français",
   },
   {
+    icon: "💶",
     value: "10 800 €",
     label: "d'aides cumulables (MaPrimeRénov' + CEE) pour une PAC air-eau",
     detail:
@@ -68,6 +74,7 @@ export const contextStats: Stat[] = [
     source: "Idéal Système / ANAH 2026",
   },
   {
+    icon: "🏛️",
     value: "3,6 Mds €",
     label: "alloués à MaPrimeRénov' en 2026",
     detail:

@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-kubex-light pt-28 pb-20 sm:pt-32 sm:pb-24"
+      className="relative overflow-hidden bg-kubex-light pt-32 pb-24 sm:pt-36 sm:pb-32"
     >
       {/* Décor d'arrière-plan */}
       <div
@@ -32,16 +32,7 @@ export default function Hero() {
 
           <Reveal delay={160}>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-kubex-ink/70">
-              Jusqu'à{" "}
-              <strong className="font-semibold text-kubex-ink">
-                10 800 € d'aides cumulables
-              </strong>{" "}
-              créent une demande massive de pompes à chaleur. Le problème : ces
-              propriétaires ne savent pas que votre entreprise existe. Ils
-              cherchent un installateur <strong className="font-semibold text-kubex-ink">RGE QualiPAC</strong> sur
-              Facebook sans le savoir — KUBEX construit des campagnes{" "}
-              <strong className="font-semibold text-kubex-ink">Meta Ads ciblées</strong>{" "}
-              pour transformer cette demande en leads qualifiés dans votre zone.
+              Remplissez votre carnet de commandes avec des clients qualifiés.
             </p>
           </Reveal>
 
