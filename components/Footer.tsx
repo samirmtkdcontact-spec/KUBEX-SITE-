@@ -17,13 +17,13 @@ export default function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-3 font-display text-sm font-semibold text-kubex-to">
-              L'agence Meta Ads des installateurs PAC RGE.
+              L'agence Meta Ads des installateurs isolation RGE.
             </p>
             <p className="mt-2 text-sm leading-relaxed text-kubex-ink/60">
               On construit des campagnes ciblées pour générer des leads de
-              particuliers qualifiés et remplir le carnet de commandes des
-              installateurs de pompes à chaleur — avec une méthode claire et des
-              promesses qu'on peut tenir.
+              propriétaires qualifiés et remplir le carnet de commandes des
+              installateurs d'isolation thermique (ITE, ITI, combles, toiture) —
+              avec une méthode claire et des promesses qu'on peut tenir.
             </p>
           </div>
 
@@ -70,13 +70,13 @@ export default function Footer() {
         <p className="mt-6 text-[11px] leading-relaxed text-kubex-ink/35">
           KUBEX est une agence indépendante, non affiliée à Meta Platforms, Inc.
           ni à un organisme public. Facebook, Instagram et Meta sont des marques
-          de Meta Platforms, Inc. ; RGE QualiPAC et MaPrimeRénov' sont des
-          dispositifs gérés par leurs organismes respectifs. Les statistiques
-          mentionnées proviennent de sources publiques citées (NapoleonCat, SQ
-          Magazine, EHPA, Hello Watt / Révolution Énergétique, economie.gouv.fr,
-          ANAH, Idéal Système, Effinity) et décrivent des tendances de marché et
-          des barèmes d'aides en vigueur, sans constituer une promesse de
-          résultat.
+          de Meta Platforms, Inc. ; RGE et MaPrimeRénov' sont des dispositifs
+          gérés par leurs organismes respectifs. Les statistiques mentionnées
+          proviennent de sources publiques citées (NapoleonCat, SQ Magazine,
+          Service-Public.fr, Cotoit, Hellio, Toutimmo3d, Ma Maison Mon Style,
+          Businesscoot, France Rénov', Effinity) et décrivent des tendances de
+          marché, un cadre réglementaire et des barèmes d'aides en vigueur, sans
+          constituer une promesse de résultat.
         </p>
       </div>
     </footer>

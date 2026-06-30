@@ -14,7 +14,7 @@ export default function Hero() {
               className="block font-medium uppercase text-kubex-accent"
               style={{ fontSize: "11px", letterSpacing: "0.25em" }}
             >
-              KUBEX · AGENCE META ADS · SPÉCIALISTE PAC RGE
+              KUBEX · AGENCE META ADS · SPÉCIALISTE ISOLATION RGE
             </span>
           </Reveal>
 
@@ -27,21 +27,20 @@ export default function Hero() {
 
           <Reveal delay={160}>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-kubex-ink/70">
-              Jusqu'à{" "}
+              La loi interdit déjà la location des logements classés{" "}
+              <strong className="font-semibold text-kubex-ink">G</strong> et
+              bannira les <strong className="font-semibold text-kubex-ink">F</strong>{" "}
+              dès 2028 —{" "}
               <strong className="font-semibold text-kubex-ink">
-                10 800 € d'aides cumulables
+                5,8 millions de propriétaires
               </strong>{" "}
-              créent une demande massive de pompes à chaleur. Le problème : ces
-              propriétaires ne savent pas que votre entreprise existe. Ils
-              cherchent un installateur{" "}
-              <strong className="font-semibold text-kubex-ink">
-                RGE QualiPAC
-              </strong>{" "}
-              sur Facebook sans le savoir — KUBEX construit des campagnes{" "}
+              sont contraints d'agir. Le problème : ils ne savent pas que votre
+              entreprise existe. KUBEX construit des campagnes{" "}
               <strong className="font-semibold text-kubex-ink">
                 Meta Ads ciblées
               </strong>{" "}
-              pour transformer cette demande en leads qualifiés dans votre zone.
+              pour transformer cette obligation légale en leads qualifiés dans
+              votre zone.
             </p>
           </Reveal>
 
@@ -69,8 +68,8 @@ export default function Hero() {
 
           <Reveal delay={340}>
             <p className="mx-auto mt-6 max-w-xl text-sm text-kubex-ink/60">
-              Seuls les installateurs RGE QualiPAC peuvent accéder aux chantiers
-              éligibles aux aides. Votre certification est un véritable avantage
+              Seuls les installateurs RGE peuvent réaliser des travaux éligibles
+              aux aides. Votre certification est un véritable avantage
               concurrentiel — <strong className="font-semibold text-kubex-ink">KUBEX vous aide à l'exploiter</strong>.
             </p>
           </Reveal>

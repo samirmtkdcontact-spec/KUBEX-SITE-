@@ -17,22 +17,24 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "KUBEX — L'agence Meta Ads des installateurs de PAC RGE",
+  title: "KUBEX — L'agence Meta Ads des installateurs isolation RGE",
   description:
-    "KUBEX génère des leads de particuliers qualifiés pour les installateurs de pompes à chaleur RGE QualiPAC, via Meta Ads. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
+    "KUBEX génère des leads de propriétaires qualifiés pour les installateurs d'isolation thermique RGE (ITE, ITI, combles, toiture), via Meta Ads. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
   keywords: [
     "Meta Ads",
-    "pompe à chaleur",
-    "PAC",
-    "RGE QualiPAC",
+    "isolation thermique",
+    "ITE",
+    "ITI",
+    "RGE",
+    "passoire thermique",
     "MaPrimeRénov'",
-    "leads installateur PAC",
+    "leads isolation",
     "publicité Facebook",
   ],
   openGraph: {
-    title: "KUBEX — Meta Ads pour installateurs de PAC RGE",
+    title: "KUBEX — Meta Ads pour installateurs isolation RGE",
     description:
-      "Des campagnes Meta Ads ciblées pour générer des leads de particuliers éligibles aux aides et remplir le carnet de commandes des installateurs PAC RGE.",
+      "Des campagnes Meta Ads ciblées pour transformer l'obligation légale de rénover les passoires thermiques en leads qualifiés pour les installateurs d'isolation RGE.",
     type: "website",
     locale: "fr_FR",
   },

@@ -4,17 +4,17 @@ const steps = [
   {
     n: "01",
     title: "Audit",
-    desc: "On analyse votre zone d'intervention, vos concurrents locaux et le profil des propriétaires éligibles à MaPrimeRénov'. Pas de campagne avant d'avoir compris votre marché et défini ce qu'est un lead vraiment exploitable pour vous.",
+    desc: "On analyse votre zone d'intervention, vos concurrents locaux et le volume de logements classés F ou G dans votre secteur. Pas de campagne avant d'avoir compris votre marché et défini ce qu'est un lead vraiment exploitable pour vous.",
   },
   {
     n: "02",
     title: "Ciblage",
-    desc: "On vise les bonnes audiences : propriétaires de logements de 15 ans et plus, chauffés au fioul ou au gaz à remplacer, dans votre secteur géographique. On ne dépense pas un euro sur des profils hors cible ou non éligibles.",
+    desc: "On vise les bonnes audiences : propriétaires et bailleurs de logements classés F ou G, contraints légalement de rénover, dans votre secteur géographique. On ne dépense pas un euro sur des profils hors cible ou non concernés.",
   },
   {
     n: "03",
     title: "Création",
-    desc: "On produit des annonces claires qui parlent des aides d'État, du confort et des économies d'énergie — les leviers qui déclenchent la prise de contact. Des publicités faites pour générer des demandes de devis, pas des likes.",
+    desc: "On produit des annonces claires qui parlent de l'urgence légale, des aides d'État et de la valorisation du bien — les leviers qui déclenchent la prise de contact. Des publicités faites pour générer des demandes de devis, pas des likes.",
   },
   {
     n: "04",

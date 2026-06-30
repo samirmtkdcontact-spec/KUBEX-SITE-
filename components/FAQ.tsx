@@ -6,11 +6,11 @@ import Reveal from "./Reveal";
 const faqs = [
   {
     q: "Mes clients sont-ils vraiment sur Facebook ?",
-    a: "Oui. La France compte 48,7 millions d'utilisateurs Facebook (NapoleonCat, déc. 2025), parmi lesquels une grande part de propriétaires de 35 à 65 ans — exactement le profil qui remplace son chauffage. Ils n'y cherchent pas activement un installateur, mais c'est justement là que Meta Ads est utile : on va susciter la demande auprès des bons profils, là où ils passent déjà du temps chaque jour.",
+    a: "Oui. La France compte 48,7 millions d'utilisateurs Facebook (NapoleonCat, déc. 2025), parmi lesquels une grande part de propriétaires et de bailleurs de 35 à 65 ans — exactement le profil concerné par l'obligation de rénover. Ils n'y cherchent pas activement un installateur, mais c'est justement là que Meta Ads est utile : on va susciter la demande auprès des bons profils, là où ils passent déjà du temps chaque jour.",
   },
   {
-    q: "Comment ciblez-vous des propriétaires éligibles aux aides ?",
-    a: "Le ciblage Meta permet de combiner zone géographique, statut de propriétaire, tranche d'âge et centres d'intérêt (rénovation, économies d'énergie, maison). On concentre la diffusion sur les profils les plus susceptibles d'être propriétaires d'un logement de 15 ans et plus, chauffé au fioul ou au gaz. L'éligibilité définitive à MaPrimeRénov' reste ensuite vérifiée au moment de la qualification du lead — c'est une partie de votre travail commercial.",
+    q: "Comment ciblez-vous des propriétaires de logements F/G ?",
+    a: "Le ciblage Meta permet de combiner zone géographique, statut de propriétaire ou de bailleur, tranche d'âge et centres d'intérêt (rénovation, immobilier locatif, économies d'énergie). On concentre la diffusion sur les profils les plus susceptibles de détenir une passoire thermique. La classe DPE exacte du logement reste ensuite vérifiée au moment de la qualification du lead — c'est une partie de votre travail commercial.",
   },
   {
     q: "Faut-il un budget pub en plus de vos honoraires ?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Travaillez-vous partout en France ?",
-    a: "Oui. Nos campagnes s'adressent aux installateurs de PAC RGE QualiPAC partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise. Et avec la formule Domination, nous pouvons travailler en exclusivité sur votre département, sous réserve de disponibilité.",
+    a: "Oui. Nos campagnes s'adressent aux installateurs d'isolation RGE partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise. Et avec la formule Domination, nous pouvons travailler en exclusivité sur votre département, sous réserve de disponibilité.",
   },
 ];
 

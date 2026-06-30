@@ -108,8 +108,8 @@ export default function Contact() {
             <p className="mt-4 text-lg text-white/65">
               Remplissez ce formulaire et on revient vers vous pour un échange
               sans engagement. On regarde ensemble votre zone, le potentiel de
-              propriétaires éligibles aux aides et ce que Meta Ads peut — ou ne
-              peut pas — vous apporter en leads.
+              propriétaires de logements F/G à rénover et ce que Meta Ads peut —
+              ou ne peut pas — vous apporter en leads.
             </p>
             <ul className="mt-7 space-y-3 text-sm text-white/70">
               <li>· Réponse honnête, même si Meta Ads n'est pas pour vous</li>
@@ -235,19 +235,19 @@ export default function Contact() {
                         id="metier"
                         type="text"
                         list="metiers"
-                        placeholder="Installateur PAC, chauffagiste RGE…"
+                        placeholder="Isolation ITE, ITI, combles…"
                         value={values.metier}
                         onChange={(e) => update("metier", e.target.value)}
                         className={`${fieldBase} ${border("metier")}`}
                       />
                       <datalist id="metiers">
-                        <option value="Installateur PAC air-eau" />
-                        <option value="Installateur PAC air-air" />
-                        <option value="Chauffagiste RGE QualiPAC" />
-                        <option value="Plombier / Chauffagiste" />
-                        <option value="Génie climatique / CVC" />
-                        <option value="Rénovation énergétique" />
-                        <option value="Autre métier du chauffage" />
+                        <option value="Isolation thermique par l'extérieur (ITE)" />
+                        <option value="Isolation thermique par l'intérieur (ITI)" />
+                        <option value="Isolation des combles" />
+                        <option value="Isolation de toiture" />
+                        <option value="Ravalement avec isolation" />
+                        <option value="Rénovation énergétique globale" />
+                        <option value="Autre métier de l'isolation" />
                       </datalist>
                       {errors.metier && (
                         <p className="mt-1 text-xs text-red-500">{errors.metier}</p>

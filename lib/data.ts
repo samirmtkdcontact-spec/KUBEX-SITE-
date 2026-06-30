@@ -1,6 +1,6 @@
 /**
- * Données réelles et vérifiées — marché des pompes à chaleur (PAC),
- * aides d'État et Meta Ads en France.
+ * Données réelles et vérifiées — marché de l'isolation thermique (ITE/ITI),
+ * urgence réglementaire (passoires thermiques), aides d'État et Meta Ads.
  * Chaque chiffre est accompagné de sa source — AUCUNE donnée inventée.
  */
 
@@ -31,54 +31,54 @@ export const heroStats: Stat[] = [
   },
 ];
 
-/** Cards de la section « Le contexte » — marché PAC, aides d'État & Meta */
+/** Cards de la section « Le contexte » — urgence réglementaire, aides & Meta */
 export const contextStats: Stat[] = [
   {
-    icon: "📈",
-    value: "+11 %",
-    label: "de ventes de PAC en Europe en 2025",
+    icon: "🚫",
+    value: "600 000",
+    label: "logements classés G interdits à la location depuis 2025",
     detail:
-      "Soit 2,63 millions d'unités vendues sur l'année : après un trou d'air, le marché de la pompe à chaleur est clairement reparti à la hausse.",
-    source: "EHPA, 2025",
+      "Depuis le 1er janvier 2025, un logement classé G ne peut plus être loué. Pour le propriétaire bailleur, ce n'est pas une option mais une contrainte légale immédiate.",
+    source: "Service-Public.fr / Cotoit, 2025",
   },
   {
-    icon: "🔥",
-    value: "×2",
-    label: "ventes de PAC en France depuis octobre 2025",
-    detail:
-      "Un doublement observé sur la fin d'année : la demande des particuliers redémarre fort, portée par les aides et la fin du fioul.",
-    source: "Hello Watt / Révolution Énergétique, déc. 2025",
-  },
-  {
-    icon: "🎯",
+    icon: "📅",
     value: "1 million",
-    label: "de PAC produites par an d'ici 2027 (objectif État)",
+    label: "de logements classés F interdits à la location dès 2028",
     detail:
-      "L'objectif gouvernemental fixe le cap : la pompe à chaleur devient un pilier de la rénovation énergétique en France.",
-    source: "economie.gouv.fr",
+      "Au 1er janvier 2028, l'interdiction s'étend aux logements classés F. Des centaines de milliers de propriétaires ont une échéance — et une raison d'agir maintenant.",
+    source: "Cotoit / Hellio, 2025-2026",
   },
   {
-    icon: "🔧",
-    value: "30 000",
-    label: "installateurs PAC à former d'ici 2027",
+    icon: "🏠",
+    value: "5,8 M",
+    label: "de passoires thermiques (F ou G) en France",
     detail:
-      "Un marché en tension où l'offre peine à suivre la demande — et où la concurrence digitale reste, aujourd'hui, faible.",
-    source: "Plan PAC, gouvernement français",
+      "Soit 15,6 % du parc immobilier. Un volume immense de propriétaires concernés par l'obligation de rénover — autant de clients potentiels pour un installateur RGE.",
+    source: "Toutimmo3d, 2026",
+  },
+  {
+    icon: "📉",
+    value: "−15 à −20 %",
+    label: "de décote à la revente d'un logement F ou G",
+    detail:
+      "Par rapport à un bien équivalent classé C ou D. Au-delà de la location, c'est la valeur patrimoniale qui est en jeu : un argument fort pour déclencher des travaux.",
+    source: "Toutimmo3d, 2026",
   },
   {
     icon: "💶",
-    value: "10 800 €",
-    label: "d'aides cumulables (MaPrimeRénov' + CEE) pour une PAC air-eau",
+    value: "70 %",
+    label: "du coût d'isolation des murs pris en charge (foyers modestes)",
     detail:
-      "Pour un ménage très modeste. Ces aides créent une demande massive chez les particuliers — réservée aux chantiers réalisés par un installateur RGE QualiPAC.",
-    source: "Idéal Système / ANAH 2026",
+      "Via MaPrimeRénov', avec une TVA réduite à 5,5 % pour des travaux réalisés par un professionnel RGE. Sur un chantier moyen de 54 671 €, l'aide perçue atteint en moyenne 37 080 €.",
+    source: "Ma Maison Mon Style 2026 / Businesscoot 2024",
   },
   {
-    icon: "🏛️",
-    value: "3,6 Mds €",
-    label: "alloués à MaPrimeRénov' en 2026",
+    icon: "🔒",
+    value: "Gel",
+    label: "des loyers des logements F et G depuis août 2022",
     detail:
-      "Avec une réouverture du guichet le 23 février 2026 : un budget d'État massif qui solvabilise des milliers de projets de chauffage.",
-    source: "ANAH 2026",
+      "Tant qu'aucun travaux n'est engagé, le loyer ne peut plus être augmenté. La pression réglementaire pousse les bailleurs à rénover — encore faut-il qu'ils vous trouvent.",
+    source: "Cotoit, 2025",
   },
 ];
