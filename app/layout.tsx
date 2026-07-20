@@ -17,23 +17,23 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "KUBEX — L'agence Meta Ads des audioprothésistes indépendants",
+  title: "KUBEX — L'agence Meta Ads des installateurs photovoltaïque RGE",
   description:
-    "KUBEX génère des rendez-vous de patients malentendants qualifiés pour les audioprothésistes indépendants et centres auditifs, via Meta Ads. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
+    "KUBEX génère des leads de propriétaires qualifiés en continu pour les installateurs photovoltaïque RGE QualiPV, via Meta Ads — indépendamment des aides du moment. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
   keywords: [
     "Meta Ads",
-    "audioprothésiste",
-    "centre auditif",
-    "audioprothèse",
-    "100% Santé",
-    "malentendants",
-    "leads patients",
+    "photovoltaïque",
+    "panneaux solaires",
+    "RGE QualiPV",
+    "autoconsommation",
+    "leads photovoltaïque",
+    "installateur solaire",
     "publicité Facebook",
   ],
   openGraph: {
-    title: "KUBEX — Meta Ads pour audioprothésistes indépendants",
+    title: "KUBEX — Meta Ads pour installateurs photovoltaïque RGE",
     description:
-      "Des campagnes Meta Ads ciblées pour amener des patients malentendants qualifiés dans votre centre auditif, avant que les grands réseaux ne les captent.",
+      "Des campagnes Meta Ads ciblées pour générer des leads de propriétaires qualifiés en continu, quelles que soient les aides du moment.",
     type: "website",
     locale: "fr_FR",
   },

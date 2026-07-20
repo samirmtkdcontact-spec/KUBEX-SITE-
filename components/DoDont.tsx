@@ -1,9 +1,9 @@
 import Reveal from "./Reveal";
 
 const promises = [
-  "Des rendez-vous de patients qualifiés, ciblés sur votre zone de chalandise",
+  "Des leads de propriétaires qualifiés, ciblés sur votre zone d'intervention",
+  "Un flux régulier, pensé pour durer au-delà des à-coups réglementaires",
   "Une méthode claire, expliquée et documentée à chaque étape",
-  "Un ciblage précis : malentendants et proches aidants de votre secteur",
   "Des comptes rendus réguliers avec les vrais chiffres de vos campagnes",
   "De la transparence totale sur le budget publicitaire et son utilisation",
   "Un accompagnement humain, sans jargon inutile",
@@ -11,10 +11,10 @@ const promises = [
 
 const noPromises = [
   "Des résultats « garantis » : aucune agence sérieuse ne peut les promettre",
-  "Un volume exact de patients chiffré à l'avance, déconnecté de votre marché",
-  "Remplacer votre réseau prescripteur (ORL, médecins) ni votre bouche-à-oreille",
+  "Un volume exact de leads chiffré à l'avance, déconnecté de votre marché",
+  "Remplacer votre travail commercial : un lead se rappelle, se qualifie, se conclut",
+  "Des campagnes bâties sur une aide précise : les réglementations changent souvent",
   "Des résultats du jour au lendemain : l'algorithme a besoin de temps",
-  "Des « secrets » ou des méthodes miracles qui contournent la réalité",
   "De faux témoignages ou des captures d'écran de résultats invérifiables",
 ];
 
@@ -62,8 +62,8 @@ export default function DoDont() {
             Ce qu'on fait — et ce qu'on ne fera jamais
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Le marketing pour professionnels de santé est plein de promesses
-            creuses — « 30 patients garantis par mois ». Notre crédibilité, c'est
+            Le marketing pour installateurs solaires est plein de promesses
+            creuses — « 30 leads garantis par mois ». Notre crédibilité, c'est
             justement de vous dire la vérité, y compris quand elle n'est pas
             vendeuse.
           </p>

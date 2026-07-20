@@ -1,6 +1,6 @@
 /**
- * Données réelles et vérifiées — marché de l'audioprothèse en France,
- * concurrence des centres auditifs et Meta Ads.
+ * Données réelles et vérifiées — marché du photovoltaïque en France,
+ * contexte réglementaire et Meta Ads.
  * Chaque chiffre est accompagné de sa source — AUCUNE donnée inventée.
  */
 
@@ -31,54 +31,54 @@ export const heroStats: Stat[] = [
   },
 ];
 
-/** Cards de la section « Le contexte » — marché audio, concurrence & Meta */
+/** Cards de la section « Le contexte » — marché PV, réglementation & Meta */
 export const contextStats: Stat[] = [
   {
-    icon: "👂",
-    value: "6,5 M",
-    label: "de Français malentendants (9,7 % de la population)",
+    icon: "☀️",
+    value: "5,9 GW",
+    label: "installés en 2025 — record historique en France",
     detail:
-      "Près d'un Français sur dix déclare une perte auditive. Un marché immense de patients potentiels, dans chaque zone de chalandise.",
-    source: "EuroTrak France 2025 / Sonup.fr",
+      "Jamais autant de puissance photovoltaïque n'avait été raccordée en une année. Le marché est porteur : la demande des particuliers est bien réelle.",
+    source: "Hellowatt / panneau-solaire.net, jan. 2026",
   },
   {
-    icon: "🎯",
-    value: "44,5 %",
-    label: "des malentendants ne sont PAS encore appareillés",
+    icon: "🔌",
+    value: "1,3 M",
+    label: "d'installations photovoltaïques raccordées au T1 2026",
     detail:
-      "Près d'un malentendant sur deux reste non équipé : c'est un marché adressable considérable, non capté, qui attend d'être informé et accompagné.",
-    source: "EuroTrak France 2025",
+      "Précisément 1 298 633 installations. Le solaire résidentiel s'installe durablement dans le paysage — et chaque foyer équipé en inspire d'autres autour de lui.",
+    source: "SDES / Enedis via ECOinfos, 2026",
   },
   {
-    icon: "🔎",
-    value: "65 %",
-    label: "des malentendants cherchent leur audioprothésiste en ligne",
+    icon: "📈",
+    value: "×2,4",
+    label: "de puissance attendue : 32,9 GW (2026) → 78,1 GW (2031)",
     detail:
-      "Avant même de prendre rendez-vous, deux tiers passent par une recherche en ligne. Sans présence digitale, ils ne trouvent que les grandes enseignes.",
-    source: "Twaino, 2026",
+      "Une trajectoire de croissance soutenue, avec un TCAC de 18,84 %. Le potentiel de chantiers reste immense pour les années à venir.",
+    source: "Mordor Intelligence, 2026",
   },
   {
-    icon: "🏥",
-    value: "8 000",
-    label: "centres audio en France (+25 % en 3 ans)",
+    icon: "⚖️",
+    value: "60 000",
+    label: "artisans touchés par les réformes de 2025",
     detail:
-      "La demande explose depuis le 100 % Santé, mais la concurrence aussi. Les grands réseaux investissent massivement en digital face aux indépendants.",
-    source: "ENSAO, 2025",
-  },
-  {
-    icon: "⚠️",
-    value: "200",
-    label: "centres fermés en 2024",
-    detail:
-      "Les indépendants sans stratégie d'acquisition ferment. Dans un marché en croissance, l'invisibilité digitale devient un risque vital pour un centre.",
-    source: "ENSAO, 2025",
+      "Les installateurs spécialisés dans le résidentiel subissent chaque changement de prime ou de TVA. Sans flux régulier de leads, un coup de barre réglementaire fait mal.",
+    source: "ECOinfos, 2026",
   },
   {
     icon: "💶",
-    value: "407 M€",
-    label: "remboursés par l'Assurance Maladie en 2025 (+7,9 %)",
+    value: "800–1 100 €",
+    label: "d'économies annuelles pour un foyer moyen",
     detail:
-      "872 551 aides auditives livrées au 1er semestre 2025 (+132 % vs 2020). Le 100 % Santé a levé le frein du reste à charge : la demande solvable est là.",
-    source: "Audition Conseil mars 2026 / Snitem 2025",
+      "Soit 20 000 à 30 000 € cumulés sur 25 ans. L'argument de vente se déplace vers l'autoconsommation et les économies sur facture — un discours qui parle aux propriétaires.",
+    source: "Helios Solaire, 2026",
+  },
+  {
+    icon: "🔎",
+    value: "48,7 M",
+    label: "d'utilisateurs Facebook en France",
+    detail:
+      "Vos futurs clients passent du temps chaque jour sur Meta. Le ciblage permet de toucher des propriétaires de maisons par zone, âge et centres d'intérêt liés aux économies d'énergie.",
+    source: "NapoleonCat, déc. 2025",
   },
 ];

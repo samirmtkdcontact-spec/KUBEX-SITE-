@@ -5,16 +5,16 @@ import Reveal from "./Reveal";
 
 const faqs = [
   {
-    q: "Mes patients sont-ils vraiment sur Facebook ?",
-    a: "Oui. La France compte 48,7 millions d'utilisateurs Facebook (NapoleonCat, déc. 2025), et la plateforme est largement utilisée par les 55-75 ans — le cœur de cible de l'appareillage auditif. On touche aussi les proches aidants (enfants adultes) qui cherchent activement une solution pour leurs parents. C'est justement là que Meta Ads est utile : susciter la demande auprès des bons profils, là où ils passent déjà du temps.",
+    q: "Mes clients sont-ils vraiment sur Facebook ?",
+    a: "Oui. La France compte 48,7 millions d'utilisateurs Facebook (NapoleonCat, déc. 2025), et la plateforme est largement utilisée par les 35-65 ans propriétaires de leur maison — exactement le profil qui investit dans le photovoltaïque. Ils n'y cherchent pas activement un installateur, mais c'est justement là que Meta Ads est utile : susciter la demande auprès des bons profils, là où ils passent déjà du temps.",
   },
   {
-    q: "Comment ciblez-vous des personnes malentendantes ?",
-    a: "Meta n'autorise pas de cibler directement une donnée de santé, et c'est normal. On procède autrement : par zone géographique autour de votre centre, tranche d'âge (55-80 ans), et centres d'intérêt liés (bien-être, santé des seniors), en visant aussi les proches aidants. La qualification du besoin auditif se fait ensuite au bilan — le rôle des campagnes est d'amener les bonnes personnes à franchir votre porte.",
+    q: "Comment ciblez-vous des propriétaires de maisons ?",
+    a: "Le ciblage Meta permet de combiner zone géographique, statut de propriétaire, tranche d'âge (35-65 ans), type de logement et centres d'intérêt (économies d'énergie, maison, écologie). On concentre la diffusion sur les profils les plus susceptibles d'être propriétaires d'une maison individuelle avec une toiture exploitable. La faisabilité technique se vérifie ensuite lors de la qualification du lead.",
   },
   {
-    q: "Meta Ads est-il compatible avec la déontologie ?",
-    a: "Oui, à condition de respecter le cadre. La communication des professionnels de santé est encadrée : pas d'allégation trompeuse, pas de comparaison dénigrant un confrère, pas de promesse de résultat thérapeutique. Nos annonces restent factuelles et informatives (bilan auditif, 100 % Santé, prise de rendez-vous) et chaque message est validé avec vous avant diffusion. Vous restez responsable et maître de votre communication.",
+    q: "Les réformes des aides n'impactent-elles pas l'efficacité des ads ?",
+    a: "C'est justement notre parti pris : on ne bâtit pas les campagnes sur une prime ou un taux de TVA qui peut changer du jour au lendemain. On met en avant des bénéfices durables — les économies sur facture (800 à 1 100 €/an, source Helios Solaire 2026), l'autoconsommation, la valorisation du bien. Quand une aide évolue, on ajuste le message ; le flux de leads, lui, ne s'effondre pas avec une réforme.",
   },
   {
     q: "Faut-il un budget pub en plus de la prestation ?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Travaillez-vous dans toute la France ?",
-    a: "Oui. Nos campagnes s'adressent aux audioprothésistes indépendants et centres auditifs partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone de chalandise précise — une ville, un quartier ou un rayon autour de votre centre. Et avec la formule Domination, nous pouvons travailler en exclusivité sur votre secteur, sous réserve de disponibilité.",
+    a: "Oui. Nos campagnes s'adressent aux installateurs photovoltaïque RGE partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise. Et avec la formule Domination, nous pouvons travailler en exclusivité sur votre département, sous réserve de disponibilité.",
   },
 ];
 

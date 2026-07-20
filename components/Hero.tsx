@@ -14,32 +14,31 @@ export default function Hero() {
               className="block font-medium uppercase text-kubex-accent"
               style={{ fontSize: "11px", letterSpacing: "0.25em" }}
             >
-              KUBEX · AGENCE META ADS · SPÉCIALISTE AUDIOPROTHÈSE
+              KUBEX · AGENCE META ADS · SPÉCIALISTE PHOTOVOLTAÏQUE RGE
             </span>
           </Reveal>
 
           <Reveal delay={80}>
             <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-kubex-ink sm:text-5xl lg:text-6xl">
-              Remplissez votre agenda avec des patients{" "}
+              Remplissez votre carnet de commandes avec des clients{" "}
               <span className="gradient-text">qualifiés</span>.
             </h1>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-kubex-ink/70">
+              La France bat des records d'installation photovoltaïque. Pourtant
+              les réformes 2025-2026 ont rendu l'acquisition de clients{" "}
               <strong className="font-semibold text-kubex-ink">
-                6,5 millions de Français
+                imprévisible
               </strong>{" "}
-              sont malentendants et{" "}
-              <strong className="font-semibold text-kubex-ink">
-                65 % cherchent leur audioprothésiste en ligne
-              </strong>
-              . Le problème : sans stratégie digitale, ils ne trouvent que les
-              grandes enseignes. KUBEX construit des campagnes{" "}
+              pour les artisans RGE. KUBEX construit des campagnes{" "}
               <strong className="font-semibold text-kubex-ink">
                 Meta Ads ciblées
               </strong>{" "}
-              pour amener des patients dans votre centre, chaque mois.
+              pour vous générer des leads qualifiés{" "}
+              <strong className="font-semibold text-kubex-ink">en continu</strong>{" "}
+              — indépendamment des aides du moment.
             </p>
           </Reveal>
 
@@ -67,9 +66,10 @@ export default function Hero() {
 
           <Reveal delay={340}>
             <p className="mx-auto mt-6 max-w-xl text-sm text-kubex-ink/60">
-              Impossible de rivaliser avec Amplifon ou Audika sur le SEO et la
-              notoriété de marque. Meta Ads est le terrain où un indépendant
-              cible chirurgicalement sa zone — <strong className="font-semibold text-kubex-ink">KUBEX vous aide à l'exploiter</strong>.
+              Votre certification RGE QualiPV est indispensable pour accéder au
+              contrat de rachat EDF OA et à la TVA réduite : une barrière à
+              l'entrée que vos concurrents non-certifiés ne peuvent pas franchir
+              — <strong className="font-semibold text-kubex-ink">KUBEX vous aide à l'exploiter</strong>.
             </p>
           </Reveal>
         </div>

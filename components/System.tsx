@@ -4,22 +4,22 @@ const steps = [
   {
     n: "01",
     title: "Audit",
-    desc: "On analyse votre zone de chalandise, vos concurrents locaux (réseaux comme indépendants) et le profil des patients de 65 ans et plus dans votre secteur. Pas de campagne avant d'avoir compris votre marché et défini ce qu'est un rendez-vous vraiment exploitable.",
+    desc: "On analyse votre zone d'intervention, vos concurrents locaux et le profil des propriétaires ciblés (maisons individuelles, toitures bien exposées) dans votre secteur. Pas de campagne avant d'avoir compris votre marché et défini ce qu'est un lead vraiment exploitable.",
   },
   {
     n: "02",
     title: "Ciblage",
-    desc: "On vise les bonnes audiences : personnes malentendantes et proches aidants (enfants adultes qui cherchent pour leurs parents), tranche 55-80 ans, autour de votre centre. On ne dépense pas un euro sur des profils hors cible ou hors zone.",
+    desc: "On vise les bonnes audiences : propriétaires de maisons individuelles de 35 à 65 ans, sensibles aux économies d'énergie, dans une zone géographique précise. On ne dépense pas un euro sur des profils hors cible ou hors zone.",
   },
   {
     n: "03",
     title: "Création",
-    desc: "On produit des annonces claires qui parlent de bilan auditif gratuit, du 100 % Santé sans reste à charge et de la qualité de vie retrouvée — les leviers qui déclenchent la prise de rendez-vous. Des publicités faites pour remplir l'agenda, pas pour collecter des likes.",
+    desc: "On produit des annonces claires centrées sur les économies sur facture (800 à 1 100 €/an), l'autoconsommation et la valorisation patrimoniale — les leviers qui déclenchent la demande de devis. Des publicités faites pour générer des leads, pas pour collecter des likes.",
   },
   {
     n: "04",
     title: "Optimisation",
-    desc: "On suit les données chaque semaine, on coupe ce qui ne marche pas, on amplifie ce qui performe. L'algorithme Meta s'affine avec le temps — on l'alimente correctement pour faire baisser le coût par rendez-vous.",
+    desc: "On suit les données chaque semaine, on coupe ce qui ne marche pas, on amplifie ce qui performe. L'algorithme Meta s'affine avec le temps — on l'alimente correctement pour faire baisser le coût par lead.",
   },
 ];
 

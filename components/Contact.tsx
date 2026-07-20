@@ -103,18 +103,18 @@ export default function Contact() {
               Audit gratuit
             </span>
             <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Parlons de votre agenda de rendez-vous
+              Parlons de votre carnet de commandes
             </h2>
             <p className="mt-4 text-lg text-white/65">
               Remplissez ce formulaire et on revient vers vous pour un échange
-              sans engagement. On regarde ensemble votre zone de chalandise, le
-              potentiel de patients malentendants à capter et ce que Meta Ads
-              peut — ou ne peut pas — vous apporter en rendez-vous.
+              sans engagement. On regarde ensemble votre zone, le potentiel de
+              propriétaires à capter et ce que Meta Ads peut — ou ne peut pas —
+              vous apporter en leads.
             </p>
             <ul className="mt-7 space-y-3 text-sm text-white/70">
               <li>· Réponse honnête, même si Meta Ads n'est pas pour vous</li>
               <li>· Aucune obligation, aucun engagement</li>
-              <li>· Estimation du potentiel de patients sur votre secteur</li>
+              <li>· Estimation du potentiel de leads sur votre secteur</li>
             </ul>
           </Reveal>
 
@@ -235,16 +235,16 @@ export default function Contact() {
                         id="metier"
                         type="text"
                         list="metiers"
-                        placeholder="Audioprothésiste, centre auditif…"
+                        placeholder="Installateur photovoltaïque…"
                         value={values.metier}
                         onChange={(e) => update("metier", e.target.value)}
                         className={`${fieldBase} ${border("metier")}`}
                       />
                       <datalist id="metiers">
-                        <option value="Audioprothésiste indépendant" />
-                        <option value="Centre auditif" />
-                        <option value="Réseau d'audioprothèse" />
-                        <option value="Autre professionnel de santé" />
+                        <option value="Installateur photovoltaïque indépendant" />
+                        <option value="Entreprise PV (2-10 salariés)" />
+                        <option value="Multi-spécialiste énergie" />
+                        <option value="Autre" />
                       </datalist>
                       {errors.metier && (
                         <p className="mt-1 text-xs text-red-500">{errors.metier}</p>

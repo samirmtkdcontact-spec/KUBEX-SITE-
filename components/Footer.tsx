@@ -17,13 +17,13 @@ export default function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-3 font-display text-sm font-semibold text-kubex-to">
-              L'agence Meta Ads des audioprothésistes indépendants.
+              L'agence Meta Ads des installateurs photovoltaïque RGE.
             </p>
             <p className="mt-2 text-sm leading-relaxed text-kubex-ink/60">
-              On construit des campagnes ciblées pour amener des patients
-              malentendants qualifiés dans les centres auditifs indépendants —
-              avec une méthode claire et des promesses qu'on peut tenir, face aux
-              grands réseaux.
+              On construit des campagnes ciblées pour générer des leads de
+              propriétaires qualifiés en continu et remplir le carnet de
+              commandes des installateurs photovoltaïque RGE QualiPV — avec une
+              méthode claire et des promesses qu'on peut tenir.
             </p>
           </div>
 
@@ -69,13 +69,14 @@ export default function Footer() {
 
         <p className="mt-6 text-[11px] leading-relaxed text-kubex-ink/35">
           KUBEX est une agence indépendante, non affiliée à Meta Platforms, Inc.
-          ni à aucun réseau d'audioprothèse. Facebook, Instagram et Meta sont des
-          marques de Meta Platforms, Inc. ; Amplifon, Audika et Alain Afflelou
-          Acousticien sont cités à titre de repères de marché et appartiennent à
-          leurs propriétaires respectifs. Les statistiques mentionnées
-          proviennent de sources publiques citées (EuroTrak France, Sonup.fr,
-          Snitem, Audition Conseil, ENSAO, Twaino, NapoleonCat, SQ Magazine,
-          Effinity) et décrivent des tendances de marché, sans constituer une
+          ni à EDF OA ou un organisme public. Facebook, Instagram et Meta sont
+          des marques de Meta Platforms, Inc. ; RGE QualiPV et le contrat EDF OA
+          sont gérés par leurs organismes respectifs. Les statistiques
+          mentionnées proviennent de sources publiques citées (Hellowatt,
+          panneau-solaire.net, SDES / Enedis via ECOinfos, les-energies-
+          renouvelables.eu, Mordor Intelligence, Helios Solaire, GridLabs,
+          NapoleonCat, SQ Magazine, Effinity) et décrivent des tendances de
+          marché et un cadre réglementaire en vigueur, sans constituer une
           promesse de résultat.
         </p>
       </div>

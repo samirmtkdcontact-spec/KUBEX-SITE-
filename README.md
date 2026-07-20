@@ -1,42 +1,43 @@
 # KUBEX — Site vitrine
 
 Site vitrine de **KUBEX**, agence Meta Ads spécialisée dans la génération de
-**rendez-vous de patients malentendants qualifiés pour les audioprothésistes
-indépendants et centres auditifs**.
+**leads de propriétaires qualifiés en continu pour les installateurs
+photovoltaïque RGE QualiPV** (résidentiel et petit tertiaire).
 
 Construit avec **Next.js 14 (App Router)**, **TypeScript** et **Tailwind CSS**.
 Prêt à déployer sur **Vercel**.
 
 ## Positionnement
 
-- **Cible** : audioprothésistes indépendants et petits centres auditifs.
-- **Problème** : agenda imprévisible alors que la demande explose depuis le
-  100 % Santé — mais les grands réseaux (Amplifon, Audika, Alain Afflelou
-  Acousticien) investissent massivement en digital pendant que les indépendants
-  restent invisibles.
-- **Solution** : des campagnes Meta Ads ciblées pour attirer des patients
-  malentendants qualifiés dans leur zone, avant que la concurrence ne les capte.
-- **Angle** : impossible de rivaliser avec les réseaux sur le SEO et la
-  notoriété de marque ; Meta Ads est le terrain où un indépendant peut cibler
-  chirurgicalement sa zone et ses 65+ ans avec un budget accessible.
+- **Cible** : installateurs photovoltaïque RGE QualiPV (résidentiel et petit
+  tertiaire).
+- **Problème** : marché en croissance record mais instable réglementairement —
+  les installateurs sans flux régulier de leads subissent de plein fouet chaque
+  changement de prime ou de TVA.
+- **Solution** : des campagnes Meta Ads ciblées pour générer des leads de
+  propriétaires qualifiés en continu, indépendamment des aides du moment.
+- **Angle** : on ne bâtit pas les campagnes sur une aide qui peut changer, mais
+  sur des bénéfices durables (économies, autoconsommation, valorisation). La
+  certification RGE QualiPV est une barrière à l'entrée (contrat EDF OA, TVA
+  réduite) que les non-certifiés ne peuvent pas franchir.
 
 ## Principes du contenu
 
 Le site ne contient **aucun faux témoignage, aucune fausse preuve sociale et
 aucun chiffre client inventé**. Les preuves sociales sont remplacées par des
-**données réelles et sourcées** sur le marché de l'audioprothèse et Meta :
+**données réelles et sourcées** sur le marché du photovoltaïque et Meta :
 
 | Donnée | Source |
 | --- | --- |
-| 6,5 M de Français malentendants (9,7 %) | EuroTrak France 2025 / Sonup.fr |
-| 55,5 % des malentendants appareillés (vs 45,7 % en 2022) | EuroTrak France 2025 / Snitem |
-| 44,5 % des malentendants non encore appareillés | EuroTrak France 2025 |
-| Croissance du marché : 4 à 6 % / an jusqu'en 2030 | Audition Conseil, mars 2026 |
-| 407 M€ de remboursements Assurance Maladie en 2025 (+7,9 %) | Audition Conseil, mars 2026 |
-| 872 551 aides auditives livrées au S1 2025 (+132 % vs 2020) | Snitem, 2025 |
-| 8 000 centres audio en France (+25 % en 3 ans) | ENSAO, 2025 |
-| 200 fermetures de centres en 2024 | ENSAO, 2025 |
-| 65 % des malentendants cherchent leur audioprothésiste en ligne | Twaino, 2026 |
+| 5,9 GW installés en 2025 — record historique en France | Hellowatt / panneau-solaire.net, jan. 2026 |
+| 1 298 633 installations PV raccordées au T1 2026 | SDES / Enedis via ECOinfos, 2026 |
+| 31 565 nouvelles installations raccordées au T1 2026 | les-energies-renouvelables.eu, juin 2026 |
+| Croissance : 32,9 GW (2026) → 78,1 GW (2031), TCAC 18,84 % | Mordor Intelligence, 2026 |
+| 13 % des nouvelles installations intègrent un stockage | Hellowatt, jan. 2026 |
+| 60 000 artisans touchés par les réformes de 2025 | ECOinfos, 2026 |
+| TVA réduite à 5,5 % pour les installations ≤ 9 kWc (oct. 2025) | Helios Solaire, 2026 |
+| 800 à 1 100 €/an d'économies (20 000 à 30 000 € sur 25 ans) | Helios Solaire, 2026 |
+| RGE QualiPV obligatoire (contrat EDF OA, TVA réduite) | GridLabs / fournisseurs-electricite.com, 2026 |
 | 48,7 M d'utilisateurs Facebook en France | NapoleonCat, déc. 2025 |
 | 9,2 % de taux de conversion moyen des annonces Facebook | SQ Magazine 2025 |
 | Budget Meta Ads recommandé PME : 200–500 €/mois | Effinity 2026 |
