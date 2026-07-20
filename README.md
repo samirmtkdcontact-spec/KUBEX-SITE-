@@ -1,41 +1,42 @@
 # KUBEX — Site vitrine
 
 Site vitrine de **KUBEX**, agence Meta Ads spécialisée dans la génération de
-**leads de propriétaires qualifiés pour les installateurs d'isolation thermique
-RGE** (ITE, ITI, combles, toiture).
+**rendez-vous de patients malentendants qualifiés pour les audioprothésistes
+indépendants et centres auditifs**.
 
 Construit avec **Next.js 14 (App Router)**, **TypeScript** et **Tailwind CSS**.
 Prêt à déployer sur **Vercel**.
 
 ## Positionnement
 
-- **Cible** : installateurs d'isolation thermique RGE (ITE, ITI, combles,
-  toiture).
-- **Problème** : carnet de commandes imprévisible malgré une obligation
-  réglementaire qui contraint des millions de propriétaires à agir.
-- **Solution** : générer des leads de propriétaires qualifiés via Meta Ads
-  (logements classés F/G, contraints par la loi de rénover ou de ne plus louer).
-- **Angle** : la loi oblige 5,8 millions de propriétaires à rénover ; ils ne
-  savent simplement pas vers quel artisan RGE se tourner. L'urgence est légale,
-  pas marketing — et la certification RGE est une barrière à l'entrée précieuse.
+- **Cible** : audioprothésistes indépendants et petits centres auditifs.
+- **Problème** : agenda imprévisible alors que la demande explose depuis le
+  100 % Santé — mais les grands réseaux (Amplifon, Audika, Alain Afflelou
+  Acousticien) investissent massivement en digital pendant que les indépendants
+  restent invisibles.
+- **Solution** : des campagnes Meta Ads ciblées pour attirer des patients
+  malentendants qualifiés dans leur zone, avant que la concurrence ne les capte.
+- **Angle** : impossible de rivaliser avec les réseaux sur le SEO et la
+  notoriété de marque ; Meta Ads est le terrain où un indépendant peut cibler
+  chirurgicalement sa zone et ses 65+ ans avec un budget accessible.
 
 ## Principes du contenu
 
 Le site ne contient **aucun faux témoignage, aucune fausse preuve sociale et
 aucun chiffre client inventé**. Les preuves sociales sont remplacées par des
-**données réelles et sourcées** sur l'urgence réglementaire, les aides d'État et
-Meta :
+**données réelles et sourcées** sur le marché de l'audioprothèse et Meta :
 
 | Donnée | Source |
 | --- | --- |
-| Location des logements G interdite depuis 2025 (~600 000 logements) | Service-Public.fr / Cotoit, 2025 |
-| Location des logements F interdite dès 2028 (~1 M de logements) | Cotoit / Hellio, 2025-2026 |
-| 5,8 M de passoires thermiques F/G (15,6 % du parc) | Toutimmo3d, 2026 |
-| Décote de 15 à 20 % à la revente d'un logement F/G | Toutimmo3d, 2026 |
-| Gel des loyers des logements F/G depuis août 2022 | Cotoit, 2025 |
-| Jusqu'à 70 % du coût d'isolation des murs pris en charge (foyers modestes) | Ma Maison Mon Style, 2026 |
-| TVA réduite à 5,5 % sur les travaux d'isolation par un RGE | Ma Maison Mon Style, 2026 |
-| Coût moyen travaux F/G : 54 671 € — aide moyenne : 37 080 € | Businesscoot, 2024 |
+| 6,5 M de Français malentendants (9,7 %) | EuroTrak France 2025 / Sonup.fr |
+| 55,5 % des malentendants appareillés (vs 45,7 % en 2022) | EuroTrak France 2025 / Snitem |
+| 44,5 % des malentendants non encore appareillés | EuroTrak France 2025 |
+| Croissance du marché : 4 à 6 % / an jusqu'en 2030 | Audition Conseil, mars 2026 |
+| 407 M€ de remboursements Assurance Maladie en 2025 (+7,9 %) | Audition Conseil, mars 2026 |
+| 872 551 aides auditives livrées au S1 2025 (+132 % vs 2020) | Snitem, 2025 |
+| 8 000 centres audio en France (+25 % en 3 ans) | ENSAO, 2025 |
+| 200 fermetures de centres en 2024 | ENSAO, 2025 |
+| 65 % des malentendants cherchent leur audioprothésiste en ligne | Twaino, 2026 |
 | 48,7 M d'utilisateurs Facebook en France | NapoleonCat, déc. 2025 |
 | 9,2 % de taux de conversion moyen des annonces Facebook | SQ Magazine 2025 |
 | Budget Meta Ads recommandé PME : 200–500 €/mois | Effinity 2026 |

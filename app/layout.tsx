@@ -17,24 +17,23 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "KUBEX — L'agence Meta Ads des installateurs isolation RGE",
+  title: "KUBEX — L'agence Meta Ads des audioprothésistes indépendants",
   description:
-    "KUBEX génère des leads de propriétaires qualifiés pour les installateurs d'isolation thermique RGE (ITE, ITI, combles, toiture), via Meta Ads. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
+    "KUBEX génère des rendez-vous de patients malentendants qualifiés pour les audioprothésistes indépendants et centres auditifs, via Meta Ads. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
   keywords: [
     "Meta Ads",
-    "isolation thermique",
-    "ITE",
-    "ITI",
-    "RGE",
-    "passoire thermique",
-    "MaPrimeRénov'",
-    "leads isolation",
+    "audioprothésiste",
+    "centre auditif",
+    "audioprothèse",
+    "100% Santé",
+    "malentendants",
+    "leads patients",
     "publicité Facebook",
   ],
   openGraph: {
-    title: "KUBEX — Meta Ads pour installateurs isolation RGE",
+    title: "KUBEX — Meta Ads pour audioprothésistes indépendants",
     description:
-      "Des campagnes Meta Ads ciblées pour transformer l'obligation légale de rénover les passoires thermiques en leads qualifiés pour les installateurs d'isolation RGE.",
+      "Des campagnes Meta Ads ciblées pour amener des patients malentendants qualifiés dans votre centre auditif, avant que les grands réseaux ne les captent.",
     type: "website",
     locale: "fr_FR",
   },

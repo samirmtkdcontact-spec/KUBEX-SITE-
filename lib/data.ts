@@ -1,6 +1,6 @@
 /**
- * Données réelles et vérifiées — marché de l'isolation thermique (ITE/ITI),
- * urgence réglementaire (passoires thermiques), aides d'État et Meta Ads.
+ * Données réelles et vérifiées — marché de l'audioprothèse en France,
+ * concurrence des centres auditifs et Meta Ads.
  * Chaque chiffre est accompagné de sa source — AUCUNE donnée inventée.
  */
 
@@ -31,54 +31,54 @@ export const heroStats: Stat[] = [
   },
 ];
 
-/** Cards de la section « Le contexte » — urgence réglementaire, aides & Meta */
+/** Cards de la section « Le contexte » — marché audio, concurrence & Meta */
 export const contextStats: Stat[] = [
   {
-    icon: "🚫",
-    value: "600 000",
-    label: "logements classés G interdits à la location depuis 2025",
+    icon: "👂",
+    value: "6,5 M",
+    label: "de Français malentendants (9,7 % de la population)",
     detail:
-      "Depuis le 1er janvier 2025, un logement classé G ne peut plus être loué. Pour le propriétaire bailleur, ce n'est pas une option mais une contrainte légale immédiate.",
-    source: "Service-Public.fr / Cotoit, 2025",
+      "Près d'un Français sur dix déclare une perte auditive. Un marché immense de patients potentiels, dans chaque zone de chalandise.",
+    source: "EuroTrak France 2025 / Sonup.fr",
   },
   {
-    icon: "📅",
-    value: "1 million",
-    label: "de logements classés F interdits à la location dès 2028",
+    icon: "🎯",
+    value: "44,5 %",
+    label: "des malentendants ne sont PAS encore appareillés",
     detail:
-      "Au 1er janvier 2028, l'interdiction s'étend aux logements classés F. Des centaines de milliers de propriétaires ont une échéance — et une raison d'agir maintenant.",
-    source: "Cotoit / Hellio, 2025-2026",
+      "Près d'un malentendant sur deux reste non équipé : c'est un marché adressable considérable, non capté, qui attend d'être informé et accompagné.",
+    source: "EuroTrak France 2025",
   },
   {
-    icon: "🏠",
-    value: "5,8 M",
-    label: "de passoires thermiques (F ou G) en France",
+    icon: "🔎",
+    value: "65 %",
+    label: "des malentendants cherchent leur audioprothésiste en ligne",
     detail:
-      "Soit 15,6 % du parc immobilier. Un volume immense de propriétaires concernés par l'obligation de rénover — autant de clients potentiels pour un installateur RGE.",
-    source: "Toutimmo3d, 2026",
+      "Avant même de prendre rendez-vous, deux tiers passent par une recherche en ligne. Sans présence digitale, ils ne trouvent que les grandes enseignes.",
+    source: "Twaino, 2026",
   },
   {
-    icon: "📉",
-    value: "−15 à −20 %",
-    label: "de décote à la revente d'un logement F ou G",
+    icon: "🏥",
+    value: "8 000",
+    label: "centres audio en France (+25 % en 3 ans)",
     detail:
-      "Par rapport à un bien équivalent classé C ou D. Au-delà de la location, c'est la valeur patrimoniale qui est en jeu : un argument fort pour déclencher des travaux.",
-    source: "Toutimmo3d, 2026",
+      "La demande explose depuis le 100 % Santé, mais la concurrence aussi. Les grands réseaux investissent massivement en digital face aux indépendants.",
+    source: "ENSAO, 2025",
+  },
+  {
+    icon: "⚠️",
+    value: "200",
+    label: "centres fermés en 2024",
+    detail:
+      "Les indépendants sans stratégie d'acquisition ferment. Dans un marché en croissance, l'invisibilité digitale devient un risque vital pour un centre.",
+    source: "ENSAO, 2025",
   },
   {
     icon: "💶",
-    value: "70 %",
-    label: "du coût d'isolation des murs pris en charge (foyers modestes)",
+    value: "407 M€",
+    label: "remboursés par l'Assurance Maladie en 2025 (+7,9 %)",
     detail:
-      "Via MaPrimeRénov', avec une TVA réduite à 5,5 % pour des travaux réalisés par un professionnel RGE. Sur un chantier moyen de 54 671 €, l'aide perçue atteint en moyenne 37 080 €.",
-    source: "Ma Maison Mon Style 2026 / Businesscoot 2024",
-  },
-  {
-    icon: "🔒",
-    value: "Gel",
-    label: "des loyers des logements F et G depuis août 2022",
-    detail:
-      "Tant qu'aucun travaux n'est engagé, le loyer ne peut plus être augmenté. La pression réglementaire pousse les bailleurs à rénover — encore faut-il qu'ils vous trouvent.",
-    source: "Cotoit, 2025",
+      "872 551 aides auditives livrées au 1er semestre 2025 (+132 % vs 2020). Le 100 % Santé a levé le frein du reste à charge : la demande solvable est là.",
+    source: "Audition Conseil mars 2026 / Snitem 2025",
   },
 ];

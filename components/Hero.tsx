@@ -14,33 +14,32 @@ export default function Hero() {
               className="block font-medium uppercase text-kubex-accent"
               style={{ fontSize: "11px", letterSpacing: "0.25em" }}
             >
-              KUBEX · AGENCE META ADS · SPÉCIALISTE ISOLATION RGE
+              KUBEX · AGENCE META ADS · SPÉCIALISTE AUDIOPROTHÈSE
             </span>
           </Reveal>
 
           <Reveal delay={80}>
             <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-kubex-ink sm:text-5xl lg:text-6xl">
-              Remplissez votre carnet de commandes avec des clients{" "}
+              Remplissez votre agenda avec des patients{" "}
               <span className="gradient-text">qualifiés</span>.
             </h1>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-kubex-ink/70">
-              La loi interdit déjà la location des logements classés{" "}
-              <strong className="font-semibold text-kubex-ink">G</strong> et
-              bannira les <strong className="font-semibold text-kubex-ink">F</strong>{" "}
-              dès 2028 —{" "}
               <strong className="font-semibold text-kubex-ink">
-                5,8 millions de propriétaires
+                6,5 millions de Français
               </strong>{" "}
-              sont contraints d'agir. Le problème : ils ne savent pas que votre
-              entreprise existe. KUBEX construit des campagnes{" "}
+              sont malentendants et{" "}
+              <strong className="font-semibold text-kubex-ink">
+                65 % cherchent leur audioprothésiste en ligne
+              </strong>
+              . Le problème : sans stratégie digitale, ils ne trouvent que les
+              grandes enseignes. KUBEX construit des campagnes{" "}
               <strong className="font-semibold text-kubex-ink">
                 Meta Ads ciblées
               </strong>{" "}
-              pour transformer cette obligation légale en leads qualifiés dans
-              votre zone.
+              pour amener des patients dans votre centre, chaque mois.
             </p>
           </Reveal>
 
@@ -68,9 +67,9 @@ export default function Hero() {
 
           <Reveal delay={340}>
             <p className="mx-auto mt-6 max-w-xl text-sm text-kubex-ink/60">
-              Seuls les installateurs RGE peuvent réaliser des travaux éligibles
-              aux aides. Votre certification est un véritable avantage
-              concurrentiel — <strong className="font-semibold text-kubex-ink">KUBEX vous aide à l'exploiter</strong>.
+              Impossible de rivaliser avec Amplifon ou Audika sur le SEO et la
+              notoriété de marque. Meta Ads est le terrain où un indépendant
+              cible chirurgicalement sa zone — <strong className="font-semibold text-kubex-ink">KUBEX vous aide à l'exploiter</strong>.
             </p>
           </Reveal>
         </div>

@@ -103,18 +103,18 @@ export default function Contact() {
               Audit gratuit
             </span>
             <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Parlons de votre carnet de commandes
+              Parlons de votre agenda de rendez-vous
             </h2>
             <p className="mt-4 text-lg text-white/65">
               Remplissez ce formulaire et on revient vers vous pour un échange
-              sans engagement. On regarde ensemble votre zone, le potentiel de
-              propriétaires de logements F/G à rénover et ce que Meta Ads peut —
-              ou ne peut pas — vous apporter en leads.
+              sans engagement. On regarde ensemble votre zone de chalandise, le
+              potentiel de patients malentendants à capter et ce que Meta Ads
+              peut — ou ne peut pas — vous apporter en rendez-vous.
             </p>
             <ul className="mt-7 space-y-3 text-sm text-white/70">
               <li>· Réponse honnête, même si Meta Ads n'est pas pour vous</li>
               <li>· Aucune obligation, aucun engagement</li>
-              <li>· Estimation du potentiel de leads sur votre département</li>
+              <li>· Estimation du potentiel de patients sur votre secteur</li>
             </ul>
           </Reveal>
 
@@ -235,19 +235,16 @@ export default function Contact() {
                         id="metier"
                         type="text"
                         list="metiers"
-                        placeholder="Isolation ITE, ITI, combles…"
+                        placeholder="Audioprothésiste, centre auditif…"
                         value={values.metier}
                         onChange={(e) => update("metier", e.target.value)}
                         className={`${fieldBase} ${border("metier")}`}
                       />
                       <datalist id="metiers">
-                        <option value="Isolation thermique par l'extérieur (ITE)" />
-                        <option value="Isolation thermique par l'intérieur (ITI)" />
-                        <option value="Isolation des combles" />
-                        <option value="Isolation de toiture" />
-                        <option value="Ravalement avec isolation" />
-                        <option value="Rénovation énergétique globale" />
-                        <option value="Autre métier de l'isolation" />
+                        <option value="Audioprothésiste indépendant" />
+                        <option value="Centre auditif" />
+                        <option value="Réseau d'audioprothèse" />
+                        <option value="Autre professionnel de santé" />
                       </datalist>
                       {errors.metier && (
                         <p className="mt-1 text-xs text-red-500">{errors.metier}</p>

@@ -5,24 +5,24 @@ import Reveal from "./Reveal";
 
 const faqs = [
   {
-    q: "Mes clients sont-ils vraiment sur Facebook ?",
-    a: "Oui. La France compte 48,7 millions d'utilisateurs Facebook (NapoleonCat, déc. 2025), parmi lesquels une grande part de propriétaires et de bailleurs de 35 à 65 ans — exactement le profil concerné par l'obligation de rénover. Ils n'y cherchent pas activement un installateur, mais c'est justement là que Meta Ads est utile : on va susciter la demande auprès des bons profils, là où ils passent déjà du temps chaque jour.",
+    q: "Mes patients sont-ils vraiment sur Facebook ?",
+    a: "Oui. La France compte 48,7 millions d'utilisateurs Facebook (NapoleonCat, déc. 2025), et la plateforme est largement utilisée par les 55-75 ans — le cœur de cible de l'appareillage auditif. On touche aussi les proches aidants (enfants adultes) qui cherchent activement une solution pour leurs parents. C'est justement là que Meta Ads est utile : susciter la demande auprès des bons profils, là où ils passent déjà du temps.",
   },
   {
-    q: "Comment ciblez-vous des propriétaires de logements F/G ?",
-    a: "Le ciblage Meta permet de combiner zone géographique, statut de propriétaire ou de bailleur, tranche d'âge et centres d'intérêt (rénovation, immobilier locatif, économies d'énergie). On concentre la diffusion sur les profils les plus susceptibles de détenir une passoire thermique. La classe DPE exacte du logement reste ensuite vérifiée au moment de la qualification du lead — c'est une partie de votre travail commercial.",
+    q: "Comment ciblez-vous des personnes malentendantes ?",
+    a: "Meta n'autorise pas de cibler directement une donnée de santé, et c'est normal. On procède autrement : par zone géographique autour de votre centre, tranche d'âge (55-80 ans), et centres d'intérêt liés (bien-être, santé des seniors), en visant aussi les proches aidants. La qualification du besoin auditif se fait ensuite au bilan — le rôle des campagnes est d'amener les bonnes personnes à franchir votre porte.",
   },
   {
-    q: "Faut-il un budget pub en plus de vos honoraires ?",
+    q: "Meta Ads est-il compatible avec la déontologie ?",
+    a: "Oui, à condition de respecter le cadre. La communication des professionnels de santé est encadrée : pas d'allégation trompeuse, pas de comparaison dénigrant un confrère, pas de promesse de résultat thérapeutique. Nos annonces restent factuelles et informatives (bilan auditif, 100 % Santé, prise de rendez-vous) et chaque message est validé avec vous avant diffusion. Vous restez responsable et maître de votre communication.",
+  },
+  {
+    q: "Faut-il un budget pub en plus de la prestation ?",
     a: "Oui, ce sont deux postes distincts : nos honoraires de gestion (chiffrés sur devis après votre audit gratuit) et le budget publicitaire versé directement à Meta. Pour ce dernier, une fourchette de 200 à 500 €/mois est recommandée pour une PME afin d'alimenter correctement l'algorithme et obtenir des données exploitables (source : Effinity 2026). On définit ensemble ce qui est réaliste pour votre zone.",
   },
   {
-    q: "Combien de temps avant les premiers leads ?",
-    a: "Honnêtement : il faut un peu de temps. L'algorithme Meta a besoin d'une phase d'apprentissage et de données pour s'optimiser, ce qui prend généralement quelques semaines. Les premiers leads peuvent arriver assez vite, mais une campagne se juge sur la durée, une fois les audiences et messages affinés. Personne de sérieux ne peut vous promettre un volume de leads dès le premier jour.",
-  },
-  {
-    q: "Travaillez-vous partout en France ?",
-    a: "Oui. Nos campagnes s'adressent aux installateurs d'isolation RGE partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise. Et avec la formule Domination, nous pouvons travailler en exclusivité sur votre département, sous réserve de disponibilité.",
+    q: "Travaillez-vous dans toute la France ?",
+    a: "Oui. Nos campagnes s'adressent aux audioprothésistes indépendants et centres auditifs partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone de chalandise précise — une ville, un quartier ou un rayon autour de votre centre. Et avec la formule Domination, nous pouvons travailler en exclusivité sur votre secteur, sous réserve de disponibilité.",
   },
 ];
 

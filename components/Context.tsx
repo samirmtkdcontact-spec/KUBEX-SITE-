@@ -8,13 +8,14 @@ export default function Context() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Le contexte</span>
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-kubex-ink sm:text-4xl">
-            5,8 millions de logements doivent être rénovés. Êtes-vous visible ?
+            Le marché explose. Êtes-vous visible ?
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            L'urgence n'est pas marketing, elle est légale : interdiction de
-            louer les passoires thermiques, gel des loyers, décote à la revente.
-            La demande de propriétaires est là — le vrai sujet, c'est qu'ils vous
-            trouvent. Voici ce que disent les chiffres, sources à l'appui.
+            Depuis le 100 % Santé, la demande d'appareillage grimpe — mais la
+            concurrence des grands réseaux aussi. Près d'un malentendant sur deux
+            n'est pas encore équipé, et deux tiers cherchent en ligne. Le vrai
+            sujet, c'est qu'ils vous trouvent. Voici les chiffres, sources à
+            l'appui.
           </p>
         </Reveal>
 
@@ -51,12 +52,11 @@ export default function Context() {
 
         <Reveal className="mt-10">
           <p className="mx-auto max-w-3xl text-center text-sm text-kubex-ink/50">
-            Ces données décrivent le cadre réglementaire, le marché de
-            l'isolation et les dispositifs d'aides. Elles ne constituent pas une
-            promesse de résultat : les performances d'une campagne dépendent de
-            votre zone, de votre offre et du budget. Les montants d'aides et les
-            échéances légales évoluent selon les barèmes et textes en vigueur et
-            la situation de chaque ménage.
+            Ces données décrivent le marché de l'audioprothèse et son évolution.
+            Elles ne constituent pas une promesse de résultat : les performances
+            d'une campagne dépendent de votre zone, de votre offre et du budget.
+            Les chiffres du marché et des remboursements évoluent selon les
+            sources et les périodes citées.
           </p>
         </Reveal>
       </div>
