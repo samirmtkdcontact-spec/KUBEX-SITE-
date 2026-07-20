@@ -1,5 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import NicheChoice from "@/components/NicheChoice";
+import NicheBanner from "@/components/NicheBanner";
 import Marquee from "@/components/Marquee";
 import MarketSection from "@/components/MarketSection";
 import System from "@/components/System";
@@ -21,6 +23,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <NicheChoice />
 
         <Marquee
           items={pvMarquee}
@@ -30,14 +33,10 @@ export default function Home() {
         />
 
         <MarketSection
-          id="photovoltaique"
-          eyebrow="Marché photovoltaïque"
-          title={
-            <>
-              <span className="text-kubex-accent">1,3 million</span>{" "}
-              d'installations. Le marché bat des records.
-            </>
-          }
+          id="section-pv"
+          index="01"
+          name="Photovoltaïque"
+          tagline="Le marché qui bat des records."
           subtitle="Les installateurs RGE QualiPV sont au cœur d'un marché qui explose. Mais sans flux régulier de leads, chaque évolution réglementaire fragilise l'activité."
           image={PV_IMAGE}
           overlay="linear-gradient(rgba(0,20,40,0.75), rgba(0,63,92,0.85))"
@@ -54,14 +53,10 @@ export default function Home() {
         />
 
         <MarketSection
-          id="pompe-a-chaleur"
-          eyebrow="Marché pompe à chaleur"
-          title={
-            <>
-              <span className="text-kubex-accent">10 800 €</span> d'aides
-              cumulables. Les propriétaires doivent agir.
-            </>
-          }
+          id="section-pac"
+          index="02"
+          name="Pompe à chaleur"
+          tagline="Les aides qui créent la demande."
           subtitle="MaPrimeRénov', CEE, éco-PTZ — les aides créent une demande massive. Le problème : les propriétaires ne savent pas que votre entreprise existe. KUBEX met votre offre face à ceux qui cherchent."
           image={PAC_IMAGE}
           overlay="linear-gradient(rgba(0,20,40,0.75), rgba(0,40,70,0.85))"
@@ -77,6 +72,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <NicheBanner />
     </>
   );
 }

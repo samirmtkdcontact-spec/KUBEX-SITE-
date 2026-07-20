@@ -21,8 +21,8 @@ export default function DataCard({ card }: { card: DataCardType }) {
         </p>
       </article>
 
-      {/* Tooltip — apparait sous la card au survol */}
-      <div className="pointer-events-none absolute left-0 right-0 top-full z-20 translate-y-2 pt-3 opacity-0 transition-all duration-[250ms] ease-out group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
+      {/* Tooltip — apparait AU-DESSUS de la card au survol (z-50, pointer-events none) */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-full z-50 translate-y-2 pb-3 opacity-0 transition-all duration-[250ms] ease-out group-hover:translate-y-0 group-hover:opacity-100">
         <div className="rounded-xl bg-kubex-gradient p-px shadow-kubex">
           <div className="rounded-[11px] bg-white p-4">
             <p className="text-sm leading-relaxed text-kubex-ink/75">
@@ -31,14 +31,9 @@ export default function DataCard({ card }: { card: DataCardType }) {
             <p className="mt-2 text-xs font-medium text-kubex-ink/45">
               {card.source}
             </p>
-            <a
-              href={card.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-kubex-accent transition-colors hover:text-kubex-to"
-            >
+            <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-kubex-accent">
               En savoir plus <span aria-hidden>→</span>
-            </a>
+            </span>
           </div>
         </div>
       </div>

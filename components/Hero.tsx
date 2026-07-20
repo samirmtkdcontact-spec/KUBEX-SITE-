@@ -6,6 +6,14 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden pt-32 pb-20 sm:pt-36 sm:pb-24"
     >
+      {/* Fond animé du Hero : grille de points + 3 orbes de lumière */}
+      <div className="hero-bg" aria-hidden>
+        <div className="hero-dots" />
+        <div className="hero-orb hero-orb--1" />
+        <div className="hero-orb hero-orb--2" />
+        <div className="hero-orb hero-orb--3" />
+      </div>
+
       <div className="container-kubex relative">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>

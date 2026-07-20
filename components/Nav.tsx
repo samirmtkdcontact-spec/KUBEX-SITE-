@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const links = [
-  { href: "#photovoltaique", label: "Le marché PV" },
-  { href: "#pompe-a-chaleur", label: "Le marché PAC" },
+  { href: "#section-pv", label: "Le marché PV" },
+  { href: "#section-pac", label: "Le marché PAC" },
   { href: "#systeme", label: "Notre méthode" },
   { href: "#honnetete", label: "Honnêteté" },
   { href: "#contact", label: "Contact" },

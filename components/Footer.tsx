@@ -4,14 +4,14 @@ const columns: { title: string; links: { href: string; label: string }[] }[] = [
   {
     title: "Photovoltaïque",
     links: [
-      { href: "#photovoltaique", label: "Le marché PV" },
+      { href: "#section-pv", label: "Le marché PV" },
       { href: "#contact", label: "Générer des leads PV" },
     ],
   },
   {
     title: "Pompe à chaleur",
     links: [
-      { href: "#pompe-a-chaleur", label: "Le marché PAC" },
+      { href: "#section-pac", label: "Le marché PAC" },
       { href: "#contact", label: "Générer des leads PAC" },
     ],
   },

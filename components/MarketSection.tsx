@@ -4,8 +4,12 @@ import type { DataCard as DataCardType } from "@/lib/data";
 
 type MarketSectionProps = {
   id: string;
-  eyebrow: string;
-  title: React.ReactNode;
+  /** Numéro de section affiché en accent, ex. "01" */
+  index: string;
+  /** Nom de la niche, ex. "Photovoltaïque" */
+  name: string;
+  /** Accroche courte sur une ligne */
+  tagline: string;
   subtitle: string;
   /** Image de fond Unsplash (URL directe) */
   image: string;
@@ -17,13 +21,15 @@ type MarketSectionProps = {
 };
 
 /**
- * Section marché (photovoltaïque ou pompe à chaleur) : image de fond +
- * overlay dégradé, texte blanc, 6 data cards sourcées avec tooltips au survol.
+ * Section marché (photovoltaïque ou pompe à chaleur) : grand titre numéroté
+ * en haut, image de fond + overlay dégradé, texte blanc, 6 data cards sourcées
+ * avec tooltips au survol.
  */
 export default function MarketSection({
   id,
-  eyebrow,
-  title,
+  index,
+  name,
+  tagline,
   subtitle,
   image,
   overlay,
@@ -34,23 +40,27 @@ export default function MarketSection({
   return (
     <section
       id={id}
-      className="relative bg-cover bg-center bg-no-repeat py-24 text-white sm:py-32"
+      className="relative bg-cover bg-center bg-no-repeat py-20 text-white sm:py-28"
       style={{ backgroundImage: `${overlay}, url("${image}")` }}
     >
       <div className="container-kubex">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white backdrop-blur-sm">
-            {eyebrow}
-          </span>
-          <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            {title}
+        {/* Grand titre de section numéroté */}
+        <Reveal className="mx-auto max-w-3xl text-center">
+          <h2
+            className="font-display font-bold leading-none"
+            style={{ fontSize: "clamp(42px, 6vw, 72px)" }}
+          >
+            <span className="text-kubex-accent">{index} /</span>{" "}
+            <span className="text-gradient-white-accent">{name}</span>
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-white/75">
+          <p className="mt-4 font-display text-xl font-medium text-white/85 sm:text-2xl">
+            {tagline}
+          </p>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/70">
             {subtitle}
           </p>
         </Reveal>
 
-        {/* Marge basse élargie pour laisser la place aux tooltips au survol */}
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card, i) => (
             <Reveal key={card.value + card.label} delay={(i % 3) * 90}>
