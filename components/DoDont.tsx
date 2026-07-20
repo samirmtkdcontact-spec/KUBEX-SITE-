@@ -1,21 +1,19 @@
 import Reveal from "./Reveal";
 
 const promises = [
-  "Des leads de propriétaires qualifiés, ciblés sur votre zone d'intervention",
-  "Un flux régulier, pensé pour durer au-delà des à-coups réglementaires",
-  "Une méthode claire, expliquée et documentée à chaque étape",
-  "Des comptes rendus réguliers avec les vrais chiffres de vos campagnes",
-  "De la transparence totale sur le budget publicitaire et son utilisation",
-  "Un accompagnement humain, sans jargon inutile",
+  "Construire des campagnes Meta Ads sérieuses",
+  "Vous fournir des leads qualifiés (pas du volume vide)",
+  "Vous accompagner avec transparence et données réelles",
+  "Adapter la stratégie si les résultats ne sont pas là",
+  "Ne jamais inventer de chiffres pour vous convaincre",
 ];
 
 const noPromises = [
-  "Des résultats « garantis » : aucune agence sérieuse ne peut les promettre",
-  "Un volume exact de leads chiffré à l'avance, déconnecté de votre marché",
-  "Remplacer votre travail commercial : un lead se rappelle, se qualifie, se conclut",
-  "Des campagnes bâties sur une aide précise : les réglementations changent souvent",
-  "Des résultats du jour au lendemain : l'algorithme a besoin de temps",
-  "De faux témoignages ou des captures d'écran de résultats invérifiables",
+  "Un nombre garanti de leads par mois",
+  "Un ROAS précis à l'avance",
+  "De remplacer votre force commerciale",
+  "Des résultats identiques à un autre client",
+  "L'invulnérabilité aux changements réglementaires",
 ];
 
 function Check() {
@@ -57,12 +55,12 @@ export default function DoDont() {
     <section id="honnetete" className="py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Notre différence</span>
+          <span className="eyebrow">Ce qu'on promet et ce qu'on ne promet pas</span>
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-kubex-ink sm:text-4xl">
-            Ce qu'on fait — et ce qu'on ne fera jamais
+            Une agence qui dit la <span className="gradient-text">vérité</span>.
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Le marketing pour installateurs solaires est plein de promesses
+            Le marketing pour installateurs énergie est plein de promesses
             creuses — « 30 leads garantis par mois ». Notre crédibilité, c'est
             justement de vous dire la vérité, y compris quand elle n'est pas
             vendeuse.
@@ -73,7 +71,7 @@ export default function DoDont() {
           <Reveal>
             <div className="h-full rounded-2xl border border-kubex-accent/30 bg-kubex-light/70 p-7">
               <h3 className="font-display text-xl font-bold text-kubex-to">
-                Ce qu'on promet
+                On s'engage à
               </h3>
               <ul className="mt-5 space-y-3.5">
                 {promises.map((item) => (
@@ -89,7 +87,7 @@ export default function DoDont() {
           <Reveal delay={100}>
             <div className="h-full rounded-2xl border border-kubex-ink/10 bg-white p-7">
               <h3 className="font-display text-xl font-bold text-kubex-ink/70">
-                Ce qu'on ne promet pas
+                On ne promet pas
               </h3>
               <ul className="mt-5 space-y-3.5">
                 {noPromises.map((item) => (

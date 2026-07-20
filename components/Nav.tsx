@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const links = [
-  { href: "#contexte", label: "Le contexte" },
-  { href: "#systeme", label: "Méthode" },
+  { href: "#photovoltaique", label: "Le marché PV" },
+  { href: "#pompe-a-chaleur", label: "Le marché PAC" },
+  { href: "#systeme", label: "Notre méthode" },
   { href: "#honnetete", label: "Honnêteté" },
-  { href: "#offres", label: "Offres" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Nav() {
@@ -24,7 +24,7 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 bg-white/85 backdrop-blur-md transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur-md transition-all duration-300 ${
         scrolled
           ? "border-b border-kubex-ink/10 shadow-sm"
           : "border-b border-transparent"

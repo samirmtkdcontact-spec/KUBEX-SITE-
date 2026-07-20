@@ -4,22 +4,22 @@ const steps = [
   {
     n: "01",
     title: "Audit",
-    desc: "On analyse votre zone d'intervention, vos concurrents locaux et le profil des propriétaires ciblés (maisons individuelles, toitures bien exposées) dans votre secteur. Pas de campagne avant d'avoir compris votre marché et défini ce qu'est un lead vraiment exploitable.",
+    desc: "Zone géographique, concurrents locaux, profil acheteur idéal. On analyse votre marché avant de lancer la moindre campagne.",
   },
   {
     n: "02",
-    title: "Ciblage",
-    desc: "On vise les bonnes audiences : propriétaires de maisons individuelles de 35 à 65 ans, sensibles aux économies d'énergie, dans une zone géographique précise. On ne dépense pas un euro sur des profils hors cible ou hors zone.",
+    title: "Ciblage Meta Ads",
+    desc: "Propriétaires de maisons individuelles, tranches d'âge, centres d'intérêt énergie. Un ciblage chirurgical sur votre zone.",
   },
   {
     n: "03",
-    title: "Création",
-    desc: "On produit des annonces claires centrées sur les économies sur facture (800 à 1 100 €/an), l'autoconsommation et la valorisation patrimoniale — les leviers qui déclenchent la demande de devis. Des publicités faites pour générer des leads, pas pour collecter des likes.",
+    title: "Création des campagnes",
+    desc: "Visuels et messages adaptés à votre niche : économies d'énergie, aides disponibles, confort thermique. Des campagnes qui parlent à vos futurs clients.",
   },
   {
     n: "04",
-    title: "Optimisation",
-    desc: "On suit les données chaque semaine, on coupe ce qui ne marche pas, on amplifie ce qui performe. L'algorithme Meta s'affine avec le temps — on l'alimente correctement pour faire baisser le coût par lead.",
+    title: "Optimisation continue",
+    desc: "Analyse hebdomadaire, ajustements en temps réel. On fait baisser le coût par lead et monter la qualité des contacts.",
   },
 ];
 
@@ -28,13 +28,14 @@ export default function System() {
     <section id="systeme" className="py-24 text-kubex-ink sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Le système KUBE</span>
+          <span className="eyebrow">Notre approche</span>
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            Une méthode en 4 étapes, sans boîte noire
+            Le <span className="gradient-text">Système Kube</span>
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Chaque étape est documentée et partagée avec vous. Vous savez ce
-            qu'on fait, pourquoi, et ce que ça donne.
+            Une méthode en 4 étapes construite spécifiquement pour les
+            installateurs énergie. Pas de template générique — une stratégie
+            taillée pour votre métier, votre zone, votre certification.
           </p>
         </Reveal>
 

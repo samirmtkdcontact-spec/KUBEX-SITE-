@@ -17,23 +17,23 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "KUBEX — L'agence Meta Ads des installateurs photovoltaïque RGE",
+  title: "KUBEX — L'agence Meta Ads des installateurs énergie RGE (PV & PAC)",
   description:
-    "KUBEX génère des leads de propriétaires qualifiés en continu pour les installateurs photovoltaïque RGE QualiPV, via Meta Ads — indépendamment des aides du moment. Méthode transparente, accompagnement honnête, sans promesse de miracle.",
+    "KUBEX génère des leads de propriétaires qualifiés pour les installateurs photovoltaïques et les poseurs de pompes à chaleur RGE, via des campagnes Meta Ads taillées pour votre métier et votre zone.",
   keywords: [
     "Meta Ads",
     "photovoltaïque",
-    "panneaux solaires",
+    "pompe à chaleur",
     "RGE QualiPV",
-    "autoconsommation",
-    "leads photovoltaïque",
-    "installateur solaire",
-    "publicité Facebook",
+    "RGE QualiPAC",
+    "MaPrimeRénov'",
+    "leads installateur énergie",
+    "panneaux solaires",
   ],
   openGraph: {
-    title: "KUBEX — Meta Ads pour installateurs photovoltaïque RGE",
+    title: "KUBEX — Meta Ads pour installateurs énergie RGE (PV & PAC)",
     description:
-      "Des campagnes Meta Ads ciblées pour générer des leads de propriétaires qualifiés en continu, quelles que soient les aides du moment.",
+      "Des campagnes Meta Ads ciblées pour générer des leads de propriétaires qualifiés — photovoltaïque et pompe à chaleur.",
     type: "website",
     locale: "fr_FR",
   },

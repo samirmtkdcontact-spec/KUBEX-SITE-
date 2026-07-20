@@ -5,24 +5,28 @@ import Reveal from "./Reveal";
 
 const faqs = [
   {
-    q: "Mes clients sont-ils vraiment sur Facebook ?",
-    a: "Oui. La France compte 48,7 millions d'utilisateurs Facebook (NapoleonCat, déc. 2025), et la plateforme est largement utilisée par les 35-65 ans propriétaires de leur maison — exactement le profil qui investit dans le photovoltaïque. Ils n'y cherchent pas activement un installateur, mais c'est justement là que Meta Ads est utile : susciter la demande auprès des bons profils, là où ils passent déjà du temps.",
+    q: "En quoi Meta Ads est-il adapté à mon métier ?",
+    a: "Vos futurs clients — propriétaires de maisons individuelles de 35 à 65 ans — passent chaque jour du temps sur Meta (48,7 millions d'utilisateurs actifs en France, source NapoleonCat déc. 2025). Ils ne cherchent pas activement un installateur, mais Meta Ads permet de susciter la demande auprès des bons profils, sur votre zone précise. Là où le référencement met des mois à porter, une campagne bien ciblée met votre offre sous leurs yeux en continu.",
   },
   {
-    q: "Comment ciblez-vous des propriétaires de maisons ?",
-    a: "Le ciblage Meta permet de combiner zone géographique, statut de propriétaire, tranche d'âge (35-65 ans), type de logement et centres d'intérêt (économies d'énergie, maison, écologie). On concentre la diffusion sur les profils les plus susceptibles d'être propriétaires d'une maison individuelle avec une toiture exploitable. La faisabilité technique se vérifie ensuite lors de la qualification du lead.",
+    q: "Combien de temps avant les premiers leads ?",
+    a: "Honnêtement : il faut un peu de temps. L'algorithme Meta a besoin d'une phase d'apprentissage et de données pour s'optimiser, ce qui prend généralement quelques semaines. Les premiers leads peuvent arriver assez vite, mais une campagne se juge sur la durée, une fois les audiences et messages affinés. Personne de sérieux ne peut vous promettre un volume de leads dès le premier jour.",
   },
   {
-    q: "Les réformes des aides n'impactent-elles pas l'efficacité des ads ?",
-    a: "C'est justement notre parti pris : on ne bâtit pas les campagnes sur une prime ou un taux de TVA qui peut changer du jour au lendemain. On met en avant des bénéfices durables — les économies sur facture (800 à 1 100 €/an, source Helios Solaire 2026), l'autoconsommation, la valorisation du bien. Quand une aide évolue, on ajuste le message ; le flux de leads, lui, ne s'effondre pas avec une réforme.",
+    q: "Qu'est-ce qui garantit la qualité des leads ?",
+    a: "Rien n'est « garanti » — mais tout est fait pour la maximiser. On cible finement (zone, profil propriétaire, centres d'intérêt), on qualifie via les messages et les formulaires, et on optimise chaque semaine pour écarter les contacts hors cible. La qualité se travaille en continu, avec vos retours terrain sur les leads reçus : ceux qui se transforment nous disent quoi amplifier.",
   },
   {
-    q: "Faut-il un budget pub en plus de la prestation ?",
-    a: "Oui, ce sont deux postes distincts : nos honoraires de gestion (chiffrés sur devis après votre audit gratuit) et le budget publicitaire versé directement à Meta. Pour ce dernier, une fourchette de 200 à 500 €/mois est recommandée pour une PME afin d'alimenter correctement l'algorithme et obtenir des données exploitables (source : Effinity 2026). On définit ensemble ce qui est réaliste pour votre zone.",
+    q: "Les évolutions réglementaires impactent-elles vos campagnes ?",
+    a: "On construit les campagnes sur des bénéfices durables — économies sur facture, confort thermique, valorisation du bien — plutôt que sur une prime ou un taux de TVA précis qui peut changer. Quand une aide évolue, on ajuste le message rapidement ; le flux de leads, lui, ne s'effondre pas avec une réforme. C'est un choix assumé pour vous rendre moins dépendant des à-coups réglementaires.",
   },
   {
     q: "Travaillez-vous dans toute la France ?",
-    a: "Oui. Nos campagnes s'adressent aux installateurs photovoltaïque RGE partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise. Et avec la formule Domination, nous pouvons travailler en exclusivité sur votre département, sous réserve de disponibilité.",
+    a: "Oui. Nos campagnes s'adressent aux installateurs énergie RGE partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise.",
+  },
+  {
+    q: "Puis-je travailler avec vous sur les deux niches ?",
+    a: "Oui. Beaucoup d'installateurs proposent à la fois le photovoltaïque et la pompe à chaleur. On peut construire des campagnes distinctes pour chaque activité, avec des audiences et des messages propres, ou une stratégie combinée selon votre positionnement. On en discute lors de l'audit pour définir la meilleure approche.",
   },
 ];
 

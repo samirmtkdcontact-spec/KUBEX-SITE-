@@ -4,11 +4,12 @@ import { FormEvent, useState } from "react";
 import Reveal from "./Reveal";
 
 type Fields = {
-  nom: string;
   prenom: string;
+  nom: string;
   email: string;
   telephone: string;
-  metier: string;
+  niche: string;
+  statut: string;
   departement: string;
   message: string;
 };
@@ -16,19 +17,28 @@ type Fields = {
 type Errors = Partial<Record<keyof Fields, string>>;
 
 const empty: Fields = {
-  nom: "",
   prenom: "",
+  nom: "",
   email: "",
   telephone: "",
-  metier: "",
+  niche: "",
+  statut: "",
   departement: "",
   message: "",
 };
 
+const niches = ["Photovoltaïque", "Pompe à chaleur", "Les deux"];
+const statuts = [
+  "Artisan indépendant",
+  "PME (2-10 salariés)",
+  "Multi-spécialiste énergie",
+  "Autre",
+];
+
 function validate(values: Fields): Errors {
   const errors: Errors = {};
-  if (!values.nom.trim()) errors.nom = "Le nom est requis.";
   if (!values.prenom.trim()) errors.prenom = "Le prénom est requis.";
+  if (!values.nom.trim()) errors.nom = "Le nom est requis.";
 
   if (!values.email.trim()) {
     errors.email = "L'email est requis.";
@@ -42,7 +52,8 @@ function validate(values: Fields): Errors {
     errors.telephone = "Numéro de téléphone invalide.";
   }
 
-  if (!values.metier.trim()) errors.metier = "Indiquez votre métier.";
+  if (!values.niche) errors.niche = "Choisissez une spécialité.";
+  if (!values.statut) errors.statut = "Choisissez votre statut.";
 
   if (!values.departement.trim()) {
     errors.departement = "Le département est requis.";
@@ -50,7 +61,6 @@ function validate(values: Fields): Errors {
     errors.departement = "Ex. : 75, 33, 2A…";
   }
 
-  if (!values.message.trim()) errors.message = "Décrivez votre besoin.";
   return errors;
 }
 
@@ -103,18 +113,17 @@ export default function Contact() {
               Audit gratuit
             </span>
             <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Parlons de votre carnet de commandes
+              Réservez votre audit gratuit — 30 minutes.
             </h2>
             <p className="mt-4 text-lg text-white/65">
-              Remplissez ce formulaire et on revient vers vous pour un échange
-              sans engagement. On regarde ensemble votre zone, le potentiel de
-              propriétaires à capter et ce que Meta Ads peut — ou ne peut pas —
-              vous apporter en leads.
+              Gratuit, sans engagement, sans pression. On analyse votre
+              situation et votre potentiel sur Meta Ads avant de vous proposer
+              quoi que ce soit.
             </p>
             <ul className="mt-7 space-y-3 text-sm text-white/70">
               <li>· Réponse honnête, même si Meta Ads n'est pas pour vous</li>
               <li>· Aucune obligation, aucun engagement</li>
-              <li>· Estimation du potentiel de leads sur votre secteur</li>
+              <li>· Estimation de votre potentiel de leads par niche</li>
             </ul>
           </Reveal>
 
@@ -228,50 +237,74 @@ export default function Contact() {
 
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div>
-                      <label htmlFor="metier" className="mb-1.5 block text-sm font-medium">
-                        Métier
+                      <label htmlFor="niche" className="mb-1.5 block text-sm font-medium">
+                        Spécialité
                       </label>
-                      <input
-                        id="metier"
-                        type="text"
-                        list="metiers"
-                        placeholder="Installateur photovoltaïque…"
-                        value={values.metier}
-                        onChange={(e) => update("metier", e.target.value)}
-                        className={`${fieldBase} ${border("metier")}`}
-                      />
-                      <datalist id="metiers">
-                        <option value="Installateur photovoltaïque indépendant" />
-                        <option value="Entreprise PV (2-10 salariés)" />
-                        <option value="Multi-spécialiste énergie" />
-                        <option value="Autre" />
-                      </datalist>
-                      {errors.metier && (
-                        <p className="mt-1 text-xs text-red-500">{errors.metier}</p>
+                      <select
+                        id="niche"
+                        value={values.niche}
+                        onChange={(e) => update("niche", e.target.value)}
+                        className={`${fieldBase} ${border("niche")}`}
+                      >
+                        <option value="" disabled>
+                          Choisir…
+                        </option>
+                        {niches.map((n) => (
+                          <option key={n} value={n}>
+                            {n}
+                          </option>
+                        ))}
+                      </select>
+                      {errors.niche && (
+                        <p className="mt-1 text-xs text-red-500">{errors.niche}</p>
                       )}
                     </div>
                     <div>
-                      <label htmlFor="departement" className="mb-1.5 block text-sm font-medium">
-                        Département
+                      <label htmlFor="statut" className="mb-1.5 block text-sm font-medium">
+                        Statut
                       </label>
-                      <input
-                        id="departement"
-                        type="text"
-                        inputMode="numeric"
-                        placeholder="75, 33, 2A…"
-                        value={values.departement}
-                        onChange={(e) => update("departement", e.target.value)}
-                        className={`${fieldBase} ${border("departement")}`}
-                      />
-                      {errors.departement && (
-                        <p className="mt-1 text-xs text-red-500">{errors.departement}</p>
+                      <select
+                        id="statut"
+                        value={values.statut}
+                        onChange={(e) => update("statut", e.target.value)}
+                        className={`${fieldBase} ${border("statut")}`}
+                      >
+                        <option value="" disabled>
+                          Choisir…
+                        </option>
+                        {statuts.map((s) => (
+                          <option key={s} value={s}>
+                            {s}
+                          </option>
+                        ))}
+                      </select>
+                      {errors.statut && (
+                        <p className="mt-1 text-xs text-red-500">{errors.statut}</p>
                       )}
                     </div>
                   </div>
 
                   <div>
+                    <label htmlFor="departement" className="mb-1.5 block text-sm font-medium">
+                      Département
+                    </label>
+                    <input
+                      id="departement"
+                      type="text"
+                      inputMode="numeric"
+                      placeholder="75, 33, 2A…"
+                      value={values.departement}
+                      onChange={(e) => update("departement", e.target.value)}
+                      className={`${fieldBase} ${border("departement")}`}
+                    />
+                    {errors.departement && (
+                      <p className="mt-1 text-xs text-red-500">{errors.departement}</p>
+                    )}
+                  </div>
+
+                  <div>
                     <label htmlFor="message" className="mb-1.5 block text-sm font-medium">
-                      Votre besoin
+                      Message <span className="text-kubex-ink/40">(optionnel)</span>
                     </label>
                     <textarea
                       id="message"
@@ -281,13 +314,10 @@ export default function Contact() {
                       onChange={(e) => update("message", e.target.value)}
                       className={`${fieldBase} resize-y ${border("message")}`}
                     />
-                    {errors.message && (
-                      <p className="mt-1 text-xs text-red-500">{errors.message}</p>
-                    )}
                   </div>
 
                   <button type="submit" className="btn-primary w-full">
-                    Réserver mon audit gratuit
+                    Envoyer ma demande <span aria-hidden>→</span>
                   </button>
                   <p className="text-center text-xs text-kubex-ink/45">
                     En envoyant ce formulaire, vous acceptez d'être recontacté

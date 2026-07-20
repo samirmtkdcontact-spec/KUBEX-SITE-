@@ -1,60 +1,79 @@
 # KUBEX — Site vitrine
 
-Site vitrine de **KUBEX**, agence Meta Ads spécialisée dans la génération de
-**leads de propriétaires qualifiés en continu pour les installateurs
-photovoltaïque RGE QualiPV** (résidentiel et petit tertiaire).
+Site vitrine de **KUBEX**, agence Meta Ads à **double spécialisation** :
+**photovoltaïque (PV)** et **pompe à chaleur (PAC)**. Un seul site premium, deux
+sections marché distinctes, chacune avec son univers visuel, ses données et sa
+proposition de valeur.
 
 Construit avec **Next.js 14 (App Router)**, **TypeScript** et **Tailwind CSS**.
 Prêt à déployer sur **Vercel**.
 
 ## Positionnement
 
-- **Cible** : installateurs photovoltaïque RGE QualiPV (résidentiel et petit
-  tertiaire).
-- **Problème** : marché en croissance record mais instable réglementairement —
-  les installateurs sans flux régulier de leads subissent de plein fouet chaque
-  changement de prime ou de TVA.
-- **Solution** : des campagnes Meta Ads ciblées pour générer des leads de
-  propriétaires qualifiés en continu, indépendamment des aides du moment.
-- **Angle** : on ne bâtit pas les campagnes sur une aide qui peut changer, mais
-  sur des bénéfices durables (économies, autoconsommation, valorisation). La
-  certification RGE QualiPV est une barrière à l'entrée (contrat EDF OA, TVA
-  réduite) que les non-certifiés ne peuvent pas franchir.
+- **Cible** : installateurs photovoltaïques et poseurs de pompes à chaleur RGE
+  (résidentiel et petit tertiaire).
+- **Problème** : deux marchés en forte expansion mais dépendants d'aides et de
+  réglementations mouvantes ; sans flux régulier de leads, chaque évolution
+  fragilise l'activité.
+- **Solution** : des campagnes Meta Ads ciblées, taillées par métier et par
+  zone, pour générer des leads de propriétaires qualifiés.
 
 ## Principes du contenu
 
 Le site ne contient **aucun faux témoignage, aucune fausse preuve sociale et
-aucun chiffre client inventé**. Les preuves sociales sont remplacées par des
-**données réelles et sourcées** sur le marché du photovoltaïque et Meta :
+aucun chiffre client inventé** ; il ne mentionne jamais Facebook (uniquement
+« Meta Ads ») et **n'affiche aucun tarif** (communiqués lors de l'audit). Les
+preuves sociales sont remplacées par des **données réelles et sourcées**,
+affichées avec leur source et un contexte au survol (tooltip).
+
+### Photovoltaïque
 
 | Donnée | Source |
 | --- | --- |
-| 5,9 GW installés en 2025 — record historique en France | Hellowatt / panneau-solaire.net, jan. 2026 |
-| 1 298 633 installations PV raccordées au T1 2026 | SDES / Enedis via ECOinfos, 2026 |
-| 31 565 nouvelles installations raccordées au T1 2026 | les-energies-renouvelables.eu, juin 2026 |
-| Croissance : 32,9 GW (2026) → 78,1 GW (2031), TCAC 18,84 % | Mordor Intelligence, 2026 |
-| 13 % des nouvelles installations intègrent un stockage | Hellowatt, jan. 2026 |
-| 60 000 artisans touchés par les réformes de 2025 | ECOinfos, 2026 |
-| TVA réduite à 5,5 % pour les installations ≤ 9 kWc (oct. 2025) | Helios Solaire, 2026 |
-| 800 à 1 100 €/an d'économies (20 000 à 30 000 € sur 25 ans) | Helios Solaire, 2026 |
-| RGE QualiPV obligatoire (contrat EDF OA, TVA réduite) | GridLabs / fournisseurs-electricite.com, 2026 |
-| 48,7 M d'utilisateurs Facebook en France | NapoleonCat, déc. 2025 |
-| 9,2 % de taux de conversion moyen des annonces Facebook | SQ Magazine 2025 |
-| Budget Meta Ads recommandé PME : 200–500 €/mois | Effinity 2026 |
+| 5,9 GW installés en 2025 — record historique | Hellowatt / SDES, jan. 2026 |
+| 1 298 633 installations raccordées au T1 2026 | SDES / Enedis, ECOinfos 2026 |
+| Croissance projetée +18,84 %/an jusqu'en 2031 | Mordor Intelligence, 2026 |
+| 800 à 1 100 €/an d'économies pour un foyer moyen | Helios Solaire, 2026 |
+| 13 % des nouvelles installations avec stockage | Hellowatt, jan. 2026 |
+| 60 000 artisans RGE spécialisés en résidentiel | ECOinfos, 2026 |
+
+### Pompe à chaleur
+
+| Donnée | Source |
+| --- | --- |
+| +11 % de ventes PAC en Europe en 2025 | EHPA, 2025 |
+| Ventes PAC ×2 en France depuis oct. 2025 | Hello Watt / Révolution Énergétique, déc. 2025 |
+| Jusqu'à 10 800 € d'aides cumulables (PAC air-eau) | ANAH / Idéal Système, 2026 |
+| 3,6 Mds € budget MaPrimeRénov' 2026 | ANAH, fév. 2026 |
+| Objectif 1 M de PAC/an d'ici 2027 | Plan PAC, economie.gouv.fr |
+| 49 % des artisans PAC : < 3 mois de visibilité | CAPEB, 2025 |
 
 Les chiffres sont centralisés dans [`lib/data.ts`](./lib/data.ts).
 
 ## Sections
 
 1. Nav fixe (logo SVG + liens + CTA, backdrop-blur au scroll)
-2. Hero + bloc « Pourquoi Meta Ads ? »
-3. Le contexte (data marché BTP & Meta)
-4. Le système KUBE (Audit → Ciblage → Création → Optimisation)
-5. Ce qu'on fait / ne fait pas (honnêteté)
-6. Offres (Lancement / Croissance / Domination)
-7. FAQ (accordéon)
-8. Formulaire de contact (validation côté client + confirmation)
-9. Footer (mentions légales)
+2. Hero global (double niche PV + PAC)
+3. Section marché **photovoltaïque** (image de fond + 6 data cards à tooltip)
+4. Section marché **pompe à chaleur** (image de fond + 6 data cards à tooltip)
+5. Le Système Kube (Audit → Ciblage → Création → Optimisation)
+6. Honnêteté (ce qu'on promet / ne promet pas)
+7. Processus (timeline audit → premier lead, remplace les offres/tarifs)
+8. FAQ (accordéon animé)
+9. Formulaire de contact (niche + statut, validation client + confirmation)
+
+Footer, écran d'intro animé, fond animé (orbes) et bandeaux défilants (marquee)
+complètent l'expérience.
+
+## Animations
+
+- **Écran d'intro** plein écran au chargement (logo → « KUBEX » lettre par
+  lettre → tagline `PHOTOVOLTAÏQUE · POMPE À CHALEUR`), puis fade out.
+- **Fond animé** global : base `#EAF7FF` + 3 orbes de lumière en boucle infinie.
+- **Bandeaux défilants** (marquee) PV et PAC entre les sections.
+- **Scroll reveal** sur les titres, cards et étapes (IntersectionObserver).
+- **Tooltips** interactifs au survol de chaque data card.
+- Toutes les animations en **CSS keyframes**, `prefers-reduced-motion` respecté.
 
 ## Démarrer
 

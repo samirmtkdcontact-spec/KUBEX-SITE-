@@ -6,10 +6,10 @@ const WORD = "KUBEX";
 
 /**
  * Écran d'intro plein écran joué au chargement de la page.
- * - Phase 1 (0–0.6s) : le carré logo apparaît en scale 0.3 → 1 + glow bleu
- * - Phase 2 (0.6–1.2s) : « KUBEX » s'écrit lettre par lettre (stagger 80ms)
- * - Phase 3 (1.2–1.8s) : « AGENCE META ADS » apparaît en fade
- * - À 2.0s : fade out + translation -20px (400ms), puis retrait du DOM
+ * - Phase 1 (0–0.7s) : le carré logo apparaît en scale 0.2 → 1 + glow bleu
+ * - Phase 2 (0.7–1.4s) : « KUBEX » s'écrit lettre par lettre (stagger 80ms)
+ * - Phase 3 (1.4–2.0s) : « PHOTOVOLTAÏQUE · POMPE À CHALEUR » apparaît en fade
+ * - À 2.2s : fade out + translation -20px (400ms), puis retrait du DOM
  *
  * Les animations sont en CSS keyframes (voir globals.css). Le JS ne gère que
  * le séquencement de sortie et le démontage. prefers-reduced-motion masque
@@ -29,8 +29,8 @@ export default function IntroScreen() {
       return;
     }
 
-    const leaveTimer = setTimeout(() => setLeaving(true), 2000);
-    const doneTimer = setTimeout(() => setDone(true), 2400);
+    const leaveTimer = setTimeout(() => setLeaving(true), 2200);
+    const doneTimer = setTimeout(() => setDone(true), 2600);
     return () => {
       clearTimeout(leaveTimer);
       clearTimeout(doneTimer);
@@ -49,8 +49,8 @@ export default function IntroScreen() {
         <span className="intro-glow" />
         <svg
           className="intro-logo"
-          width={108}
-          height={108}
+          width={116}
+          height={116}
           viewBox="0 0 48 48"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -80,14 +80,14 @@ export default function IntroScreen() {
           <span
             key={`${letter}-${i}`}
             className="intro-letter"
-            style={{ animationDelay: `${600 + i * 80}ms` }}
+            style={{ animationDelay: `${700 + i * 80}ms` }}
           >
             {letter}
           </span>
         ))}
       </div>
 
-      <p className="intro-tagline mt-5">AGENCE META ADS</p>
+      <p className="intro-tagline mt-5">PHOTOVOLTAÏQUE · POMPE À CHALEUR</p>
     </div>
   );
 }
