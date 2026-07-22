@@ -375,6 +375,16 @@
   }
 }
 
+/* Accent de bordure gauche des sections (animé au scroll reveal) */
+.section-accent {
+  border-left: 3px solid transparent;
+  transition: border-left-color 0.8s ease;
+}
+
+.section-accent-on {
+  border-left-color: rgba(0, 150, 214, 0.4);
+}
+
 /* Checkmark de confirmation — apparition en scale 0 → 1 */
 .success-check {
   animation: success-pop 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;

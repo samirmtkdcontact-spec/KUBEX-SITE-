@@ -3,6 +3,8 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import IntroScreen from "@/components/IntroScreen";
+import ScrollProgress from "@/components/ScrollProgress";
+import SectionAccents from "@/components/SectionAccents";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -48,6 +50,8 @@ export default function RootLayout({
     <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body>
         <AnimatedBackground />
+        <ScrollProgress />
+        <SectionAccents />
         <IntroScreen />
         {children}
       </body>

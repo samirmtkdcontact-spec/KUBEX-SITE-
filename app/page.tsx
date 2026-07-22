@@ -5,6 +5,7 @@ import MarketSection from "@/components/MarketSection";
 import System from "@/components/System";
 import DoDont from "@/components/DoDont";
 import WhyKubex from "@/components/WhyKubex";
+import WaveDivider from "@/components/WaveDivider";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -61,8 +62,11 @@ export default function Home() {
         />
 
         <System />
+        <WaveDivider />
         <DoDont />
+        <WaveDivider flip />
         <WhyKubex />
+        <WaveDivider />
         <FAQ />
         <Contact />
       </main>
