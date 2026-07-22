@@ -9,8 +9,13 @@ export default function Hero() {
       {/* Fond animé du Hero : bandes horizontales « KUBEX » + 3 orbes de lumière */}
       <div className="hero-bg" aria-hidden>
         <div className="hero-bands">
-          {Array.from({ length: 22 }).map((_, row) => (
-            <div key={row} className="hero-band">
+          {Array.from({ length: 26 }).map((_, row) => (
+            <div
+              key={row}
+              className={`hero-band ${
+                row % 2 === 0 ? "hero-band--odd" : "hero-band--even"
+              }`}
+            >
               {/* Deux copies identiques pour un défilement sans couture (-50%) */}
               {Array.from({ length: 28 }).map((__, w) => (
                 <span key={w} className="hero-band-word">
