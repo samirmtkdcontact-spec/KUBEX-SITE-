@@ -143,7 +143,6 @@ export default function Contact() {
             <ul className="mt-7 space-y-3 text-sm text-white/70">
               <li>· Réponse honnête, même si Meta Ads n'est pas pour vous</li>
               <li>· Aucune obligation, aucun engagement</li>
-              <li>· Estimation de votre potentiel de leads par niche</li>
             </ul>
           </Reveal>
 
