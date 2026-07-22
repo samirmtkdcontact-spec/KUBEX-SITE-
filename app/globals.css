@@ -149,8 +149,8 @@
     z-index: -1;
     overflow: hidden;
     pointer-events: none;
-    /* Base propre : dégradé vertical très léger, quasi blanc bleuté */
-    background: linear-gradient(180deg, #f0f8ff 0%, #e8f4ff 100%);
+    /* Fond uniforme identique au reste du site — aucune coupure de teinte */
+    background: #eaf7ff;
   }
 
   /* Bandes diagonales animées contenant « KUBEX » répété (teintes du logo) */
@@ -181,17 +181,9 @@
     font-size: 13px;
     letter-spacing: 0.35em;
     text-transform: uppercase;
-  }
-
-  /* Teintes exactes du logo KUBEX (hex + opacity séparée) */
-  .hero-band--odd .hero-band-word {
-    color: #0096d6; /* bleu clair du logo */
-    opacity: 0.35;
-  }
-
-  .hero-band--even .hero-band-word {
-    color: #004f8c; /* bleu navy du logo */
-    opacity: 0.25;
+    /* Teinte unique du logo KUBEX — identique partout, sans alternance */
+    color: #0096d6;
+    opacity: 0.4;
   }
 
   .hero-orb {
