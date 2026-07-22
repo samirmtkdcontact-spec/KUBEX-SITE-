@@ -52,12 +52,12 @@ export default function NicheBanner() {
       <div className="container-kubex flex h-14 items-center justify-between gap-3">
         <div className="flex items-center gap-3 overflow-x-auto sm:gap-5">
           <div className="flex items-center gap-2 whitespace-nowrap">
-            <span aria-hidden>☀️</span>
+            <span aria-hidden>🔥</span>
             <span className="text-sm font-medium text-kubex-ink">
-              Photovoltaïque
+              Pompe à chaleur
             </span>
             <a
-              href="#section-pv"
+              href="#section-pac"
               onClick={dismiss}
               className="text-sm font-semibold text-kubex-accent hover:text-kubex-to"
             >
@@ -68,12 +68,12 @@ export default function NicheBanner() {
           <span className="h-5 w-px flex-none bg-kubex-ink/15" aria-hidden />
 
           <div className="flex items-center gap-2 whitespace-nowrap">
-            <span aria-hidden>🔥</span>
+            <span aria-hidden>☀️</span>
             <span className="text-sm font-medium text-kubex-ink">
-              Pompe à chaleur
+              Photovoltaïque
             </span>
             <a
-              href="#section-pac"
+              href="#section-pv"
               onClick={dismiss}
               className="text-sm font-semibold text-kubex-accent hover:text-kubex-to"
             >

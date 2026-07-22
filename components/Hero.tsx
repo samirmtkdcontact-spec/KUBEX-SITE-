@@ -6,9 +6,20 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden pt-32 pb-20 sm:pt-36 sm:pb-24"
     >
-      {/* Fond animé du Hero : grille de points + 3 orbes de lumière */}
+      {/* Fond animé du Hero : bandes diagonales « KUBEX » + 3 orbes de lumière */}
       <div className="hero-bg" aria-hidden>
-        <div className="hero-dots" />
+        <div className="hero-bands">
+          {Array.from({ length: 30 }).map((_, i) => (
+            <div
+              key={i}
+              className={`hero-band ${i % 2 === 1 ? "hero-band--tinted" : ""}`}
+            >
+              {Array.from({ length: 30 })
+                .map(() => "KUBEX")
+                .join("  ")}
+            </div>
+          ))}
+        </div>
         <div className="hero-orb hero-orb--1" />
         <div className="hero-orb hero-orb--2" />
         <div className="hero-orb hero-orb--3" />

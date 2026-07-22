@@ -24,10 +24,6 @@ const faqs = [
     q: "Travaillez-vous dans toute la France ?",
     a: "Oui. Nos campagnes s'adressent aux installateurs énergie RGE partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise.",
   },
-  {
-    q: "Puis-je travailler avec vous sur les deux niches ?",
-    a: "Oui. Beaucoup d'installateurs proposent à la fois le photovoltaïque et la pompe à chaleur. On peut construire des campagnes distinctes pour chaque activité, avec des audiences et des messages propres, ou une stratégie combinée selon votre positionnement. On en discute lors de l'audit pour définir la meilleure approche.",
-  },
 ];
 
 function AccordionItem({ q, a }: { q: string; a: string }) {
@@ -74,7 +70,7 @@ export default function FAQ() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">FAQ</span>
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-kubex-ink sm:text-4xl">
-            Les questions qu'on nous pose
+            Ce que vous devez savoir avant de commencer
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
             Des réponses directes, sans langue de bois.

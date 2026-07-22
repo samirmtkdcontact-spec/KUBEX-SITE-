@@ -96,16 +96,6 @@ export default function NicheChoice() {
         <Reveal>
           <div className="grid gap-6 md:grid-cols-2">
             <NicheCard
-              href="#section-pv"
-              background="linear-gradient(135deg, #00B4FF 0%, #003F5C 100%)"
-              icon={<SunIcon />}
-              title="Photovoltaïque"
-              subtitle="Installateurs RGE QualiPV"
-              stat="5,9 GW installés en 2025"
-              cta="Voir le marché PV"
-              shadow="hover:shadow-[0_28px_70px_-20px_rgba(0,180,255,0.6)]"
-            />
-            <NicheCard
               href="#section-pac"
               background="linear-gradient(135deg, #003F5C 0%, #001A2E 100%)"
               icon={<FlameIcon />}
@@ -114,6 +104,16 @@ export default function NicheChoice() {
               stat="10 800 € d'aides cumulables"
               cta="Voir le marché PAC"
               shadow="hover:shadow-[0_28px_70px_-20px_rgba(0,63,92,0.7)]"
+            />
+            <NicheCard
+              href="#section-pv"
+              background="linear-gradient(135deg, #00B4FF 0%, #003F5C 100%)"
+              icon={<SunIcon />}
+              title="Photovoltaïque"
+              subtitle="Installateurs RGE QualiPV"
+              stat="5,9 GW installés en 2025"
+              cta="Voir le marché PV"
+              shadow="hover:shadow-[0_28px_70px_-20px_rgba(0,180,255,0.6)]"
             />
           </div>
         </Reveal>

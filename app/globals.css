@@ -151,22 +151,34 @@
     pointer-events: none;
   }
 
-  /* Grille de points subtile, estompée sur les bords via un masque radial */
-  .hero-dots {
+  /* Bandes diagonales animées contenant « KUBEX » répété */
+  .hero-bands {
     position: absolute;
-    inset: 0;
-    background-image: radial-gradient(
-      rgba(0, 63, 92, 0.5) 1px,
-      transparent 1px
-    );
-    background-size: 26px 26px;
-    opacity: 0.04;
-    -webkit-mask-image: radial-gradient(
-      ellipse at center,
-      #000 0%,
-      transparent 72%
-    );
-    mask-image: radial-gradient(ellipse at center, #000 0%, transparent 72%);
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotate(-30deg);
+    animation: hero-bands-move 30s linear infinite;
+  }
+
+  .hero-band {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    line-height: 2.4;
+    padding: 6px 0;
+    color: rgba(0, 100, 180, 0.08);
+  }
+
+  .hero-band--tinted {
+    background: rgba(0, 180, 255, 0.06);
   }
 
   .hero-orb {
@@ -182,7 +194,7 @@
     right: -220px;
     background: radial-gradient(
       circle,
-      rgba(0, 180, 255, 0.12) 0%,
+      rgba(0, 180, 255, 0.09) 0%,
       rgba(0, 180, 255, 0) 70%
     );
     animation: orb-float-1 20s ease-in-out infinite alternate;
@@ -195,7 +207,7 @@
     left: -180px;
     background: radial-gradient(
       circle,
-      rgba(0, 63, 92, 0.09) 0%,
+      rgba(0, 63, 92, 0.07) 0%,
       rgba(0, 63, 92, 0) 70%
     );
     animation: orb-float-2 25s ease-in-out -7s infinite alternate;
@@ -208,10 +220,19 @@
     right: 8%;
     background: radial-gradient(
       circle,
-      rgba(0, 180, 255, 0.06) 0%,
+      rgba(0, 180, 255, 0.045) 0%,
       rgba(0, 180, 255, 0) 70%
     );
     animation: orb-float-3 17s ease-in-out -3s infinite alternate;
+  }
+}
+
+@keyframes hero-bands-move {
+  from {
+    transform: rotate(-30deg) translateX(0);
+  }
+  to {
+    transform: rotate(-30deg) translateX(180px);
   }
 }
 
@@ -384,6 +405,7 @@
   .hero-orb--1,
   .hero-orb--2,
   .hero-orb--3,
+  .hero-bands,
   .marquee__track--left,
   .marquee__track--right {
     animation: none;

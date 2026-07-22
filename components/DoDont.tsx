@@ -1,25 +1,23 @@
 import Reveal from "./Reveal";
 
 const promises = [
-  "Construire des campagnes Meta Ads sérieuses",
-  "Vous fournir des leads qualifiés (pas du volume vide)",
-  "Vous accompagner avec transparence et données réelles",
-  "Adapter la stratégie si les résultats ne sont pas là",
-  "Ne jamais inventer de chiffres pour vous convaincre",
+  "Construire des campagnes Meta Ads sérieuses et adaptées à votre secteur",
+  "Vous accompagner avec des données réelles et vérifiées",
+  "Être transparents sur les performances, semaine après semaine",
+  "Ajuster la stratégie si les résultats ne sont pas au rendez-vous",
 ];
 
 const noPromises = [
-  "Un nombre garanti de leads par mois",
-  "Un ROAS précis à l'avance",
-  "De remplacer votre force commerciale",
-  "Des résultats identiques à un autre client",
-  "L'invulnérabilité aux changements réglementaires",
+  "Un volume de leads garanti chaque mois",
+  "Des résultats identiques d'un client à l'autre",
+  "Une solution miracle aux turbulences réglementaires du secteur",
+  "Un remplacement de votre force commerciale",
 ];
 
 function Check() {
   return (
     <svg
-      className="mt-0.5 h-5 w-5 flex-none text-kubex-accent"
+      className="mt-0.5 h-5 w-5 flex-none text-emerald-500"
       viewBox="0 0 20 20"
       fill="currentColor"
       aria-hidden
@@ -36,7 +34,7 @@ function Check() {
 function Cross() {
   return (
     <svg
-      className="mt-0.5 h-5 w-5 flex-none text-kubex-ink/40"
+      className="mt-0.5 h-5 w-5 flex-none text-kubex-ink/35"
       viewBox="0 0 20 20"
       fill="currentColor"
       aria-hidden
@@ -55,23 +53,21 @@ export default function DoDont() {
     <section id="honnetete" className="py-24 sm:py-32">
       <div className="container-kubex">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">Ce qu'on promet et ce qu'on ne promet pas</span>
+          <span className="eyebrow">Notre engagement</span>
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-kubex-ink sm:text-4xl">
-            Une agence qui dit la <span className="gradient-text">vérité</span>.
+            Notre engagement envers <span className="gradient-text">vous</span>.
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Le marketing pour installateurs énergie est plein de promesses
-            creuses — « 30 leads garantis par mois ». Notre crédibilité, c'est
-            justement de vous dire la vérité, y compris quand elle n'est pas
-            vendeuse.
+            Nous préférons être clairs dès le départ plutôt que de promettre ce
+            que nous ne pouvons pas garantir.
           </p>
         </Reveal>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           <Reveal>
-            <div className="h-full rounded-2xl border border-kubex-accent/30 bg-kubex-light/70 p-7">
+            <div className="h-full rounded-2xl border border-emerald-500/25 bg-kubex-light/70 p-7">
               <h3 className="font-display text-xl font-bold text-kubex-to">
-                On s'engage à
+                Nos engagements
               </h3>
               <ul className="mt-5 space-y-3.5">
                 {promises.map((item) => (
@@ -87,7 +83,7 @@ export default function DoDont() {
           <Reveal delay={100}>
             <div className="h-full rounded-2xl border border-kubex-ink/10 bg-white p-7">
               <h3 className="font-display text-xl font-bold text-kubex-ink/70">
-                On ne promet pas
+                Ce que nous ne promettons pas
               </h3>
               <ul className="mt-5 space-y-3.5">
                 {noPromises.map((item) => (

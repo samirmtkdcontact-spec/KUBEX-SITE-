@@ -2,13 +2,6 @@ import Logo from "./Logo";
 
 const columns: { title: string; links: { href: string; label: string }[] }[] = [
   {
-    title: "Photovoltaïque",
-    links: [
-      { href: "#section-pv", label: "Le marché PV" },
-      { href: "#contact", label: "Générer des leads PV" },
-    ],
-  },
-  {
     title: "Pompe à chaleur",
     links: [
       { href: "#section-pac", label: "Le marché PAC" },
@@ -16,11 +9,18 @@ const columns: { title: string; links: { href: string; label: string }[] }[] = [
     ],
   },
   {
+    title: "Photovoltaïque",
+    links: [
+      { href: "#section-pv", label: "Le marché PV" },
+      { href: "#contact", label: "Générer des leads PV" },
+    ],
+  },
+  {
     title: "Méthode",
     links: [
       { href: "#systeme", label: "Le Système Kube" },
       { href: "#honnetete", label: "Honnêteté" },
-      { href: "#processus", label: "Comment ça se passe" },
+      { href: "#pourquoi", label: "Pourquoi KUBEX" },
     ],
   },
   {
