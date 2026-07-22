@@ -151,34 +151,30 @@
     pointer-events: none;
   }
 
-  /* Bandes diagonales animées contenant « KUBEX » répété */
+  /* Bandes horizontales animées contenant « KUBEX » répété */
   .hero-bands {
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    inset: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: rotate(-30deg);
-    animation: hero-bands-move 30s linear infinite;
+    gap: 18px;
   }
 
   .hero-band {
+    width: max-content;
     white-space: nowrap;
-    overflow: hidden;
-    font-family: var(--font-space-grotesk), system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.3em;
-    line-height: 2.4;
-    padding: 6px 0;
-    color: rgba(0, 100, 180, 0.08);
+    animation: hero-bands-move 30s linear infinite;
   }
 
-  .hero-band--tinted {
-    background: rgba(0, 180, 255, 0.06);
+  .hero-band-word {
+    display: inline-block;
+    margin-right: 80px;
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.35em;
+    color: rgba(0, 180, 255, 0.22);
   }
 
   .hero-orb {
@@ -229,10 +225,10 @@
 
 @keyframes hero-bands-move {
   from {
-    transform: rotate(-30deg) translateX(0);
+    transform: translateX(0);
   }
   to {
-    transform: rotate(-30deg) translateX(180px);
+    transform: translateX(-50%);
   }
 }
 
@@ -405,7 +401,7 @@
   .hero-orb--1,
   .hero-orb--2,
   .hero-orb--3,
-  .hero-bands,
+  .hero-band,
   .marquee__track--left,
   .marquee__track--right {
     animation: none;

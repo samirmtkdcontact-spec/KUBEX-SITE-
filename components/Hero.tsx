@@ -6,17 +6,17 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden pt-32 pb-20 sm:pt-36 sm:pb-24"
     >
-      {/* Fond animé du Hero : bandes diagonales « KUBEX » + 3 orbes de lumière */}
+      {/* Fond animé du Hero : bandes horizontales « KUBEX » + 3 orbes de lumière */}
       <div className="hero-bg" aria-hidden>
         <div className="hero-bands">
-          {Array.from({ length: 30 }).map((_, i) => (
-            <div
-              key={i}
-              className={`hero-band ${i % 2 === 1 ? "hero-band--tinted" : ""}`}
-            >
-              {Array.from({ length: 30 })
-                .map(() => "KUBEX")
-                .join("  ")}
+          {Array.from({ length: 22 }).map((_, row) => (
+            <div key={row} className="hero-band">
+              {/* Deux copies identiques pour un défilement sans couture (-50%) */}
+              {Array.from({ length: 28 }).map((__, w) => (
+                <span key={w} className="hero-band-word">
+                  KUBEX
+                </span>
+              ))}
             </div>
           ))}
         </div>
