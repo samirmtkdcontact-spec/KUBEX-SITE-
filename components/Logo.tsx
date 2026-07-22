@@ -4,6 +4,8 @@ type LogoProps = {
   /** Affiche le mot-symbole "KUBEX" à côté du carré */
   withWordmark?: boolean;
   className?: string;
+  /** Classe appliquée au mot-symbole (couleur) — sombre par défaut */
+  wordmarkClassName?: string;
 };
 
 /**
@@ -14,6 +16,7 @@ export default function Logo({
   size = 40,
   withWordmark = true,
   className = "",
+  wordmarkClassName = "text-kubex-ink",
 }: LogoProps) {
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
@@ -45,7 +48,9 @@ export default function Logo({
         />
       </svg>
       {withWordmark && (
-        <span className="font-display text-xl font-bold tracking-tight text-kubex-ink">
+        <span
+          className={`font-display text-xl font-bold tracking-tight ${wordmarkClassName}`}
+        >
           KUBEX
         </span>
       )}

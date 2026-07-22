@@ -22,17 +22,23 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Fond dégradé : opaque en haut de page, légèrement translucide au scroll
+  const background = scrolled
+    ? "linear-gradient(90deg, rgba(0,150,214,0.95) 0%, rgba(0,85,164,0.95) 50%, rgba(0,63,92,0.95) 100%)"
+    : "linear-gradient(90deg, #0096D6 0%, #0055A4 50%, #003F5C 100%)";
+
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur-md transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 backdrop-blur-md transition-all duration-300 ${
         scrolled
-          ? "border-b border-kubex-ink/10 shadow-sm"
+          ? "border-b border-white/10 shadow-sm"
           : "border-b border-transparent"
       }`}
+      style={{ background }}
     >
       <nav className="container-kubex flex h-16 items-center justify-between">
         <a href="#top" aria-label="Accueil KUBEX">
-          <Logo />
+          <Logo wordmarkClassName="text-white" />
         </a>
 
         <ul className="hidden items-center gap-7 md:flex">
@@ -40,7 +46,7 @@ export default function Nav() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-kubex-ink/70 transition-colors hover:text-kubex-accent"
+                className="text-sm font-medium text-white/90 underline-offset-4 transition-opacity hover:text-white hover:underline hover:opacity-100"
               >
                 {link.label}
               </a>
@@ -49,31 +55,34 @@ export default function Nav() {
         </ul>
 
         <div className="hidden md:block">
-          <a href="#contact" className="btn-primary !px-5 !py-2.5 text-sm">
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-[#0078C8] transition-colors duration-200 hover:bg-white/90"
+          >
             Réserver un audit gratuit
           </a>
         </div>
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-kubex-ink/10 md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/30 md:hidden"
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
           <span className="relative block h-4 w-5">
             <span
-              className={`absolute left-0 top-0 h-0.5 w-5 bg-kubex-ink transition-transform ${
+              className={`absolute left-0 top-0 h-0.5 w-5 bg-white transition-transform ${
                 open ? "translate-y-[7px] rotate-45" : ""
               }`}
             />
             <span
-              className={`absolute left-0 top-1/2 h-0.5 w-5 -translate-y-1/2 bg-kubex-ink transition-opacity ${
+              className={`absolute left-0 top-1/2 h-0.5 w-5 -translate-y-1/2 bg-white transition-opacity ${
                 open ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`absolute bottom-0 left-0 h-0.5 w-5 bg-kubex-ink transition-transform ${
+              className={`absolute bottom-0 left-0 h-0.5 w-5 bg-white transition-transform ${
                 open ? "-translate-y-[7px] -rotate-45" : ""
               }`}
             />
@@ -83,14 +92,14 @@ export default function Nav() {
 
       {/* Menu mobile */}
       {open && (
-        <div className="border-t border-kubex-ink/10 bg-white md:hidden">
+        <div className="border-t border-white/15 md:hidden" style={{ background }}>
           <ul className="container-kubex flex flex-col py-4">
             {links.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block py-3 text-base font-medium text-kubex-ink/80"
+                  className="block py-3 text-base font-medium text-white/90"
                 >
                   {link.label}
                 </a>
@@ -100,7 +109,7 @@ export default function Nav() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="btn-primary w-full"
+                className="inline-flex w-full items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-[#0078C8] transition-colors duration-200 hover:bg-white/90"
               >
                 Réserver un audit gratuit
               </a>
