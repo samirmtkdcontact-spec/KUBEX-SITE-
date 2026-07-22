@@ -45,7 +45,7 @@ export default function Footer() {
             <p className="mt-2 text-sm leading-relaxed text-kubex-ink/60">
               Photovoltaïque et pompe à chaleur : on construit des campagnes
               Meta Ads ciblées pour générer des leads de propriétaires qualifiés,
-              avec une méthode claire et des promesses qu'on peut tenir.
+              avec une méthode claire et des engagements qu'on peut tenir.
             </p>
           </div>
 
