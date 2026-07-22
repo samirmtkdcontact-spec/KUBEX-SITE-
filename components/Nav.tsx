@@ -30,7 +30,9 @@ export default function Nav() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 backdrop-blur transition-all duration-300"
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled ? "backdrop-blur" : ""
+      }`}
       style={{ background }}
     >
       <nav className="container-kubex flex h-16 items-center justify-between">

@@ -77,7 +77,8 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-32 pb-16 sm:pt-36 sm:pb-20"
+      className="relative min-h-screen overflow-hidden pt-32 pb-16 sm:pt-36 sm:pb-20"
+      style={{ backgroundColor: "#003F5C" }}
     >
       {/* Fond animé du Hero : bandes « KUBEX » sur fond bleu logo + orbes */}
       <div className="hero-bg" aria-hidden>
