@@ -183,13 +183,15 @@
     text-transform: uppercase;
   }
 
-  /* Alternance des deux teintes exactes du logo pour la profondeur */
+  /* Teintes exactes du logo KUBEX (hex + opacity séparée) */
   .hero-band--odd .hero-band-word {
-    color: rgba(0, 170, 255, 0.18); /* bleu glacier #00AAFF */
+    color: #0096d6; /* bleu clair du logo */
+    opacity: 0.35;
   }
 
   .hero-band--even .hero-band-word {
-    color: rgba(0, 90, 158, 0.12); /* bleu navy #005A9E */
+    color: #004f8c; /* bleu navy du logo */
+    opacity: 0.25;
   }
 
   .hero-orb {
