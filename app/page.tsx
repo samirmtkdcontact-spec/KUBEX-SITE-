@@ -1,7 +1,5 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import NicheChoice from "@/components/NicheChoice";
-import NicheBanner from "@/components/NicheBanner";
 import Marquee from "@/components/Marquee";
 import MarketSection from "@/components/MarketSection";
 import System from "@/components/System";
@@ -23,13 +21,17 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <NicheChoice />
 
+        {/* Bloc continu des deux bandes défilantes (PAC ← / PV →) */}
         <Marquee
           items={pacMarquee}
-          direction="right"
-          gradient="pac"
+          direction="left"
           label="Repères marché pompe à chaleur"
+        />
+        <Marquee
+          items={pvMarquee}
+          direction="right"
+          label="Repères marché photovoltaïque"
         />
 
         <MarketSection
@@ -43,13 +45,6 @@ export default function Home() {
           cards={pacCards}
           ctaLabel="Générer des leads PAC"
           ctaHref="#contact"
-        />
-
-        <Marquee
-          items={pvMarquee}
-          direction="left"
-          gradient="pv"
-          label="Repères marché photovoltaïque"
         />
 
         <MarketSection
@@ -72,7 +67,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-      <NicheBanner />
     </>
   );
 }

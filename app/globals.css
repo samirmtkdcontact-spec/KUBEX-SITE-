@@ -149,8 +149,8 @@
     z-index: -1;
     overflow: hidden;
     pointer-events: none;
-    /* Fond uniforme identique au reste du site — aucune coupure de teinte */
-    background: #eaf7ff;
+    /* Fond bleu du logo KUBEX, uniforme sur tout le Hero */
+    background: #0078c8;
   }
 
   /* Bandes diagonales animées contenant « KUBEX » répété (teintes du logo) */
@@ -181,9 +181,9 @@
     font-size: 13px;
     letter-spacing: 0.35em;
     text-transform: uppercase;
-    /* Teinte unique du logo KUBEX — identique partout, sans alternance */
-    color: #0096d6;
-    opacity: 0.4;
+    /* Blanc semi-transparent sur le fond bleu du Hero */
+    color: rgba(255, 255, 255, 0.15);
+    opacity: 1;
   }
 
   .hero-orb {

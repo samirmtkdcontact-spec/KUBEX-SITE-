@@ -8,10 +8,10 @@ const promises = [
 ];
 
 const noPromises = [
-  "Un volume de leads garanti chaque mois",
-  "Des résultats identiques d'un client à l'autre",
-  "Une solution miracle aux turbulences réglementaires du secteur",
-  "Un remplacement de votre force commerciale",
+  "Le volume exact de leads générés chaque mois",
+  "L'uniformité des résultats d'un client à l'autre",
+  "L'impact des évolutions réglementaires sur la demande",
+  "La conversion des leads en chantiers signés",
 ];
 
 function Check() {
@@ -83,7 +83,7 @@ export default function DoDont() {
           <Reveal delay={100}>
             <div className="h-full rounded-2xl border border-kubex-ink/10 bg-white p-7">
               <h3 className="font-display text-xl font-bold text-kubex-ink/70">
-                Ce que nous ne promettons pas
+                Ce que nous ne contrôlons pas
               </h3>
               <ul className="mt-5 space-y-3.5">
                 {noPromises.map((item) => (
