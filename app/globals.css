@@ -149,16 +149,8 @@
     z-index: -1;
     overflow: hidden;
     pointer-events: none;
-    /* Dégradé vertical continu : de la nav (navy) jusqu'au bas des cards */
-    background: linear-gradient(
-      to bottom,
-      #003f5c 0%,
-      #0055a4 15%,
-      #0078c8 35%,
-      #0096d6 60%,
-      #0078c8 85%,
-      #005b9f 100%
-    );
+    /* Fond bleu logo #0078C8 avec dégradé vertical */
+    background: linear-gradient(to bottom, #003f5c 0%, #0078c8 40%, #0096d6 100%);
   }
 
   /* Bandes diagonales animées contenant « KUBEX » répété (teintes du logo) */
