@@ -22,14 +22,15 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Fond dégradé : opaque en haut de page, légèrement translucide au scroll
+  // Transparente en haut (fusion avec le dégradé du Hero) ; translucide au
+  // scroll pour garder le texte blanc lisible au-dessus des sections claires.
   const background = scrolled
-    ? "linear-gradient(90deg, rgba(0,150,214,0.95) 0%, rgba(0,85,164,0.95) 50%, rgba(0,63,92,0.95) 100%)"
-    : "linear-gradient(90deg, #0096D6 0%, #0055A4 50%, #003F5C 100%)";
+    ? "linear-gradient(90deg, rgba(0,63,92,0.90) 0%, rgba(0,85,164,0.90) 100%)"
+    : "transparent";
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 backdrop-blur-md transition-all duration-300"
+      className="fixed inset-x-0 top-0 z-50 backdrop-blur transition-all duration-300"
       style={{ background }}
     >
       <nav className="container-kubex flex h-16 items-center justify-between">

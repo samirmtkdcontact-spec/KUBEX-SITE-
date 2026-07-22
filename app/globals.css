@@ -149,8 +149,16 @@
     z-index: -1;
     overflow: hidden;
     pointer-events: none;
-    /* Fond bleu du logo KUBEX, uniforme sur tout le Hero */
-    background: #0078c8;
+    /* Dégradé vertical continu : de la nav (navy) jusqu'au bas des cards */
+    background: linear-gradient(
+      to bottom,
+      #003f5c 0%,
+      #0055a4 15%,
+      #0078c8 35%,
+      #0096d6 60%,
+      #0078c8 85%,
+      #005b9f 100%
+    );
   }
 
   /* Bandes diagonales animées contenant « KUBEX » répété (teintes du logo) */
@@ -182,7 +190,7 @@
     letter-spacing: 0.35em;
     text-transform: uppercase;
     /* Blanc semi-transparent sur le fond bleu du Hero */
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.12);
     opacity: 1;
   }
 

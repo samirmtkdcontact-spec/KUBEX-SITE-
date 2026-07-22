@@ -97,20 +97,6 @@ export default function Hero() {
         <div className="hero-orb hero-orb--3" />
       </div>
 
-      {/* Dégradé de transition : la nav se fond dans le Hero (aucune coupure) */}
-      <div
-        aria-hidden
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          height: "80px",
-          zIndex: 0,
-          background: "linear-gradient(to bottom, #0067B8 0%, #0078C8 100%)",
-        }}
-      />
-
       <div className="container-kubex relative z-[1]">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
