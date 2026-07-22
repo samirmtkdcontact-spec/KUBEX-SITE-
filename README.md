@@ -99,7 +99,29 @@ npm start
 - Accent : `#00B4FF`
 - Typographies : **Inter** (corps) + **Space Grotesk** (titres) via `next/font`
 
+## Formulaire de contact (email via Resend)
+
+Le formulaire poste vers la route API `app/api/contact/route.ts`, qui envoie un
+email récapitulatif à `samirmtkd.contact@gmail.com` via [Resend](https://resend.com).
+
+Configuration :
+
+1. Créer un compte sur [resend.com](https://resend.com) → **API Keys** →
+   **Create API Key**.
+2. En local : renseigner la clé dans `.env.local` (non versionné) :
+   ```
+   RESEND_API_KEY=re_votre_cle
+   ```
+3. Sur Vercel : **Settings → Environment Variables → Add**
+   `RESEND_API_KEY = votre_cle`, puis redéployer.
+
+Tant qu'aucune clé valide n'est configurée, la route renvoie une erreur 500 et
+le formulaire affiche sa bannière d'erreur (aucun email n'est envoyé). L'expéditeur
+`onboarding@resend.dev` fonctionne sans domaine vérifié ; pour un envoi depuis
+votre propre domaine, vérifiez-le dans Resend et adaptez le champ `from`.
+
 ## Déploiement Vercel
 
 Importer le dépôt sur [Vercel](https://vercel.com/) — la configuration Next.js
-est détectée automatiquement, aucune variable d'environnement n'est requise.
+est détectée automatiquement. Ajouter la variable `RESEND_API_KEY` (voir
+ci-dessus) pour activer l'envoi d'emails du formulaire de contact.

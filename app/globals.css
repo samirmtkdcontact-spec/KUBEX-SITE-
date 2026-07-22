@@ -381,6 +381,26 @@
   }
 }
 
+/* Checkmark de confirmation — apparition en scale 0 → 1 */
+.success-check {
+  animation: success-pop 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes success-pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /* Scroll reveal — animation légère via CSS transitions */
 @layer utilities {
   .reveal {
@@ -418,7 +438,8 @@
   .hero-orb--3,
   .hero-band,
   .marquee__track--left,
-  .marquee__track--right {
+  .marquee__track--right,
+  .success-check {
     animation: none;
   }
 

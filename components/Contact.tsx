@@ -70,29 +70,49 @@ const fieldBase =
 export default function Contact() {
   const [values, setValues] = useState<Fields>(empty);
   const [errors, setErrors] = useState<Errors>({});
-  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   function update(field: keyof Fields, value: string) {
     setValues((v) => ({ ...v, [field]: value }));
     if (errors[field]) {
       setErrors((e) => ({ ...e, [field]: undefined }));
     }
+    if (error) setError(false);
   }
 
-  function onSubmit(e: FormEvent) {
+  async function onSubmit(e: FormEvent) {
     e.preventDefault();
     const found = validate(values);
     setErrors(found);
-    if (Object.keys(found).length === 0) {
-      // Pas de back-end ici : on confirme côté client.
-      setSubmitted(true);
+    if (Object.keys(found).length > 0) return;
+
+    setError(false);
+    setLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+      if (res.ok) {
+        setSuccess(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
     }
   }
 
   function reset() {
     setValues(empty);
     setErrors({});
-    setSubmitted(false);
+    setSuccess(false);
+    setError(false);
   }
 
   const border = (field: keyof Fields) =>
@@ -128,12 +148,16 @@ export default function Contact() {
           </Reveal>
 
           <Reveal delay={100}>
-            <div className="rounded-2xl bg-white p-6 text-kubex-ink shadow-kubex sm:p-8">
-              {submitted ? (
+            <div
+              className={`rounded-2xl bg-white p-6 text-kubex-ink shadow-kubex sm:p-8 ${
+                success ? "border border-emerald-300" : ""
+              }`}
+            >
+              {success ? (
                 <div className="flex flex-col items-center py-8 text-center">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-kubex-gradient">
+                  <div className="success-check flex h-16 w-16 items-center justify-center rounded-full bg-emerald-500">
                     <svg
-                      className="h-7 w-7 text-white"
+                      className="h-8 w-8 text-white"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -148,12 +172,10 @@ export default function Contact() {
                     </svg>
                   </div>
                   <h3 className="mt-5 font-display text-xl font-bold">
-                    Merci {values.prenom} !
+                    Votre demande a bien été envoyée.
                   </h3>
                   <p className="mt-2 max-w-sm text-sm text-kubex-ink/65">
-                    Votre demande a bien été enregistrée. On revient vers vous
-                    très vite à l'adresse <strong>{values.email}</strong> pour
-                    organiser votre audit gratuit.
+                    Nous vous recontactons sous 24h.
                   </p>
                   <button
                     type="button"
@@ -316,9 +338,54 @@ export default function Contact() {
                     />
                   </div>
 
-                  <button type="submit" className="btn-primary w-full">
-                    Envoyer ma demande <span aria-hidden>→</span>
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-70"
+                  >
+                    {loading ? (
+                      <>
+                        <svg
+                          className="h-4 w-4 animate-spin"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          aria-hidden
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          />
+                          <path
+                            className="opacity-90"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 0 1 8-8V0C5.4 0 0 5.4 0 12h4Z"
+                          />
+                        </svg>
+                        Envoi en cours…
+                      </>
+                    ) : (
+                      <>
+                        Envoyer ma demande <span aria-hidden>→</span>
+                      </>
+                    )}
                   </button>
+
+                  {error && (
+                    <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600">
+                      Une erreur s'est produite. Contactez-nous directement :{" "}
+                      <a
+                        href="mailto:samirmtkd.contact@gmail.com"
+                        className="font-semibold underline"
+                      >
+                        samirmtkd.contact@gmail.com
+                      </a>
+                    </div>
+                  )}
+
                   <p className="text-center text-xs text-kubex-ink/45">
                     En envoyant ce formulaire, vous acceptez d'être recontacté
                     au sujet de votre demande.
