@@ -32,24 +32,7 @@ export default function Home() {
       <main>
         <Hero />
 
-        {/* Bloc continu des trois bandes défilantes (Désamiantage ← / PAC ← / PV →) */}
-        <Marquee
-          items={desamiantageMarquee}
-          direction="left"
-          background="linear-gradient(90deg, #1A4A2E, #2D7A4F)"
-          label="Repères marché désamiantage"
-        />
-        <Marquee
-          items={pacMarquee}
-          direction="left"
-          label="Repères marché pompe à chaleur"
-        />
-        <Marquee
-          items={pvMarquee}
-          direction="right"
-          label="Repères marché photovoltaïque"
-        />
-
+        {/* Chaque marché est suivi de sa bande défilante, qui le sépare du suivant */}
         <MarketSection
           id="section-desamiantage"
           index="01"
@@ -61,6 +44,13 @@ export default function Home() {
           cards={desamiantageCards}
           ctaLabel="Générer des leads désamiantage"
           ctaHref="#contact"
+        />
+
+        <Marquee
+          items={desamiantageMarquee}
+          direction="left"
+          background="linear-gradient(90deg, #1A4A2E, #2D7A4F)"
+          label="Repères marché désamiantage"
         />
 
         <MarketSection
@@ -76,6 +66,13 @@ export default function Home() {
           ctaHref="#contact"
         />
 
+        <Marquee
+          items={pacMarquee}
+          direction="right"
+          background="linear-gradient(90deg, #003F5C, #0078C8)"
+          label="Repères marché pompe à chaleur"
+        />
+
         <MarketSection
           id="section-pv"
           index="03"
@@ -87,6 +84,13 @@ export default function Home() {
           cards={pvCards}
           ctaLabel="Générer des leads PV"
           ctaHref="#contact"
+        />
+
+        <Marquee
+          items={pvMarquee}
+          direction="left"
+          background="linear-gradient(90deg, #0078C8, #00B4FF)"
+          label="Repères marché photovoltaïque"
         />
 
         <System />

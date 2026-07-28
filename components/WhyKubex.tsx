@@ -49,7 +49,7 @@ const blocks = [
   {
     icon: TargetIcon,
     title: "Spécialisation sectorielle",
-    desc: "On ne travaille qu'avec des installateurs énergie. Ça veut dire qu'on connaît vos clients, vos aides, vos objections.",
+    desc: "Désamiantage, PAC, photovoltaïque — trois marchés différents, une même logique d'acquisition. On connaît vos clients, vos contraintes réglementaires et vos arguments de vente.",
   },
   {
     icon: ChartIcon,
@@ -64,7 +64,7 @@ const blocks = [
   {
     icon: ShieldIcon,
     title: "Engagement sur la méthode",
-    desc: "On s'engage sur une méthode rigoureuse, pas sur des volumes. L'honnêteté est notre seul avantage concurrentiel.",
+    desc: "On s'engage sur une méthode rigoureuse, pas sur des volumes. La rigueur et la transparence sont notre seul avantage concurrentiel — dans trois marchés où la confiance se mérite.",
   },
 ];
 
@@ -78,8 +78,9 @@ export default function WhyKubex() {
             Ce qui nous <span className="gradient-text">distingue</span>.
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Pas une agence généraliste. Une agence construite pour un seul
-            secteur — l'énergie RGE.
+            Pas une agence généraliste. Une agence construite pour trois marchés
+            qui demandent une vraie expertise — le désamiantage, la pompe à
+            chaleur et le photovoltaïque.
           </p>
         </Reveal>
 

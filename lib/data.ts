@@ -170,32 +170,27 @@ export const pacCards: DataCard[] = [
   },
 ];
 
-/** Contenu des bandeaux défilants (marquee) entre les sections */
+/** Contenu des bandeaux défilants (marquee) — séparateurs entre marchés */
 export const desamiantageMarquee = [
   "DÉSAMIANTAGE",
   "4M de bâtiments",
   "83 % d'amiante encore présent",
   "Certifications SS3/SS4",
-  "1 milliard € de marché",
-  "KUBEX",
-];
-
-export const pvMarquee = [
-  "PHOTOVOLTAÏQUE",
-  "1,3M d'installations",
-  "Record 5,9 GW en 2025",
-  "RGE QualiPV",
-  "Économies 20 000 €+ sur 25 ans",
-  "Meta Ads",
   "KUBEX",
 ];
 
 export const pacMarquee = [
   "POMPE À CHALEUR",
-  "+11 % ventes Europe 2025",
-  "Jusqu'à 10 800 € d'aides cumulables",
+  "+11 % ventes 2025",
+  "10 800 € d'aides",
   "RGE QualiPAC",
-  "MaPrimeRénov'",
-  "Meta Ads",
+  "KUBEX",
+];
+
+export const pvMarquee = [
+  "PHOTOVOLTAÏQUE",
+  "5,9 GW en 2025",
+  "1,3M d'installations",
+  "RGE QualiPV",
   "KUBEX",
 ];
