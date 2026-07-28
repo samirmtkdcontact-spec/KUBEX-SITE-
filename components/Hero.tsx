@@ -144,15 +144,19 @@ export default function Hero() {
               className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed"
               style={{ color: "rgba(255,255,255,0.85)" }}
             >
-              Deux marchés en pleine expansion, portés par des aides d'État et
-              une demande structurelle forte. KUBEX génère des leads qualifiés
-              pour les{" "}
+              Trois niches en pleine expansion, portées par des obligations
+              légales, des aides d'État et une demande structurelle forte. KUBEX
+              génère des leads qualifiés pour les{" "}
               <strong className="font-semibold text-white">
-                installateurs photovoltaïques
+                entreprises de désamiantage
+              </strong>
+              , les{" "}
+              <strong className="font-semibold text-white">
+                installateurs de pompes à chaleur
               </strong>{" "}
               et les{" "}
               <strong className="font-semibold text-white">
-                poseurs de pompes à chaleur RGE
+                poseurs de panneaux photovoltaïques
               </strong>{" "}
               — via des campagnes Meta Ads taillées pour votre métier et votre
               zone.
