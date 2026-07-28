@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const links = [
-  { href: "#section-pac", label: "Le marché PAC" },
-  { href: "#section-pv", label: "Le marché PV" },
-  { href: "#systeme", label: "Notre méthode" },
+  { href: "#section-desamiantage", label: "Désamiantage" },
+  { href: "#section-pac", label: "PAC" },
+  { href: "#section-pv", label: "PV" },
+  { href: "#systeme", label: "Méthode" },
   { href: "#honnetete", label: "Honnêteté" },
   { href: "#contact", label: "Contact" },
 ];

@@ -7,8 +7,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 /** Échappe les entrées utilisateur avant injection dans le HTML de l'email. */
 function escapeHtml(value: unknown): string {
   return String(value ?? "")
@@ -36,6 +34,9 @@ export async function POST(req: Request) {
       { status: 500 }
     );
   }
+
+  // Instanciation à la demande : le build ne dépend pas de la présence de la clé.
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   const p = escapeHtml(prenom);
   const n = escapeHtml(nom);

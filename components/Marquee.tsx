@@ -2,16 +2,19 @@ type MarqueeProps = {
   items: string[];
   direction?: "left" | "right";
   label: string;
+  /** Fond du bandeau (dégradé) — bleu logo par défaut */
+  background?: string;
 };
 
 /**
- * Bandeau défilant en continu (marquee CSS), 48px de haut, fond bleu logo.
- * Deux bandes adjacentes (PAC + PV) forment un bloc visuel continu.
+ * Bandeau défilant en continu (marquee CSS), 48px de haut.
+ * Plusieurs bandes adjacentes forment un bloc visuel continu.
  */
 export default function Marquee({
   items,
   direction = "left",
   label,
+  background = "#0078C8",
 }: MarqueeProps) {
   // Deux copies identiques du contenu pour un défilement continu
   const sequence = [...items, ...items];
@@ -19,7 +22,7 @@ export default function Marquee({
   return (
     <div
       className="marquee flex h-12 items-center"
-      style={{ background: "#0078C8" }}
+      style={{ background }}
       aria-label={label}
       aria-hidden
     >

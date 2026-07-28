@@ -2,6 +2,13 @@ import Logo from "./Logo";
 
 const columns: { title: string; links: { href: string; label: string }[] }[] = [
   {
+    title: "Désamiantage",
+    links: [
+      { href: "#section-desamiantage", label: "Le marché désamiantage" },
+      { href: "#contact", label: "Générer des leads" },
+    ],
+  },
+  {
     title: "Pompe à chaleur",
     links: [
       { href: "#section-pac", label: "Le marché PAC" },
@@ -40,18 +47,19 @@ export default function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-3 font-display text-sm font-semibold text-kubex-to">
-              L'agence Meta Ads des installateurs énergie RGE.
+              L'agence Meta Ads des professionnels de l'énergie et de la
+              rénovation RGE.
             </p>
             <p className="mt-2 text-sm leading-relaxed text-kubex-ink/60">
-              Photovoltaïque et pompe à chaleur : on construit des campagnes
-              Meta Ads ciblées pour générer des leads de propriétaires qualifiés,
-              avec une méthode claire et des engagements qu'on peut tenir.
+              Désamiantage, pompe à chaleur et photovoltaïque : on construit des
+              campagnes Meta Ads ciblées pour générer des leads qualifiés, avec
+              une méthode claire et des engagements qu'on peut tenir.
             </p>
           </div>
 
           <nav
             aria-label="Pied de page"
-            className="grid grid-cols-2 gap-8 sm:grid-cols-4"
+            className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5"
           >
             {columns.map((col) => (
               <div key={col.title}>

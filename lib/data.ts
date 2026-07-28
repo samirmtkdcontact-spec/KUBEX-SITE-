@@ -1,6 +1,6 @@
 /**
- * Données réelles et vérifiées — double spécialisation photovoltaïque (PV)
- * et pompe à chaleur (PAC). Chaque chiffre est accompagné de sa source et
+ * Données réelles et vérifiées — trois niches : désamiantage, pompe à chaleur
+ * (PAC) et photovoltaïque (PV). Chaque chiffre est accompagné de sa source et
  * d'un contexte affiché au survol — AUCUNE donnée inventée.
  */
 
@@ -13,6 +13,58 @@ export type DataCard = {
   /** Lien « En savoir plus → » vers la source officielle */
   href: string;
 };
+
+/** Section désamiantage — 6 data cards sourcées */
+export const desamiantageCards: DataCard[] = [
+  {
+    value: "4 millions",
+    label: "de bâtiments concernés",
+    source: "Batimex / Guide désamiantage 2026",
+    tooltip:
+      "Tous les bâtiments construits avant le 1er juillet 1997 sont potentiellement amiantés. 35 à 40 % contiennent encore des matériaux amiantés.",
+    href: "https://www.batimex.fr",
+  },
+  {
+    value: "83 %",
+    label: "de l'amiante non encore retiré",
+    source: "ADEME via Monimmeuble.com, 2024",
+    tooltip:
+      "Seulement 17 % du gisement total d'amiante a été retiré depuis l'interdiction en 1997. Le marché a encore des décennies de travail devant lui.",
+    href: "https://www.monimmeuble.com",
+  },
+  {
+    value: "76,5 %",
+    label: "des résidences construites avant 1997",
+    source: "INSEE RP2021 via desamianter.fr",
+    tooltip:
+      "Proportion variant de moins de 60 % dans les zones récentes à plus de 85 % dans certains départements du Nord et Nord-Est — zone prioritaire pour les désamianteurs.",
+    href: "https://www.desamianter.fr",
+  },
+  {
+    value: "1 milliard €",
+    label: "de chiffre d'affaires",
+    source: "Syrta / Made in FR, 2025",
+    tooltip:
+      "Chiffre d'affaires record atteint selon le Syndicat du Retrait et Traitement de l'Amiante. Croissance de +4,8 %/an entre 2015 et 2018 malgré les crises.",
+    href: "https://www.madeinfr.fr",
+  },
+  {
+    value: "SS3 / SS4",
+    label: "certification obligatoire",
+    source: "Code du travail / Service-Public.fr",
+    tooltip:
+      "Aucun chantier de désamiantage ne peut démarrer sans entreprise certifiée. Cette certification est une barrière à l'entrée forte — les certifiés captent toute la demande.",
+    href: "https://www.service-public.fr",
+  },
+  {
+    value: "Hauts-de-France",
+    label: "zone à très fort risque",
+    source: "INSEE RP2021 / Devis Diagnostics, 2025",
+    tooltip:
+      "Bretagne, Normandie, Île-de-France et Hauts-de-France : les zones de reconstruction d'après-guerre concentrent le plus fort taux de bâtiments antérieurs à 1997.",
+    href: "https://www.devis-diagnostics-immobilier.fr",
+  },
+];
 
 /** Section photovoltaïque — 6 data cards sourcées */
 export const pvCards: DataCard[] = [
@@ -119,6 +171,15 @@ export const pacCards: DataCard[] = [
 ];
 
 /** Contenu des bandeaux défilants (marquee) entre les sections */
+export const desamiantageMarquee = [
+  "DÉSAMIANTAGE",
+  "4M de bâtiments",
+  "83 % d'amiante encore présent",
+  "Certifications SS3/SS4",
+  "1 milliard € de marché",
+  "KUBEX",
+];
+
 export const pvMarquee = [
   "PHOTOVOLTAÏQUE",
   "1,3M d'installations",

@@ -59,6 +59,20 @@ export default function System() {
             ))}
           </ol>
         </div>
+
+        {/* La méthode s'applique aux 3 niches */}
+        <Reveal className="mt-16 flex flex-wrap items-center justify-center gap-3">
+          {["Désamiantage", "Pompe à chaleur", "Photovoltaïque"].map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full bg-kubex-gradient p-px"
+            >
+              <span className="block rounded-full bg-kubex-light px-4 py-1.5 text-sm font-semibold">
+                <span className="gradient-text">{tag}</span>
+              </span>
+            </span>
+          ))}
+        </Reveal>
       </div>
     </section>
   );

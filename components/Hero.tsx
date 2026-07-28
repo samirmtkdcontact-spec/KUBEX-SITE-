@@ -37,6 +37,26 @@ function FlameIcon() {
   );
 }
 
+function HazardIcon() {
+  return (
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#fff"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" />
+      <path d="M12 9v4" />
+      <path d="M12 17h.01" />
+    </svg>
+  );
+}
+
 type NicheCardProps = {
   href: string;
   icon: React.ReactNode;
@@ -157,9 +177,17 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        {/* Cards PAC / PV intégrées en bas du Hero */}
-        <Reveal delay={200} className="mx-auto mt-16 max-w-4xl">
-          <div className="grid gap-5 sm:grid-cols-2">
+        {/* Cards Désamiantage / PAC / PV intégrées en bas du Hero */}
+        <Reveal delay={200} className="mx-auto mt-16 max-w-5xl">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <NicheCard
+              href="#section-desamiantage"
+              icon={<HazardIcon />}
+              title="Désamiantage"
+              subtitle="Entreprises certifiées SS3/SS4"
+              stat="4 millions de bâtiments concernés"
+              cta="Voir le marché"
+            />
             <NicheCard
               href="#section-pac"
               icon={<FlameIcon />}

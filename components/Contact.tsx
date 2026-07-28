@@ -27,7 +27,12 @@ const empty: Fields = {
   message: "",
 };
 
-const niches = ["Photovoltaïque", "Pompe à chaleur", "Les deux"];
+const niches = [
+  "Désamiantage",
+  "Pompe à chaleur",
+  "Photovoltaïque",
+  "Les trois",
+];
 const statuts = [
   "Artisan indépendant",
   "PME (2-10 salariés)",
