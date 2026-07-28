@@ -49,7 +49,7 @@ const blocks = [
   {
     icon: TargetIcon,
     title: "Spécialisation sectorielle",
-    desc: "Désamiantage, PAC, photovoltaïque — trois marchés différents, une même logique d'acquisition. On connaît vos clients, vos contraintes réglementaires et vos arguments de vente.",
+    desc: "Chaque marché a ses codes, ses clients, ses objections. On ne généralise pas — on adapte la stratégie Meta Ads à la réalité de votre activité et de votre zone géographique.",
   },
   {
     icon: ChartIcon,
@@ -59,7 +59,7 @@ const blocks = [
   {
     icon: EyeIcon,
     title: "Transparence totale",
-    desc: "Vous avez accès aux performances de vos campagnes. On ne cache rien, on explique tout, même quand ça ne va pas dans le bon sens.",
+    desc: "Vous avez accès aux performances de vos campagnes. On ne cache rien, on explique tout, même quand les résultats prennent du temps à se stabiliser.",
   },
   {
     icon: ShieldIcon,

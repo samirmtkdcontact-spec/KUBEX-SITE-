@@ -32,6 +32,21 @@ export default function Home() {
       <main>
         <Hero />
 
+        {/* Bande de transition entre le Hero et la 1re section marché */}
+        <Marquee
+          items={[
+            "DÉSAMIANTAGE",
+            "4M de bâtiments",
+            "83 % d'amiante encore présent",
+            "Certifications SS3/SS4",
+            "1 milliard €",
+            "KUBEX",
+          ]}
+          direction="left"
+          background="linear-gradient(90deg, #1A4A2E, #2D7A4F)"
+          label="Repères marché désamiantage"
+        />
+
         {/* Chaque marché est suivi de sa bande défilante, qui le sépare du suivant */}
         <MarketSection
           id="section-desamiantage"
