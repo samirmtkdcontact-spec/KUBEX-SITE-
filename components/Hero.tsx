@@ -144,7 +144,7 @@ export default function Hero() {
               className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed"
               style={{ color: "rgba(255,255,255,0.85)" }}
             >
-              Trois niches en pleine expansion, portées par des obligations
+              Trois marchés en pleine expansion, portés par des obligations
               légales, des aides d'État et une demande structurelle forte. KUBEX
               génère des leads qualifiés pour les{" "}
               <strong className="font-semibold text-white">
