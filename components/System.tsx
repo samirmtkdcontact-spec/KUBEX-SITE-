@@ -62,7 +62,7 @@ export default function System() {
 
         {/* La méthode s'applique aux 3 niches */}
         <Reveal className="mt-16 flex flex-wrap items-center justify-center gap-3">
-          {["Désamiantage", "Pompe à chaleur", "Photovoltaïque"].map((tag) => (
+          {["Pompe à chaleur", "Photovoltaïque"].map((tag) => (
             <span
               key={tag}
               className="rounded-full bg-kubex-gradient p-px"

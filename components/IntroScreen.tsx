@@ -8,7 +8,7 @@ const WORD = "KUBEX";
  * Écran d'intro plein écran joué au chargement de la page.
  * - Phase 1 (0–0.7s) : le carré logo apparaît en scale 0.2 → 1 + glow bleu
  * - Phase 2 (0.7–1.4s) : « KUBEX » s'écrit lettre par lettre (stagger 80ms)
- * - Phase 3 (1.4–2.0s) : « DÉSAMIANTAGE · POMPE À CHALEUR · PHOTOVOLTAÏQUE » en fade
+ * - Phase 3 (1.4–2.0s) : « POMPE À CHALEUR · PHOTOVOLTAÏQUE » apparaît en fade
  * - À 2.2s : fade out + translation -20px (400ms), puis retrait du DOM
  *
  * Les animations sont en CSS keyframes (voir globals.css). Le JS ne gère que
@@ -87,9 +87,7 @@ export default function IntroScreen() {
         ))}
       </div>
 
-      <p className="intro-tagline mt-5">
-        DÉSAMIANTAGE · POMPE À CHALEUR · PHOTOVOLTAÏQUE
-      </p>
+      <p className="intro-tagline mt-5">POMPE À CHALEUR · PHOTOVOLTAÏQUE</p>
     </div>
   );
 }

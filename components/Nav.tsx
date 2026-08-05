@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const links = [
-  { href: "#section-desamiantage", label: "Désamiantage" },
   { href: "#section-pac", label: "PAC" },
   { href: "#section-pv", label: "PV" },
   { href: "#systeme", label: "Méthode" },

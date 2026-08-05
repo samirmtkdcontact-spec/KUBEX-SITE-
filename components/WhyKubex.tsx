@@ -64,7 +64,7 @@ const blocks = [
   {
     icon: ShieldIcon,
     title: "Engagement sur la méthode",
-    desc: "On s'engage sur une méthode rigoureuse, pas sur des volumes. La rigueur et la transparence sont notre seul avantage concurrentiel — dans trois marchés où la confiance se mérite.",
+    desc: "On s'engage sur une méthode rigoureuse, pas sur des volumes. La rigueur et la transparence sont notre seul avantage concurrentiel — dans deux marchés où la confiance se mérite.",
   },
 ];
 
@@ -78,9 +78,9 @@ export default function WhyKubex() {
             Ce qui nous <span className="gradient-text">distingue</span>.
           </h2>
           <p className="mt-4 text-lg text-kubex-ink/70">
-            Pas une agence généraliste. Une agence construite pour trois marchés
-            qui demandent une vraie expertise — le désamiantage, la pompe à
-            chaleur et le photovoltaïque.
+            Pas une agence généraliste. Une agence construite pour deux marchés
+            qui demandent une vraie expertise — la pompe à chaleur et le
+            photovoltaïque.
           </p>
         </Reveal>
 
