@@ -40,12 +40,12 @@ export default function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-3 font-display text-sm font-semibold text-kubex-to">
-              L'agence Meta Ads des installateurs énergie RGE.
+              L'agence de publicité digitale ciblée des installateurs énergie RGE.
             </p>
             <p className="mt-2 text-sm leading-relaxed text-kubex-ink/60">
               Pompe à chaleur et photovoltaïque : on construit des campagnes
-              Meta Ads ciblées pour générer des leads qualifiés, avec une méthode
-              claire et des engagements qu'on peut tenir.
+              digitales ciblées pour générer des leads qualifiés, avec une
+              méthode claire et des engagements qu'on peut tenir.
             </p>
           </div>
 
@@ -95,8 +95,9 @@ export default function Footer() {
           Les données présentées sur ce site sont issues de sources officielles
           et d'études sectorielles. Elles reflètent des tendances de marché et ne
           constituent pas une promesse de résultat. KUBEX est une agence
-          indépendante, non affiliée à Meta Platforms, Inc. ni à un organisme
-          public. Meta est une marque de Meta Platforms, Inc.
+          indépendante, non affiliée aux régies publicitaires ni à un organisme
+          public. Les marques et plateformes citées appartiennent à leurs
+          propriétaires respectifs.
         </p>
       </div>
     </footer>

@@ -5,12 +5,12 @@ import Reveal from "./Reveal";
 
 const faqs = [
   {
-    q: "En quoi Meta Ads est-il adapté à mon métier ?",
-    a: "Vos futurs clients — propriétaires de maisons individuelles de 35 à 65 ans — passent chaque jour du temps sur Meta (48,7 millions d'utilisateurs actifs en France, source NapoleonCat déc. 2025). Ils ne cherchent pas activement un installateur, mais Meta Ads permet de susciter la demande auprès des bons profils, sur votre zone précise. Là où le référencement met des mois à porter, une campagne bien ciblée met votre offre sous leurs yeux en continu.",
+    q: "En quoi la publicité digitale ciblée est-elle adaptée à mon métier ?",
+    a: "Vos futurs clients — propriétaires de maisons individuelles de 35 à 65 ans — passent chaque jour du temps sur les réseaux sociaux (48,7 millions d'utilisateurs actifs en France, source NapoleonCat déc. 2025). Ils ne cherchent pas activement un installateur, mais la publicité digitale ciblée permet de susciter la demande auprès des bons profils, sur votre zone précise. Là où le référencement met des mois à porter, une campagne bien ciblée met votre offre sous leurs yeux en continu.",
   },
   {
     q: "Combien de temps avant les premiers leads ?",
-    a: "Honnêtement : il faut un peu de temps. L'algorithme Meta a besoin d'une phase d'apprentissage et de données pour s'optimiser, ce qui prend généralement quelques semaines. Les premiers leads peuvent arriver assez vite, mais une campagne se juge sur la durée, une fois les audiences et messages affinés. Personne de sérieux ne peut vous promettre un volume de leads dès le premier jour.",
+    a: "Honnêtement : il faut un peu de temps. L'algorithme publicitaire a besoin d'une phase d'apprentissage et de données pour s'optimiser, ce qui prend généralement quelques semaines. Les premiers leads peuvent arriver assez vite, mais une campagne se juge sur la durée, une fois les audiences et messages affinés. Personne de sérieux ne peut vous promettre un volume de leads dès le premier jour.",
   },
   {
     q: "Qu'est-ce qui garantit la qualité des leads ?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Travaillez-vous dans toute la France ?",
-    a: "Oui. Nos campagnes s'adressent aux installateurs énergie RGE partout en France métropolitaine. Le ciblage géographique de Meta nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise.",
+    a: "Oui. Nos campagnes s'adressent aux installateurs énergie RGE partout en France métropolitaine. Le ciblage géographique nous permet de concentrer la diffusion sur votre zone d'intervention précise — une ville, un département ou un rayon autour de votre entreprise.",
   },
 ];
 

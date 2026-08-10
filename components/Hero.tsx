@@ -108,7 +108,7 @@ export default function Hero() {
                 color: "rgba(255,255,255,0.65)",
               }}
             >
-              KUBEX · AGENCE META ADS · ÉNERGIE RENOUVELABLE &amp; THERMIQUE
+              KUBEX · ACQUISITION DIGITALE · ÉNERGIE RENOUVELABLE &amp; THERMIQUE
             </span>
           </Reveal>
 
@@ -134,8 +134,8 @@ export default function Hero() {
               <strong className="font-semibold text-white">
                 poseurs de panneaux photovoltaïques
               </strong>{" "}
-              — via des campagnes Meta Ads taillées pour votre métier et votre
-              zone.
+              — via des campagnes digitales ciblées taillées pour votre métier
+              et votre zone.
             </p>
           </Reveal>
 

@@ -137,11 +137,14 @@ export default function Contact() {
             </h2>
             <p className="mt-4 text-lg text-white/65">
               Gratuit, sans engagement, sans pression. On analyse votre
-              situation et votre potentiel sur Meta Ads avant de vous proposer
-              quoi que ce soit.
+              situation et votre potentiel en publicité digitale ciblée avant de
+              vous proposer quoi que ce soit.
             </p>
             <ul className="mt-7 space-y-3 text-sm text-white/70">
-              <li>· Réponse honnête, même si Meta Ads n'est pas pour vous</li>
+              <li>
+                · Réponse honnête, même si la publicité digitale ciblée n'est pas
+                pour vous
+              </li>
               <li>· Aucune obligation, aucun engagement</li>
             </ul>
           </Reveal>

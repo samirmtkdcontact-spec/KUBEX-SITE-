@@ -1,6 +1,7 @@
 # KUBEX — Site vitrine
 
-Site vitrine de **KUBEX**, agence Meta Ads à **double spécialisation** :
+Site vitrine de **KUBEX**, agence de publicité digitale ciblée à **double
+spécialisation** :
 **photovoltaïque (PV)** et **pompe à chaleur (PAC)**. Un seul site premium, deux
 sections marché distinctes, chacune avec son univers visuel, ses données et sa
 proposition de valeur.
@@ -15,14 +16,15 @@ Prêt à déployer sur **Vercel**.
 - **Problème** : deux marchés en forte expansion mais dépendants d'aides et de
   réglementations mouvantes ; sans flux régulier de leads, chaque évolution
   fragilise l'activité.
-- **Solution** : des campagnes Meta Ads ciblées, taillées par métier et par
+- **Solution** : des campagnes digitales ciblées, taillées par métier et par
   zone, pour générer des leads de propriétaires qualifiés.
 
 ## Principes du contenu
 
 Le site ne contient **aucun faux témoignage, aucune fausse preuve sociale et
-aucun chiffre client inventé** ; il ne mentionne jamais Facebook (uniquement
-« Meta Ads ») et **n'affiche aucun tarif** (communiqués lors de l'audit). Les
+aucun chiffre client inventé** ; il ne mentionne aucune marque de plateforme
+(uniquement « publicité digitale ciblée ») et **n'affiche aucun tarif**
+(communiqués lors de l'audit). Les
 preuves sociales sont remplacées par des **données réelles et sourcées**,
 affichées avec leur source et un contexte au survol (tooltip).
 

@@ -49,7 +49,7 @@ const blocks = [
   {
     icon: TargetIcon,
     title: "Spécialisation sectorielle",
-    desc: "Chaque marché a ses codes, ses clients, ses objections. On ne généralise pas — on adapte la stratégie Meta Ads à la réalité de votre activité et de votre zone géographique.",
+    desc: "Chaque marché a ses codes, ses clients, ses objections. On ne généralise pas — on adapte la stratégie de publicité digitale ciblée à la réalité de votre activité et de votre zone géographique.",
   },
   {
     icon: ChartIcon,

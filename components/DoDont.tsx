@@ -1,7 +1,7 @@
 import Reveal from "./Reveal";
 
 const promises = [
-  "Construire des campagnes Meta Ads sérieuses et adaptées à votre secteur",
+  "Construire des campagnes digitales ciblées sérieuses et adaptées à votre secteur",
   "Vous accompagner avec des données réelles et vérifiées",
   "Être transparents sur les performances, semaine après semaine",
   "Ajuster la stratégie si les résultats ne sont pas au rendez-vous",
