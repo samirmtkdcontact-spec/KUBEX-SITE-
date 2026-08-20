@@ -8,9 +8,7 @@ type Fields = {
   nom: string;
   email: string;
   telephone: string;
-  niche: string;
-  statut: string;
-  departement: string;
+  entreprise: string;
   message: string;
 };
 
@@ -21,19 +19,9 @@ const empty: Fields = {
   nom: "",
   email: "",
   telephone: "",
-  niche: "",
-  statut: "",
-  departement: "",
+  entreprise: "",
   message: "",
 };
-
-const niches = ["Pompe à chaleur", "Photovoltaïque", "Les deux", "Autre"];
-const statuts = [
-  "Artisan indépendant",
-  "PME (2-10 salariés)",
-  "Multi-spécialiste énergie",
-  "Autre",
-];
 
 function validate(values: Fields): Errors {
   const errors: Errors = {};
@@ -52,13 +40,8 @@ function validate(values: Fields): Errors {
     errors.telephone = "Numéro de téléphone invalide.";
   }
 
-  if (!values.niche) errors.niche = "Choisissez une spécialité.";
-  if (!values.statut) errors.statut = "Choisissez votre statut.";
-
-  if (!values.departement.trim()) {
-    errors.departement = "Le département est requis.";
-  } else if (!/^(\d{2,3}|2[ab])$/i.test(values.departement.trim())) {
-    errors.departement = "Ex. : 75, 33, 2A…";
+  if (!values.entreprise.trim()) {
+    errors.entreprise = "Le nom de votre entreprise est requis.";
   }
 
   return errors;
@@ -108,13 +91,6 @@ export default function Contact() {
     }
   }
 
-  function reset() {
-    setValues(empty);
-    setErrors({});
-    setSuccess(false);
-    setError(false);
-  }
-
   const border = (field: keyof Fields) =>
     errors[field] ? "border-red-400" : "border-kubex-ink/15";
 
@@ -150,42 +126,50 @@ export default function Contact() {
           </Reveal>
 
           <Reveal delay={100}>
-            <div
-              className={`rounded-2xl bg-white p-6 text-kubex-ink shadow-kubex sm:p-8 ${
-                success ? "border border-emerald-300" : ""
-              }`}
-            >
+            <div className="rounded-2xl bg-white p-6 text-kubex-ink shadow-kubex sm:p-8">
               {success ? (
-                <div className="flex flex-col items-center py-8 text-center">
-                  <div className="success-check flex h-16 w-16 items-center justify-center rounded-full bg-emerald-500">
+                <div className="confirm-block flex flex-col items-center px-2 py-10 text-center">
+                  <div
+                    className="confirm-circle flex items-center justify-center"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      borderRadius: "9999px",
+                      background: "#22C55E",
+                    }}
+                  >
                     <svg
-                      className="h-8 w-8 text-white"
+                      width="54"
+                      height="54"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
+                      stroke="#ffffff"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       aria-hidden
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m5 13 4 4L19 7"
-                      />
+                      <path className="confirm-check" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="mt-5 font-display text-xl font-bold">
-                    Votre demande a bien été envoyée.
-                  </h3>
-                  <p className="mt-2 max-w-sm text-sm text-kubex-ink/65">
-                    Nous vous recontactons sous 24h.
-                  </p>
-                  <button
-                    type="button"
-                    onClick={reset}
-                    className="btn-secondary mt-6"
+                  <h3
+                    className="confirm-text font-display font-bold"
+                    style={{ fontSize: "24px", color: "#0A1628", marginTop: "24px" }}
                   >
-                    Envoyer une autre demande
-                  </button>
+                    Demande bien reçue ✓
+                  </h3>
+                  <p
+                    className="confirm-text"
+                    style={{ fontSize: "16px", color: "#4A6080", marginTop: "12px" }}
+                  >
+                    Nous vous recontactons sous 24h ouvrées.
+                  </p>
+                  <p
+                    className="confirm-text"
+                    style={{ fontSize: "14px", color: "#8AA0B8", marginTop: "8px" }}
+                  >
+                    Vérifiez vos emails et votre messagerie.
+                  </p>
                 </div>
               ) : (
                 <form noValidate onSubmit={onSubmit} className="space-y-4">
@@ -259,70 +243,22 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <div>
-                      <label htmlFor="niche" className="mb-1.5 block text-sm font-medium">
-                        Spécialité
-                      </label>
-                      <select
-                        id="niche"
-                        value={values.niche}
-                        onChange={(e) => update("niche", e.target.value)}
-                        className={`${fieldBase} ${border("niche")}`}
-                      >
-                        <option value="" disabled>
-                          Choisir…
-                        </option>
-                        {niches.map((n) => (
-                          <option key={n} value={n}>
-                            {n}
-                          </option>
-                        ))}
-                      </select>
-                      {errors.niche && (
-                        <p className="mt-1 text-xs text-red-500">{errors.niche}</p>
-                      )}
-                    </div>
-                    <div>
-                      <label htmlFor="statut" className="mb-1.5 block text-sm font-medium">
-                        Statut
-                      </label>
-                      <select
-                        id="statut"
-                        value={values.statut}
-                        onChange={(e) => update("statut", e.target.value)}
-                        className={`${fieldBase} ${border("statut")}`}
-                      >
-                        <option value="" disabled>
-                          Choisir…
-                        </option>
-                        {statuts.map((s) => (
-                          <option key={s} value={s}>
-                            {s}
-                          </option>
-                        ))}
-                      </select>
-                      {errors.statut && (
-                        <p className="mt-1 text-xs text-red-500">{errors.statut}</p>
-                      )}
-                    </div>
-                  </div>
-
                   <div>
-                    <label htmlFor="departement" className="mb-1.5 block text-sm font-medium">
-                      Département
+                    <label htmlFor="entreprise" className="mb-1.5 block text-sm font-medium">
+                      Nom de votre entreprise{" "}
+                      <span className="text-red-500">*</span>
                     </label>
                     <input
-                      id="departement"
+                      id="entreprise"
                       type="text"
-                      inputMode="numeric"
-                      placeholder="75, 33, 2A…"
-                      value={values.departement}
-                      onChange={(e) => update("departement", e.target.value)}
-                      className={`${fieldBase} ${border("departement")}`}
+                      autoComplete="organization"
+                      placeholder="Ex: Dupont Énergie, Soleil & Fils…"
+                      value={values.entreprise}
+                      onChange={(e) => update("entreprise", e.target.value)}
+                      className={`${fieldBase} ${border("entreprise")}`}
                     />
-                    {errors.departement && (
-                      <p className="mt-1 text-xs text-red-500">{errors.departement}</p>
+                    {errors.entreprise && (
+                      <p className="mt-1 text-xs text-red-500">{errors.entreprise}</p>
                     )}
                   </div>
 

@@ -19,11 +19,10 @@ function escapeHtml(value: unknown): string {
 
 export async function POST(req: Request) {
   const body = await req.json();
-  const { prenom, nom, email, telephone, niche, statut, departement, message } =
-    body;
+  const { prenom, nom, email, telephone, entreprise, message } = body;
 
   // Champs obligatoires côté serveur (défense en profondeur)
-  if (!prenom || !nom || !email || !telephone || !niche || !statut || !departement) {
+  if (!prenom || !nom || !email || !telephone || !entreprise) {
     return NextResponse.json({ error: "Champs manquants" }, { status: 400 });
   }
 
@@ -42,9 +41,7 @@ export async function POST(req: Request) {
   const n = escapeHtml(nom);
   const e = escapeHtml(email);
   const t = escapeHtml(telephone);
-  const ni = escapeHtml(niche);
-  const s = escapeHtml(statut);
-  const d = escapeHtml(departement);
+  const ent = escapeHtml(entreprise);
   const m = message ? escapeHtml(message) : "—";
 
   try {
@@ -52,23 +49,21 @@ export async function POST(req: Request) {
       from: "KUBEX Contact <onboarding@resend.dev>",
       to: "samirmtkd.contact@gmail.com",
       replyTo: email,
-      subject: `Nouvelle demande d'audit — ${p} ${n} (${ni})`,
+      subject: `Nouvelle demande — ${p} ${n} (${ent})`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: linear-gradient(135deg, #00B4FF, #003F5C); padding: 24px; border-radius: 8px 8px 0 0;">
             <h1 style="color: white; margin: 0; font-size: 20px;">
-              Nouvelle demande d'audit KUBEX
+              Nouvelle demande KUBEX
             </h1>
           </div>
           <div style="background: #f8fafc; padding: 24px; border-radius: 0 0 8px 8px; border: 1px solid #e2e8f0;">
             <table style="width: 100%; border-collapse: collapse;">
-              <tr><td style="padding: 8px 0; color: #64748b; width: 140px;">Prénom</td><td style="padding: 8px 0; font-weight: 600;">${p}</td></tr>
+              <tr><td style="padding: 8px 0; color: #64748b; width: 160px;">Prénom</td><td style="padding: 8px 0; font-weight: 600;">${p}</td></tr>
               <tr><td style="padding: 8px 0; color: #64748b;">Nom</td><td style="padding: 8px 0; font-weight: 600;">${n}</td></tr>
               <tr><td style="padding: 8px 0; color: #64748b;">Email</td><td style="padding: 8px 0;"><a href="mailto:${e}" style="color: #00B4FF;">${e}</a></td></tr>
               <tr><td style="padding: 8px 0; color: #64748b;">Téléphone</td><td style="padding: 8px 0; font-weight: 600;">${t}</td></tr>
-              <tr><td style="padding: 8px 0; color: #64748b;">Niche</td><td style="padding: 8px 0;"><span style="background: #00B4FF; color: white; padding: 2px 10px; border-radius: 20px; font-size: 13px;">${ni}</span></td></tr>
-              <tr><td style="padding: 8px 0; color: #64748b;">Statut</td><td style="padding: 8px 0;">${s}</td></tr>
-              <tr><td style="padding: 8px 0; color: #64748b;">Département</td><td style="padding: 8px 0;">${d}</td></tr>
+              <tr><td style="padding: 8px 0; color: #64748b;">Entreprise</td><td style="padding: 8px 0; font-weight: 600;">${ent}</td></tr>
               <tr><td style="padding: 8px 0; color: #64748b; vertical-align: top;">Message</td><td style="padding: 8px 0;">${m}</td></tr>
             </table>
           </div>

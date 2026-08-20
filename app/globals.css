@@ -402,6 +402,58 @@
   border-left-color: rgba(0, 150, 214, 0.4);
 }
 
+/* ───────────────────────────────────────────────
+   Confirmation d'envoi du formulaire (3 phases)
+   ─────────────────────────────────────────────── */
+.confirm-block {
+  animation: confirm-slide-up 0.5s ease-out both;
+}
+
+.confirm-circle {
+  transform: scale(0);
+  animation: confirm-circle-pop 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.confirm-check {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: confirm-check-draw 0.4s ease-out 0.6s forwards;
+}
+
+.confirm-text {
+  opacity: 0;
+  animation: confirm-fade-in 0.5s ease-out 1s forwards;
+}
+
+@keyframes confirm-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes confirm-circle-pop {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes confirm-check-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes confirm-fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
 /* Checkmark de confirmation — apparition en scale 0 → 1 */
 .success-check {
   animation: success-pop 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -466,6 +518,17 @@
 
   .niche-banner {
     transition: none;
+  }
+
+  /* Confirmation d'envoi : état final immédiat, sans animation */
+  .confirm-block,
+  .confirm-circle,
+  .confirm-check,
+  .confirm-text {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    stroke-dashoffset: 0;
   }
 
   /* Pas d'écran d'intro animé pour les utilisateurs sensibles au mouvement */
