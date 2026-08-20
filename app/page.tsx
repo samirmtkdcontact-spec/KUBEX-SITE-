@@ -64,6 +64,24 @@ export default function Home() {
           ctaHref="#contact"
         />
 
+        {/* Bande de transition entre la section PV et Le Système Kube */}
+        <Marquee
+          items={[
+            "Acquisition digitale",
+            "Leads qualifiés",
+            "Énergie renouvelable",
+            "RGE",
+            "KUBEX",
+            "Résultats mesurables",
+            "Campagnes ciblées",
+            "Performance",
+            "KUBEX",
+          ]}
+          direction="right"
+          background="linear-gradient(90deg, #003F5C, #00B4FF)"
+          label="Acquisition digitale KUBEX"
+        />
+
         <System />
         <WaveDivider />
         <DoDont />

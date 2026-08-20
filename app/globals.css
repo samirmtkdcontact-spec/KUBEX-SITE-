@@ -43,6 +43,23 @@
     @apply inline-flex items-center gap-2 rounded-full border border-kubex-accent/30 bg-kubex-light px-4 py-1.5 text-sm font-semibold text-kubex-to;
   }
 
+  /* Lien de navigation encadré */
+  .nav-link {
+    display: inline-block;
+    border: 1px solid rgba(0, 180, 255, 0.35);
+    border-radius: 8px;
+    padding: 6px 14px;
+    transition: all 0.2s ease;
+    background: transparent;
+    color: #0a1628;
+  }
+
+  .nav-link:hover {
+    border-color: rgba(0, 180, 255, 0.85);
+    background: rgba(0, 180, 255, 0.08);
+    color: #00b4ff;
+  }
+
   /* Mini-badge de réassurance sous les CTAs */
   .trust-pill {
     @apply inline-flex items-center gap-1.5 rounded-full border bg-white text-[12px] font-medium;

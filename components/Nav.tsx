@@ -35,13 +35,10 @@ export default function Nav() {
           <Logo />
         </a>
 
-        <ul className="hidden items-center gap-7 md:flex">
+        <ul className="hidden items-center gap-3 md:flex">
           {links.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-sm font-medium text-kubex-ink/70 transition-colors hover:text-kubex-accent"
-              >
+              <a href={link.href} className="nav-link text-sm font-medium">
                 {link.label}
               </a>
             </li>
