@@ -50,7 +50,7 @@ export default function Nav() {
 
         <div className="hidden md:block">
           <a href="#contact" className="btn-primary !px-5 !py-2.5 text-sm">
-            Réserver un audit gratuit
+            Prendre rendez-vous
           </a>
         </div>
 
@@ -102,7 +102,7 @@ export default function Nav() {
                 onClick={() => setOpen(false)}
                 className="btn-primary w-full"
               >
-                Réserver un audit gratuit
+                Prendre rendez-vous
               </a>
             </li>
           </ul>

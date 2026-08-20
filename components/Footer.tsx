@@ -26,7 +26,7 @@ const columns: { title: string; links: { href: string; label: string }[] }[] = [
   {
     title: "Contact",
     links: [
-      { href: "#contact", label: "Réserver un audit" },
+      { href: "#contact", label: "Prendre rendez-vous" },
       { href: "#faq", label: "FAQ" },
     ],
   },

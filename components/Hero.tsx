@@ -145,7 +145,7 @@ export default function Hero() {
                 href="#contact"
                 className="inline-flex w-full items-center justify-center rounded-xl bg-white px-6 py-3 font-semibold text-[#0078C8] shadow-kubex transition-transform duration-200 hover:-translate-y-0.5 sm:w-auto"
               >
-                Réserver un audit gratuit
+                Prendre rendez-vous
               </a>
               <a
                 href="#systeme"
