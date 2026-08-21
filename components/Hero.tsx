@@ -121,21 +121,24 @@ export default function Hero() {
 
           <Reveal delay={160}>
             <p
-              className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed"
+              className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed"
               style={{ color: "rgba(255,255,255,0.85)" }}
             >
-              Deux marchés en pleine expansion, portés par des aides d'État et
-              une demande structurelle forte. KUBEX génère des leads qualifiés
-              pour les{" "}
+              Deux marchés en pleine expansion, portés par des aides d'État
+              <br />
+              et une demande structurelle forte. KUBEX génère des leads
+              <br />
+              qualifiés pour les{" "}
               <strong className="font-semibold text-white">
                 installateurs de pompes à chaleur
-              </strong>{" "}
+              </strong>
+              <br />
               et les{" "}
               <strong className="font-semibold text-white">
                 poseurs de panneaux photovoltaïques
-              </strong>{" "}
-              — via des campagnes digitales ciblées taillées pour votre métier
-              et votre zone.
+              </strong>
+              <br />— via des campagnes digitales ciblées taillées pour votre
+              métier et votre zone.
             </p>
           </Reveal>
 
